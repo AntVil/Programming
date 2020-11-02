@@ -2,7 +2,18 @@
 ### a simple textadventure
 
 ##### TODO:
-- update TODO-list
+- ###### storyboard
+- theme: sci-fy
+- login
+- items, difference from before
+- continuety
+- possible branching
+- fight-system
+- story-based (main-thread)
+
+##### Design:
+- alone
+- 
 
 ##### HOW TO RUN THE ADVENTURE (using VSCode):
 - copy the repository to your computer
