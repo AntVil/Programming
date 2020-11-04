@@ -1,33 +1,73 @@
-########################################### Ideas
-Classes:
-Engineer
-(Scientist
-Soldier) -> nice 2 have: additional classes
-Day x, 26385km left
-BoardComputer (daily tasks) [idea: virus-
-Dilemma tasks: easy now, hard later/ hard now, easy later
-Tasks: Message decription
+########################################## Ideas
+-essential
++features
+#implemented
+:discarded
 
-Idea Jan:
+-Engineer
++Classes: Scientist, Soldier, ...
+-login
+-day-counter/distance left
+-items, difference from before -> continuety
++save progress
+
+(Idea Jan, approved: 1)
 -The game is made up of stages. 
 -The stages are linear at first but can divide into branches which always have a way to get back to the main branch.
 -A stage can be a mixture of lore/story and questions. 
--The questions decide which path is taken in the story. (for example: You don’t have much fuel left in your ships tank. You get a formular and some numbers and you have to calculate how far you can get with what’s left in the tank of the ship. If you answer correct you can easily refuel on the next civilized planet. if you fail you crash on an abandon planet and you have to make the fuel yourself.)
+-The questions decide which path is taken in the story. 
+(for example: You don’t have much fuel left in your ships tank. 
+You get a formular and some numbers and you have to calculate how far you can get with what’s left in the tank of the ship. 
+If you answer correct you can easily refuel on the next civilized planet. 
+if you fail you crash on an abandon planet and you have to make the fuel yourself.)
+
+=> diagrams for demonstration would be great
 
 
-########################################### Story
+
+
+
+########################################## In-game Tasks (Ideas)
+-essential
++features
+#implemented
+:discarded
+
+-BoardComputer (daily tasks) [idea: virus]
+-Dilemma tasks: easy now, hard later/ hard now, easy later
+Tasks: Message description
+-fix ship
+-make food
+-take course to somewhere
+-avoid asteroids, ...
+-solve math problems
++javascript code
++decipher message
+
+
+
+
+
+########################################## Story
+Basic:
+-alone on ship (sci-fy)
+
 Beginning:
 Mission: reaching habitable Planet
 Background: WW3 made the russian federation revive their space program, a last resort solution to escape earth while the US. nuked Moscow and the surrounding districts.
 It is another lonely morning on board of the SPUTNIK 2078, the little suite you call home since 4 years is smelling like the content of your daily dose of tubed food paste. 
 
-
+Journey:
+...
 
 End: 
+...
 
 
 
-########################################## Structur
+
+
+########################################## Structure (storing data)
 Ideas for structuring saved data:
 
 Stage:
@@ -36,3 +76,9 @@ Stage:
 
 Questions:
 #Index(int) | "Frage die gerstellt werden soll" | Anwortmöglichkeiten (String Array) 
+
+
+
+
+
+########################################## Features
