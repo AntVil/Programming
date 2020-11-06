@@ -1,0 +1,39 @@
+%<>${}@
+
+
+
+%
+This is a comment
+It won't be displayed 
+%
+
+$
+This is a story text.
+These messages will be in different lines.
+All messages here will be displayed exactly like this.
+
+Above this line is a blank line
+$
+
+@Consequence1 = Option1{
+Interationtext goes here
+This text will be in the next line
+
+Above this line is a blank line
+
+@Consequence1 = Option1<
+Text for Option 1 will be here
+This will be in the next line
+#Consequence1 = Option 1 was taken
+>
+
+<
+Text for Option 2 will be here
+#Consequence2 = Option 2 was taken
+>
+
+<
+Text for Option 3 will be here
+#Consequence3 = Option 3 was taken
+>
+}
