@@ -15,8 +15,6 @@ Additional (features):
 +length (>10 days)
 +interaction types (number-input/random, ...)
 +code expandability
-+text 'typed' by computer
-
 
 Other:
 -text-adventure
