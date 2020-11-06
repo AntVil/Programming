@@ -1,6 +1,6 @@
 Requirenments (must-have):
 -login (names)
--length (10 days; 10-15min)
+-length (10 days; 5-10min)
 -interaction types (multiple choice, text-input)
 -design ([0] option1 [1] option2)
 -continuety (story flows to one end; see diagram)
@@ -15,8 +15,6 @@ Additional (features):
 +length (>10 days)
 +interaction types (number-input/random, ...)
 +code expandability
-+text 'typed' by computer
-
 
 Other:
 -text-adventure
