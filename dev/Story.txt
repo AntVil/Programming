@@ -1,0 +1,30 @@
+Layout:
+Day x, 26385km left
+BoardComputer (daily tasks) [idea: virus-
+Dilemma tasks: easy now, hard later/ hard now, easy later
+Tasks: Message decription
+
+Character:
+Name X,Y; Engineer & Kosmonaut, chosen from competence list in the emergency program
+
+Mission: 
+reaching habitable Planet
+
+Background: 
+WW3 made the russian federation revive their space program, a last resort solution to escape earth while the US. nuked Moscow and the surrounding districts. 
+There were three different teams sent out to discover the planet-like asteroid named “надежда”[nadezhda], around 4 lightyears away, from which the scientists in Dolgoprudny, Moscow kept receiving strange messages since december 2068.
+Beginning:
+It is another lonely morning on board of the SPUTNIK 2078. The little suite you call home for 4 years is smelling like the content of your daily dose of tubed food paste. Although you don't feel the cold, you can still feel its presence, out there in the dark. 
+
+
+End: 
+
+
+
+
+Nice 2 have: 
+
+class system: 
+Engineer
+Scientist
+Soldier
