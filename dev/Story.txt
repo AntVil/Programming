@@ -17,18 +17,40 @@ from which the scientists in Dolgoprudny, Moscow kept receiving strange messages
 
 Beginning:
 It is another lonely morning on board of the SPUTNIK 2078. 
-The little suite you call home for 4 years is smelling like the content of your daily dose of tubed food paste. 
+The little suite you called home for the last 4 years is smelling like the content of your daily dose of tubed food paste. 
 Although you don't feel the cold, you can still feel its presence, out there in the dark. 
+
+(Day 1):
+Orientation. 
+One of the challenges you are facing is maintaining the correct course at daytime, as you are required to turn off the navigation system while you are not sleeping.
+The BoardComputer uses too much energy, the tiny reactor on board of the SPUTNIK 2078 became less efficient during the last few months. Engineered in a rush, 
+it was the first of its kind, nuclear powered and... safe - as they said. 
+Your alarm buzzes and the digital clock in the corner of your stateroom shows 04:00 in the morning. You have slept for 5 hours. It's dark outside... it's always. You grab 
+your little notebook that is strapped to the container right next to your sleeping cabin. Recalculating the amount of sleep that you can allow yourself became a daily routine.
+
+Interaction: 
+estimated km left: 6.509.482
+current speed: 4,23627 km/s
+energy efficiency: 21/100 (21% of the original performance)
+
+How exactly do you calculate that again? Man, your head hurts.
+
+time in hours =
+
+[1]: ((km / speed) / 86.400) * 0,21 
+[2]: 24 * 0,21 
+[3]: f*ck it, I go back too sleep.
+
+
+[1] Wait? 3,7348086?? That means you are way over your time! 
+[2] You have to resign to the fact that sleeping less will eventually secure your chances of survival, so you get up, like every morning.
+[3] *player wakes up on day 2*
+
+
+
+
 
 
 End: 
 
 
-
-
-Nice 2 have: 
-
-class system: 
-Engineer
-Scientist
-Soldier
