@@ -5,15 +5,15 @@ It starts and ends with the percent sign
 
 These Characters (and the percent-character) are markers used for reading the files:
 
-?   (story-restriction)
 $   (story-start/-end)
 {   (interaction-start)
 }   (interaction-end)
-@   (interaction-/Option-restriction)
+@   (Restriction)
 <   (option-start)
 >   (option-end)
 [   (style-change)
 ]   (style-normalize)
+#   (Consequence)
 
 
 These characters control the style of text:

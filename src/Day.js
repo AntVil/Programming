@@ -40,20 +40,35 @@ class Day{
      * @returns {boolean} Encountered major error while parsing (doesn't catch all errors!).
      */
     fillAgenda(dayMarkup){
+        const MARKER_COMMENT = "%";
+        const MARKER_RESTRICTION = "@";
+        const MARKER_STORY = "$";
+        const MARKER_STYLE_CHANGE = "[";
+        const MARKER_STYLE_RED = "r";
+        const MARKER_STYLE_GREEN = "g";
+        const MARKER_STYLE_BLUE = "b";
+        const MARKER_STYLE_UNDERLINE = "_";
+        const MARKER_STYLE_BOLD = "+";
+        const MARKER_STYLE_END = "]";
+        const MARKER_INTERACTION_START = "{";
+        const MARKER_INTERACTION_END = "}";
+        const MARKER_OPTION_START = "<";
+        const MARKER_OPTION_END = ">";
+        const MARKER_OPTION_CONSEQUENCE = "#";
+
         const STATE0 = 0;
         const COMMENT = 1;
 
-        const STORY_RESTRICTION = 2;
+        const RESTRICTION = 2;
+
         const STORY = 3;
         const STORY_STYLE_CHANGE = 4;
         const STORY_STYLED = 5;
 
-        const INTERACTION_RESTRICTION = 6;
         const INTERACTION = 7;
         const INTERACTION_STYLE_CHANGE = 8;
         const INTERACTION_STYLED = 9;
 
-        const OPTION_RESTRICTION = 10;
         const OPTION = 11;
         const OPTION_STYLE_CHANGE = 12;
         const OPTION_STYLED = 13;
@@ -66,33 +81,39 @@ class Day{
         for(var i=0;i<dayMarkup.length;i++){
             let character = dayMarkup.charAt(i);
             if(state === STATE0){
-                if(character === "%"){
+                if(character === MARKER_COMMENT){
                     state = COMMENT;
-                }else if(character === "?"){
-                    state = STORY_RESTRICTION;
-                }else if(character === "$"){
+                }else if(character === MARKER_RESTRICTION){
+                    state = RESTRICTION;
+                }else if(character === MARKER_STORY){
                     state = STORY;
-                }else if(character === "@"){
-                    state = INTERACTION_RESTRICTION;
-                }else if(character === "{"){
+                }else if(character === MARKER_INTERACTION_START){
                     state = INTERACTION;
                 }
             }else if(state === COMMENT){
-                if(character === "%"){
+                if(character === MARKER_COMMENT){
                     state = STATE0;
                 }
-            }else if(state === STORY_RESTRICTION){
-                if(character === "{"){
+            }else if(state === RESTRICTION){
+                if(character === MARKER_STORY){
                     this.addToAgenda("STORY_RESTRICTION", eventText);
                     eventText = "";
+                    state = STORY;
+                }else if(character === MARKER_INTERACTION_START){
+                    this.addToAgenda("INTERACTION_RESTRICTION", eventText);
+                    eventText = "";
                     state = INTERACTION;
+                }else if(character === MARKER_OPTION_START){
+                    this.addToAgenda("OPTION_RESTRICTION", eventText);
+                    eventText = "";
+                    state = OPTION;
                 }else{
                     eventText += character;
                 }
             }else if(state === STORY){
-                if(character === "["){
+                if(character === MARKER_STYLE_CHANGE){
                     state = STORY_STYLE_CHANGE;
-                }else if(character === "$"){
+                }else if(character === MARKER_STORY){
                     this.addToAgenda("STORY", eventText);
                     eventText = "";
                     state = STATE0;
@@ -100,95 +121,83 @@ class Day{
                     eventText += character;
                 }
             }else if(state === STORY_STYLE_CHANGE){
-                if(character === "r"){
+                if(character === MARKER_STYLE_RED){
                     eventText += "\x1b[31m";
                     state = STORY_STYLED;
-                }else if(character === "g"){
+                }else if(character === MARKER_STYLE_GREEN){
                     eventText += "\x1b[32m";
                     state = STORY_STYLED;
-                }else if(character === "b"){
+                }else if(character === MARKER_STYLE_BLUE){
                     eventText += "\x1b[34m";
                     state = STORY_STYLED;
-                }else if(character === "_"){
+                }else if(character === MARKER_STYLE_UNDERLINE){
                     eventText += "\x1b[4m";
                     state = STORY_STYLED;
-                }else if(character === "+"){
+                }else if(character === MARKER_STYLE_BOLD){
                     eventText += "\x1b[1m";
                     state = STORY_STYLED;
                 }else{
                     throw `Error: invalid style character. (line: ${atLine})`
                 }
             }else if(state === STORY_STYLED){
-                if(character === "]"){
+                if(character === MARKER_STYLE_END){
                     eventText += "\x1b[0m";
                     state = STORY;
                 }else{
                     eventText += character;
                 }
-            }else if(state === INTERACTION_RESTRICTION){
-                if(character === "{"){
-                    this.addToAgenda("INTERACTION_RESTRICTION", eventText);
-                    eventText = "";
-                    state = INTERACTION;
-                }else{
-                    eventText += character;
-                }
             }else if(state === INTERACTION){
-                if(character === "["){
+                if(character === MARKER_STYLE_CHANGE){
                     state = INTERACTION_STYLE_CHANGE;
-                }else if(character === "@"){
+                }else if(character === MARKER_RESTRICTION){
                     this.addToAgenda("INTERACTION", eventText);
                     eventText = "";
-                    state = OPTION_RESTRICTION;
-                }else if(character === "<"){
+                    state = RESTRICTION;
+                }else if(character === MARKER_OPTION_START){
                     this.addToAgenda("INTERACTION", eventText);
                     eventText = "";
                     state = OPTION;
+                }else if(character === MARKER_INTERACTION_END){
+                    this.addToAgenda("INTERACTION", eventText);
+                    eventText = "";
+                    state = STATE0;
                 }else{
                     eventText += character;
                 }
             }else if(state === INTERACTION_STYLE_CHANGE){
-                if(character === "r"){
+                if(character === MARKER_STYLE_RED){
                     eventText += "\x1b[31m";
                     state = INTERACTION_STYLED;
-                }else if(character === "g"){
+                }else if(character === MARKER_STYLE_GREEN){
                     eventText += "\x1b[32m";
                     state = INTERACTION_STYLED;
-                }else if(character === "b"){
+                }else if(character === MARKER_STYLE_BLUE){
                     eventText += "\x1b[34m";
                     state = INTERACTION_STYLED;
-                }else if(character === "_"){
+                }else if(character === MARKER_STYLE_UNDERLINE){
                     eventText += "\x1b[4m";
                     state = INTERACTION_STYLED;
-                }else if(character === "+"){
+                }else if(character === MARKER_STYLE_BOLD){
                     eventText += "\x1b[1m";
                     state = INTERACTION_STYLED;
                 }else{
                     throw `Error: invalid style character (line: ${atLine})`;
                 }
             }else if(state === INTERACTION_STYLED){
-                if(character === "]"){
+                if(character === MARKER_STYLE_END){
                     eventText += "\x1b[0m";
                     state = INTERACTION;
                 }else{
                     eventText += character;
                 }
-            }else if(state === OPTION_RESTRICTION){
-                if(character === "<"){
-                    this.addToAgenda("OPTION_RESTRICTION", eventText);
-                    eventText = "";
-                    state = OPTION;
-                }else{
-                    eventText += character;
-                }
             }else if(state === OPTION){
-                if(character === "["){
+                if(character === MARKER_STYLE_CHANGE){
                     state = OPTION_STYLE_CHANGE;
-                }else if(character === "#"){
+                }else if(character === MARKER_OPTION_CONSEQUENCE){
                     this.addToAgenda("OPTION", eventText);
                     eventText = "";
                     state = OPTION_CONSEQUENCE;
-                }else if(character === ">"){
+                }else if(character === MARKER_OPTION_END){
                     this.addToAgenda("OPTION", eventText);
                     eventText = "";
                     state = INTERACTION;
@@ -196,36 +205,40 @@ class Day{
                     eventText += character;
                 }
             }else if(state === OPTION_STYLE_CHANGE){
-                if(character === "r"){
+                if(character === MARKER_STYLE_RED){
                     eventText += "\x1b[31m";
                     state = OPTION_STYLED;
-                }else if(character === "g"){
+                }else if(character === MARKER_STYLE_GREEN){
                     eventText += "\x1b[32m";
                     state = OPTION_STYLED;
-                }else if(character === "b"){
+                }else if(character === MARKER_STYLE_BLUE){
                     eventText += "\x1b[34m";
                     state = OPTION_STYLED;
-                }else if(character === "_"){
+                }else if(character === MARKER_STYLE_UNDERLINE){
                     eventText += "\x1b[4m";
                     state = OPTION_STYLED;
-                }else if(character === "+"){
+                }else if(character === MARKER_STYLE_BOLD){
                     eventText += "\x1b[1m";
                     state = OPTION_STYLED;
                 }else{
                     throw `Error: invalid style character (line: ${atLine})`;
                 }
             }else if(state === OPTION_STYLED){
-                if(character === "]"){
+                if(character === MARKER_STYLE_END){
                     eventText += "\x1b[0m";
                     state = OPTION;
                 }else{
                     eventText += character;
                 }
             }else if(state === OPTION_CONSEQUENCE){
-                if(character === ">"){
+                if(character === MARKER_OPTION_END){
                     this.addToAgenda("OPTION_CONSEQUENCE", eventText);
                     eventText = "";
                     state = INTERACTION;
+                }else if(character === MARKER_OPTION_CONSEQUENCE){
+                    this.addToAgenda("OPTION_CONSEQUENCE", eventText);
+                    eventText = "";
+                    state = OPTION_CONSEQUENCE;
                 }else{
                     eventText += character;
                 }
