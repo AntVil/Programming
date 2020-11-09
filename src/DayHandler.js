@@ -19,6 +19,30 @@ class DayHandler{
         let dayFilePath = pathModule.join(daysFolderPath, this.DAYS[this.dayIndex]);
         this.currentDay = new dayModule.Day(dayFilePath);
     }
+
+    getEventType(){
+        return this.currentDay.getEventType();
+    }
+
+    popOptions(){
+        let options = [];
+        while(!this.dayIsDone()){
+            if(this.getEventType() === "OPTION"){
+                options.push(this.popEventData());
+            }else{
+                break;
+            }
+        }
+        return options;
+    }
+
+    popEventData(){
+        return this.currentDay.popEventData();
+    }
+
+    dayIsDone(){
+        return this.currentDay.isDone();
+    }
 }
 
 exports.DayHandler = DayHandler;

@@ -1,3 +1,11 @@
+|
+Input your name:
+~N
+|
+
+
+
+
 %
 This is a comment
 It won't be displayed 
@@ -23,6 +31,11 @@ b   (blue)
 _   (underline)
 +   (bold)
 
+
+This character controls text-variables:
+~N  (name)
+
+
 Most markers can still be used in normal text, as they are used semantically diffrent.
 But if errors occur try to use diffrent characters.
 %
@@ -41,7 +54,7 @@ Above this line is a blank line
 [bThis is blue Text]
 [gThis is green Text]
 [_This is underlined Text]
-[+This is bold Text]
+[+This is bold Text] 
 $
 
 
@@ -70,6 +83,16 @@ Text for Option 3 will be here
 >
 }
 
-?Consequence1 = Option1$
+@Consequence1 = Option1$
 This text is only displayed when option1 was taken
+$
+
+
+|
+Input your name:
+~N
+|
+
+$
+some story at the end
 $
