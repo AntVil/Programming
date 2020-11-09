@@ -68,16 +68,8 @@ End:
 
 
 ########################################## Structure (storing data)
-Ideas for structuring saved data:
-
-Stage:
-#Index(int) | "Abstand zum Planeten"
-
-
-Questions:
-#Index(int) | "Frage die gerstellt werden soll" | Anwortmöglichkeiten (String Array) 
-
-
+-Storing days
+-markup for easy rewritability and code readability
 
 
 

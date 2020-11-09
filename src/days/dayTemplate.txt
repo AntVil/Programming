@@ -1,25 +1,56 @@
-%<>${}@
-
-
-
 %
 This is a comment
 It won't be displayed 
+It starts and ends with the percent sign
+
+These Characters (and the percent-character) are markers used for reading the files:
+
+$   (story-start/-end)
+{   (interaction-start)
+}   (interaction-end)
+@   (Restriction)
+<   (option-start)
+>   (option-end)
+[   (style-change)
+]   (style-normalize)
+#   (Consequence)
+
+
+These characters control the style of text:
+r   (red)
+g   (green)
+b   (blue)
+_   (underline)
++   (bold)
+
+Most markers can still be used in normal text, as they are used semantically diffrent.
+But if errors occur try to use diffrent characters.
 %
+
+
+Text here is not displayed as well, but it should be put into a comment to prevent errors!
+
 
 $
 This is a story text.
 These messages will be in different lines.
-All messages here will be displayed exactly like this.
+All messages here will be displayed exactly as they are.
 
 Above this line is a blank line
+[rThis is red Text]
+[bThis is blue Text]
+[gThis is green Text]
+[_This is underlined Text]
+[+This is bold Text]
 $
+
 
 @Consequence1 = Option1{
 Interationtext goes here
 This text will be in the next line
 
 Above this line is a blank line
+[rThis is red Text]
 
 @Consequence1 = Option1<
 Text for Option 1 will be here
@@ -29,6 +60,7 @@ This will be in the next line
 
 <
 Text for Option 2 will be here
+[rOptions can have color as well (red)]
 #Consequence2 = Option 2 was taken
 >
 
@@ -37,3 +69,7 @@ Text for Option 3 will be here
 #Consequence3 = Option 3 was taken
 >
 }
+
+?Consequence1 = Option1$
+This text is only displayed when option1 was taken
+$
