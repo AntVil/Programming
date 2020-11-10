@@ -26,8 +26,16 @@ class InputHandler {
             }
         } while (viableString != true);
     }
+    getNumberInput() {
+        let viableNumber = false;
+        do {
+            const optionInput = readline.questionInt();
+            if (typeof optionInput === "number" && optionInput < options) {
+                viableNumber = true;
+                return optionInput;
+            }
+        } while (viableNumber != true);
+    }
 }
-
-
 
 exports.InputHandler = InputHandler;
