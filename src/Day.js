@@ -1,4 +1,3 @@
-const interactionModule = require("./Interaction");
 const fileReaderModule = require("fs");
 
 const MARKER_COMMENT = "%";
@@ -32,7 +31,7 @@ class Day {
         }
 
         for(let i=0;i<this.agenda.length;i++){
-            console.log(this.agenda[i]);
+            //console.log(this.agenda[i]);
         }
     }
 
