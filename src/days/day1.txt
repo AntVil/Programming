@@ -1,0 +1,135 @@
+%
+Layout:
+Day x, 26385km left
+BoardComputer (daily tasks) [idea: virus-
+Dilemma tasks: easy now, hard later/ hard now, easy later
+Tasks: Message decription
+
+Character:
+Name X,Y; Engineer & Kosmonaut, chosen from competence list in the emergency program
+%
+
+$
+Mission: 
+reaching habitable Planet
+$
+
+%
+Background story:
+Story Block :0
+%
+
+$
+WW3 made the russian federation revive their space program, a last resort solution to escape the earth while the US. nuked Moscow and the surrounding districts. 
+There were three different teams sent out to discover the planet-like asteroid named “надежда”(nadezhda), around 489.396.264 km away, 
+from which the scientists in Dolgoprudny, Moscow kept receiving strange messages since december 2068.
+$
+
+%Story Block 1:%
+$
+It is another lonely morning on board of the SPUTNIK 2078. 
+The little suite you called home for the last 4 years is smelling like the content of your daily dose of tubed food paste. 
+Although you don't feel the cold, you can still feel its presence, out there in the dark. 
+$
+
+$
+Orientation. One of the challenges you are facing is maintaining the correct course at daytime, as you are required to turn off the navigation system while you are not sleeping.
+The BoardComputer uses too much energy, the tiny reactor on board of the SPUTNIK 2078 became less efficient during the last few months. Engineered in a rush, 
+it was the first of its kind, nuclear powered and... safe - as they said. 
+Your alarm buzzes and the digital clock in the corner of your stateroom shows 04:00 in the morning. You have slept for 5 hours. It's dark outside... it's always. You grab 
+your little notebook that is strapped to the container right next to your sleeping cabin. Recalculating the amount of sleep that you can allow yourself became a daily routine.
+$
+
+
+
+{
+estimated km left: [r6.509.482]
+current speed: [r4,23627 km/s]
+energy efficiency: [r21/100] (21% of the original performance)
+
+How exactly do you calculate that again? Man, your head hurts.
+
+time in hours =
+
+<
+((km / speed) / 86.400) * 0,21 
+#StoryBlock = 1.1
+>
+
+<
+24 * 0,21 
+#StoryBlock = 1.2
+>
+
+<
+f*ck it, I'll go back too sleep.
+#StoryBlock = 1.3
+>
+
+}
+
+
+@StoryBlock = 1.1$
+Wait? 3,7348086?? That means you are way over your time! You rush out of the cabin way faster than the little space should allow and find yourself in the command section. 
+You check all the instruments, daily routine for you. But today... something was different.
+#StoryBlock = 2
+$
+
+
+
+@StoryBlock = 1.2$
+You have to resign to the fact that sleeping less will eventually secure your chances of survival, so you get up, like every morning. There is no coffe in space, obviously, 
+but you are pretty shure that one of the pills in your daily dose of "vitamins" contains something like coffeine, or at least something with the same effect on your body. 
+No clue how you otherwise would be able to sustain this kind of lifestyle. You float out of your cabin and find yourself in the command section. 
+You check all the instruments, daily routine for you. "Good Morning General ~N", displayed on top of the monitor. But today... this was the only thing on the screen that didn't surprise you.
+#StoryBlock = 2
+$
+
+
+@StoryBlock = 1.3$
+No headache. That's nice. Maybe that was exactly what you needed. 
+#StoryBlock = 3
+$
+
+
+
+@StoryBlock = 2$
+You've never seen anything like this. Neither in Training, which, admittedly hasn't been very long or intense, nor one time in nearly 4 years on this ship, something like [+this] had occured. 
+And [+this] is not to be taken unseriously. For everyday people the numbers on the screen of the boardcomputer would have seemed oridanry or insignificant. But you know what they mean. 
+And you cannot decide yet, if you rather should, or should not, feel happy about that.
+
+The trajectorys of the ship are recalculated daily. Usually you wake up to about three or four different options the computer calculated overnight. The problem is, they never looked like this:
+#StoryBlock = 2.0
+$
+
+
+
+@StoryBlock = 2.0{
+trajectory option 1: course correction 0.00032472° , new estimated km left: [r6.434.534] km
+trajectory option 2: course correction 0.00034793° , new estimated km left: [r4.186] km
+trajectory option 2: course correction 0.00045744° , new estimated km left: [r6.434.497] km
+
+Was there an error?
+
+<
+Must be an error, run calculations again
+#StoryBlock = 2.1
+#lessPower = true
+>
+
+<
+Can't be. The computer has never made any mistakes. It is what I think it is.
+#StoryBlock = 2.2
+>
+
+}
+
+
+@StoryBlock = 2.1$
+Alright, running the calculations again might take a few hours, but it'll hopefully give you some answers.
+$
+
+
+@StoryBlock = 2.2$
+Your Knowledge about wormholes may be a tad rusty, but you're sure, that there can be no other way a trajectory can be of a over 1500 times shorter distance, than the one that differs 0.00002321°.
+$

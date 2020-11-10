@@ -8,7 +8,7 @@ class InputHandler {
         let viableNumber = false;
         do {
             const optionInput = readline.questionInt();
-            if (typeof optionInput === "number" && optionInput < options && option > 0) {
+            if (typeof optionInput === "number" && optionInput < options && optionInput >= 0) {
                 viableNumber = true;
                 return optionInput;
             }

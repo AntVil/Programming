@@ -14,7 +14,7 @@ const MARKER_INTERACTION_START = "{";
 const MARKER_INTERACTION_END = "}";
 const MARKER_OPTION_START = "<";
 const MARKER_OPTION_END = ">";
-const MARKER_OPTION_CONSEQUENCE = "#";
+const MARKER_CONSEQUENCE = "#";
 const MARKER_TEXT_INPUT = "|";
 const MARKER_VARIABLE_DECLARATION = "~";
 
@@ -33,6 +33,8 @@ class Day {
         for(let i=0;i<this.agenda.length;i++){
             //console.log(this.agenda[i]);
         }
+
+
     }
 
     /**
@@ -65,19 +67,21 @@ class Day {
         const STORY_STYLE_CHANGE = 4;
         const STORY_STYLED = 5;
 
-        const INTERACTION = 6;
-        const INTERACTION_STYLE_CHANGE = 7;
-        const INTERACTION_STYLED = 8;
+        const STORY_CONSEQUENCE = 6;
 
-        const OPTION = 9;
-        const OPTION_STYLE_CHANGE = 10;
-        const OPTION_STYLED = 11;
+        const INTERACTION = 7;
+        const INTERACTION_STYLE_CHANGE = 8;
+        const INTERACTION_STYLED = 9;
 
-        const OPTION_CONSEQUENCE = 12;
+        const OPTION = 10;
+        const OPTION_STYLE_CHANGE = 11;
+        const OPTION_STYLED = 12;
 
-        const TEXT_INPUT = 13;
+        const OPTION_CONSEQUENCE = 13;
 
-        const VARIABLE_DECLARATION = 14;
+        const TEXT_INPUT = 14;
+
+        const VARIABLE_DECLARATION = 15;
 
         let state = STATE0;
         let eventText = "";
@@ -120,7 +124,10 @@ class Day {
                     this.addToAgenda("STORY", eventText);
                     eventText = "";
                     state = STATE0;
-                } else {
+                } else if(character === MARKER_CONSEQUENCE){
+                    state = STORY_CONSEQUENCE;
+                    eventText += character;
+                }else {
                     eventText += character;
                 }
             } else if (state === STORY_STYLE_CHANGE) {
@@ -149,7 +156,15 @@ class Day {
                 } else {
                     eventText += character;
                 }
-            } else if (state === INTERACTION) {
+            } else if(state === STORY_CONSEQUENCE){
+                if (character === MARKER_STORY) {
+                    this.addToAgenda("STORY", eventText);
+                    eventText = "";
+                    state = STATE0;
+                } else {
+                    eventText += character;
+                }
+            }else if (state === INTERACTION) {
                 if (character === MARKER_STYLE_CHANGE) {
                     state = INTERACTION_STYLE_CHANGE;
                 } else if (character === MARKER_RESTRICTION) {
@@ -196,7 +211,7 @@ class Day {
             } else if (state === OPTION) {
                 if (character === MARKER_STYLE_CHANGE) {
                     state = OPTION_STYLE_CHANGE;
-                } else if (character === MARKER_OPTION_CONSEQUENCE) {
+                } else if (character === MARKER_CONSEQUENCE) {
                     state = OPTION_CONSEQUENCE;
                     eventText += character;
                 } else if (character === MARKER_OPTION_END) {
@@ -275,17 +290,39 @@ class Day {
                 
                 let restriction;
                 let text;
+                let consequences;
                 if(story.length === 1){
                     restriction = "";
-                    text = story[0];
+
+                    let storyParts = story[0].split(MARKER_CONSEQUENCE);
+                    if(storyParts.length === 1){
+                        text = storyParts[0];
+                        consequences = [];
+                    }else{
+                        text = storyParts[0];
+                        consequences = storyParts.splice(1, storyParts.length-1);
+                    }
                 }else{
                     restriction = story[0];
-                    text = story[1];
+
+                    let storyParts = story[1].split(MARKER_CONSEQUENCE);
+                    if(storyParts.length === 1){
+                        text = storyParts[0];
+                        consequences = [];
+                    }else{
+                        text = storyParts[0];
+                        consequences = storyParts.splice(1, storyParts.length-1);
+                    }
+                }
+
+                for(let i=0;i<consequences.length;i++){
+                    consequences[i] = consequences[i].trim();
                 }
                 
                 this.agenda.push([eventType, {
                     RESTRICTION: restriction,
-                    TEXT: text.trim()
+                    TEXT: text.trim(),
+                    CONSEQUENCES: consequences
                 }]);
             }else if(eventType === "INTERACTION"){
                 let interaction = eventText.split(MARKER_INTERACTION_START);
@@ -313,7 +350,7 @@ class Day {
                 if(option.length === 1){
                     restriction = "";
 
-                    let optionParts = option[0].split(MARKER_OPTION_CONSEQUENCE);
+                    let optionParts = option[0].split(MARKER_CONSEQUENCE);
                     if(optionParts.length === 1){
                         text = optionParts[0];
                         consequences = [];
@@ -324,7 +361,7 @@ class Day {
                 }else{
                     restriction = option[0];
 
-                    let optionParts = option[1].split(MARKER_OPTION_CONSEQUENCE);
+                    let optionParts = option[1].split(MARKER_CONSEQUENCE);
                     if(optionParts.length === 1){
                         text = optionParts[0];
                         consequences = [];
@@ -332,6 +369,10 @@ class Day {
                         text = optionParts[0];
                         consequences = optionParts.splice(1, optionParts.length-1);
                     }
+                }
+
+                for(let i=0;i<consequences.length;i++){
+                    consequences[i] = consequences[i].trim();
                 }
                 
                 this.agenda.push([eventType, {
@@ -370,7 +411,7 @@ class Day {
     }
 
     isDone() {
-        return this.atEvent >= this.agenda.length - 1;
+        return this.atEvent >= this.agenda.length;
     }
 }
 

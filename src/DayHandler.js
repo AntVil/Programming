@@ -5,7 +5,7 @@ const daysFolderPath = pathModule.join(__dirname, "/days");
 class DayHandler{
     constructor(){
         this.DAYS = [
-            "dayTemplate.txt"
+            "day1.txt"
         ];
 
         this.dayIndex = -1;

@@ -25,7 +25,7 @@ class Main{
         
         if(eventType === "STORY"){
             let story = this.dayHandler.popEventData();
-            this.handleStory(story.RESTRICTION, story.TEXT);
+            this.handleStory(story.RESTRICTION, story.TEXT, story.CONSEQUENCES);
         }else if(eventType === "INTERACTION"){
             let interaction = this.dayHandler.popEventData();
             let options = this.dayHandler.popOptions();
@@ -38,12 +38,19 @@ class Main{
         }
     }
 
-    handleStory(restriction, storyText){
+    handleStory(restriction, storyText, consequences){
         if(this.validRestriction(restriction)){
             return;
         }
 
         console.log(storyText + "\n");
+
+        for(let i=0;i<consequences.length;i++){
+            let consequenceParts = consequences[i].split("=");
+            let consequenceVariable = (consequenceParts[0] || "").trim().toUpperCase();
+            let consequenceValue = (consequenceParts[1] || "").trim().toUpperCase();
+            this.variableDictionary[consequenceVariable] = consequenceValue;
+        }
     }
 
     handleInteraction(restriction, interactionText, options){
