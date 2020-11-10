@@ -16,12 +16,12 @@ $
 
 %
 Background story:
-Story Block 0:%
+Story Block :0
 %
 
 $
 WW3 made the russian federation revive their space program, a last resort solution to escape the earth while the US. nuked Moscow and the surrounding districts. 
-There were three different teams sent out to discover the planet-like asteroid named “надежда”[nadezhda], around 489.396.264 km away, 
+There were three different teams sent out to discover the planet-like asteroid named “надежда”(nadezhda), around 489.396.264 km away, 
 from which the scientists in Dolgoprudny, Moscow kept receiving strange messages since december 2068.
 $
 
@@ -41,7 +41,7 @@ Your alarm buzzes and the digital clock in the corner of your stateroom shows 04
 your little notebook that is strapped to the container right next to your sleeping cabin. Recalculating the amount of sleep that you can allow yourself became a daily routine.
 $
 
-Interaction 1:
+%Interaction 1:%
 
 {
 estimated km left: [r6.509.482]
@@ -105,6 +105,8 @@ And you cannot decide yet, if you rather should, or should not, feel happy about
 
 The trajectorys of the ship are recalculated daily. Usually you wake up to about three or four different options the computer calculated overnight. The problem is, they never looked like this:
 $
+
+%Interaction 2:%
 
 {
 trajectory option 1: course correction 0.00032472° , new estimated km left: [r6.434.534] km
