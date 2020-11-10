@@ -1,6 +1,6 @@
 const readline = require('readline-sync');
 
-class InputHander {
+class InputHandler {
     constructor() {
 
     }
@@ -8,7 +8,7 @@ class InputHander {
         let viableNumber = false;
         do {
             const optionInput = readline.questionInt();
-            if (typeof optionInput === "number" && optionInput <= options) {
+            if (typeof optionInput === "number" && optionInput < options && option > 0) {
                 viableNumber = true;
                 return optionInput;
             }
@@ -17,10 +17,10 @@ class InputHander {
     }
 
     getTextInput() {
-        let viableString = flase;
-        const textInput = readline.question();
+        let viableString = false;
+        const textInput = readline.question().trim();
         do {
-            if (typeof textInput === "string") {
+            if (typeof textInput === "string" && textInput.length > 0) {
                 viableString = true;
                 return textInput;
             }
@@ -30,4 +30,4 @@ class InputHander {
 
 
 
-exports.InputHander = InputHander;
+exports.InputHandler = InputHandler;

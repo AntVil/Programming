@@ -1,10 +1,11 @@
 const dayHandlerModule = require("./DayHandler");
-//const inputHandlerModule = require("./InputHander");
+const inputHandlerModule = require("./InputHandler");
 
 class Main{
     constructor(){
         this.dayHandler = new dayHandlerModule.DayHandler();
-        //this.inputHandler = new inputHandlerModule.InputHandler;
+        this.inputHandler = new inputHandlerModule.InputHandler();
+
         this.variableDictionary = {
             "N": "Username"
         };
@@ -56,7 +57,7 @@ class Main{
             console.log(`[${i}]\n` + options[i].TEXT + "\n");
         }
 
-        let takenOption = 1;//this.inputHandler.getTextInput();
+        let takenOption = this.inputHandler.getOptionInput(options.length);
         let consequences = options[takenOption].CONSEQUENCES;
         for(let i=0;i<consequences.length;i++){
             let consequenceParts = consequences[i].split("=");
@@ -68,7 +69,7 @@ class Main{
 
     handleTextInput(inputDescription, variableName){
         console.log(inputDescription);
-        this.variableDictionary[variableName] = "User-input";//this.inputHandler.getTextInput();
+        this.variableDictionary[variableName] = this.inputHandler.getTextInput();
         console.log("");
     }
 
