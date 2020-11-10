@@ -58,7 +58,7 @@ Above this line is a blank line
 $
 
 
-@Consequence1 = Option1{
+{
 Interationtext goes here
 This text will be in the next line
 
@@ -68,18 +68,18 @@ Above this line is a blank line
 @Consequence1 = Option1<
 Text for Option 1 will be here
 This will be in the next line
-#Consequence1 = Option 1 was taken
+#Consequence1 = Option1
 >
 
 <
 Text for Option 2 will be here
 [rOptions can have color as well (red)]
-#Consequence2 = Option 2 was taken
+#Consequence2 = Option2
 >
 
 <
 Text for Option 3 will be here
-#Consequence3 = Option 3 was taken
+#Consequence3 = Option3
 >
 }
 
