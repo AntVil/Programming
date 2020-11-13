@@ -118,7 +118,7 @@ Must be an error, run calculations again.
 >
 
 <
-Can't be. The computer has never made any mistakes. It is what I think it is.
+Can't be. The computer has never made any mistakes. It is what I think it is?
 #StoryBlock = 2.2
 >
 
@@ -263,7 +263,7 @@ Muss ein Fehler sein, muss neu berechnen werden.
 >
 
 <
-Kann nicht sein. Der Computer hat noch nie einen Fehler gemacht. Es ist was es ist.
+Kann nicht sein. Der Computer hat noch nie einen Fehler gemacht. Ist es das was ich denke, was es ist?
 #StoryBlock = 2.2
 >
 }
