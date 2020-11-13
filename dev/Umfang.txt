@@ -16,6 +16,7 @@ Additional (features):
 +interaction types (number-input/random, ...)
 +code expandability
 +color in console
++additional languages
 
 
 Other:
