@@ -40,7 +40,11 @@ class Main{
 
     handleStory(story){
         if(this.restrictionSatisfied(story.getRestriction())){
-            console.log(story.getText() + "\n");
+            let storyText = story.getText() + "\n";
+            while (storyText.includes("~N") === true) {
+                storyText = storyText.replace("~N", this.variableDictionary.N);
+            }
+            console.log(storyText);
 
             let consequences = story.getConsequences();
             for(let i=0;i<consequences.length;i++){
@@ -51,7 +55,11 @@ class Main{
 
     handleInteraction(interaction){
         if(this.restrictionSatisfied(interaction.getRestriction())){
-            console.log(interaction.getText() + "\n");
+            let interactionText = interaction.getText() + "\n";
+            while (interactionText.includes("~N") === true) {
+                interactionText = interactionText.replace("~N", this.variableDictionary.N);
+            }
+            console.log(interactionText);
 
             let options = interaction.getOptions();
             let possibleOptions = [];
@@ -73,10 +81,11 @@ class Main{
         }
     }
 
-    handleTextInput(inputDescription, variableName){
-        console.log(inputDescription);
-        this.variableDictionary[variableName] = this.inputHandler.getTextInput();
+    handleTextInput(textInput){
+        console.log(textInput.getText());
+        this.variableDictionary[textInput.getVariableName()] = this.inputHandler.getTextInput();
         console.log("");
+        console.log(this.variableDictionary);
     }
 
 
