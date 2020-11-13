@@ -17,13 +17,10 @@ Deutsch
 }
 
 @Language = English$
-This is in English
+English was selected.
 $
 
 
-
-
-
 @Language = Deutsch$
-Das ist Deutsch
+Es wurde Deutsch ausgewählt.
 $
