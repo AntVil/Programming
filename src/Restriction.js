@@ -2,43 +2,33 @@ const constantsModule = require("./constants");
 
 class Restriction{
     constructor(description){
-        description = description.toUpperCase();
-        this.restrictions = description.split(constantsModule.MARKER_VARIABLE_AND);
-        for(let i=0;i<this.restrictions.length;i++){
-            this.restrictions[i] = this.restrictions[i].trim();
-        }
-
-        if(this.restrictions[0] === ""){
-            this.restrictions = [];
-        }
-
-        /*
         this.variables = [];
         let restrictions = description.split(constantsModule.MARKER_VARIABLE_AND);
         for(let i=0;i<restrictions.length;i++){
-            this.variables.push(restrictions[i].split(constantsModule.MARKER_VARIABLE_EQUALS));
+            if(restrictions[i].trim().length !== 0){
+                let variableParts = restrictions[i].split(constantsModule.MARKER_VARIABLE_EQUALS);
+                let variable = {
+                    name: variableParts[0].trim().toUpperCase(),
+                    value: variableParts[1].trim().toUpperCase(),
+                    getVariableName: function(){
+                        return this.name;
+                    },
+                    getVariableValue: function(){
+                        return this.value;
+                    }
+                }
+                this.variables.push(variable);
+            }
         }
-        */
+        
     }
 
     getType(){
         return constantsModule.TYPE_RESTRICTION;
     }
 
-    getRestrictions(){
-        return this.restrictions;
-    }
-
-    getVariablesLength(){
-        return this.variables.length;
-    }
-
-    getVariableName(index){
-
-    }
-
-    getVariableValue(index){
-
+    getVariables(){
+        return this.variables;
     }
 }
 

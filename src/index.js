@@ -86,12 +86,10 @@ class Main{
 
 
     restrictionSatisfied(restriction){
-        let restrictions = restriction.getRestrictions();
-        for(let i=0;i<restrictions.length;i++){
-            let res = restrictions[i].split(constantsModule.MARKER_VARIABLE_EQUALS);
-            let variableName = res[0].trim();
-            let variableValue = res[1].trim();
-            if(this.variableDictionary[variableName] !== variableValue){
+        let variables = restriction.getVariables();
+        for(let i=0;i<variables.length;i++){
+            let variable = variables[i];
+            if(this.variableDictionary[variable.getVariableName()] !== variable.getVariableValue()){
                 return false;
             }
         }

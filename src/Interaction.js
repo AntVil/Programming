@@ -12,7 +12,7 @@ class Interaction{
             this.text = interaction[0];
         }else{
             this.restriction = new restrictionModule.Restriction(interaction[0]);
-            this.text = new restrictionModule.Restriction(interaction[1]);
+            this.text = interaction[1];
         }
 
         this.options = [];
