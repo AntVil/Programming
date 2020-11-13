@@ -16,9 +16,12 @@ exports.MARKER_OPTION_END = ">";
 exports.MARKER_CONSEQUENCE_START = "#";
 exports.MARKER_TEXT_INPUT = "|";
 exports.MARKER_VARIABLE_START = "~";
+exports.MARKER_VARIABLE_EQUALS = "=";
+exports.MARKER_VARIABLE_AND = "&";
 
 exports.TYPE_STORY = 0;
 exports.TYPE_INTERACTION = 1;
 exports.TYPE_OPTION = 2;
 exports.TYPE_TEXT_INPUT = 3;
 exports.TYPE_CONSEQUENCE = 4;
+exports.TYPE_RESTRICTION = 5;

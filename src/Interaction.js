@@ -1,4 +1,5 @@
 const constantsModule = require("./constants");
+const restrictionModule = require("./Restriction");
 
 class Interaction{
     constructor(description){
@@ -7,11 +8,11 @@ class Interaction{
         this.restriction;
         this.text;
         if(interaction.length === 1){
-            this.restriction = "";
+            this.restriction = new restrictionModule.Restriction("");
             this.text = interaction[0];
         }else{
             this.restriction = interaction[0];
-            this.text = interaction[1];
+            this.text = new restrictionModule.Restriction(interaction[1]);
         }
 
         this.options = [];
@@ -21,8 +22,8 @@ class Interaction{
         this.options.push(option);
     }
 
-    getRestrictions(){
-        return [this.restriction];
+    getRestriction(){
+        return this.restriction;
     }
 
     getText(){

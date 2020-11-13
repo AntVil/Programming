@@ -3,10 +3,22 @@ Language
 <
 English
 #Language = English
-#123 = 2
+#123 = true
 >
 <
 Deutsch
 #Language = Deutsch
 >
 }
+
+@Language = English & 123 = 12$
+This is in English
+$
+
+
+
+
+
+@Language = Deutsch$
+Das ist Deutsch
+$

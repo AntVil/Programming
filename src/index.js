@@ -35,43 +35,38 @@ class Main{
     }
 
     handleStory(story){
-        if(this.restrictionSatisfied(story.getRestrictions()[0])){
-            return;
-        }
+        if(this.restrictionSatisfied(story.getRestriction())){
+            console.log(story.getText() + "\n");
 
-        console.log(story.getText() + "\n");
-
-        for(let i=0;i<consequences.length;i++){
-            let consequenceParts = consequences[i].split("=");
-            let consequenceVariable = (consequenceParts[0] || "").trim().toUpperCase();
-            let consequenceValue = (consequenceParts[1] || "").trim().toUpperCase();
-            this.variableDictionary[consequenceVariable] = consequenceValue;
+            let consequences = story.getConsequences();
+            for(let i=0;i<consequences.length;i++){
+                this.handleConsequence(consequences[i]);
+            }
         }
     }
 
     handleInteraction(interaction){
-        if(this.restrictionSatisfied(interaction.getRestrictions()[0])){
-            return;
-        }
-        
-        console.log(interaction.getText() + "\n");
+        if(this.restrictionSatisfied(interaction.getRestriction())){
+            console.log(interaction.getText() + "\n");
 
-        let options = interaction.getOptions();
-        for(let i=0;i<options.length;i++){
-            console.log(`[${i}] ${options[i].getText()}\n`);
-        }
+            let options = interaction.getOptions();
+            let possibleOptions = [];
+            for(let i=0;i<options.length;i++){
+                if(this.restrictionSatisfied(options[i].getRestriction())){
+                    possibleOptions.push(options[i]);
+                }
+            }
+            for(let i=0;i<options.length;i++){
+                console.log(`[${i}] ${options[i].getText()}\n`);
+            }
 
-        let takenOption = this.inputHandler.getOptionInput(options.length);
-        let consequences = options[takenOption].getConsequences();
-        
-        /*
-        for(let i=0;i<consequences.length;i++){
-            let consequenceParts = consequences[i].split("=");
-            let consequenceVariable = (consequenceParts[0] || "").trim().toUpperCase();
-            let consequenceValue = (consequenceParts[1] || "").trim().toUpperCase();
-            this.variableDictionary[consequenceVariable] = consequenceValue;
+            let takenOption = this.inputHandler.getOptionInput(options.length);
+            
+            let consequences = options[takenOption].getConsequences();
+            for(let i=0;i<consequences.length;i++){
+                this.handleConsequence(consequences[i]);
+            }
         }
-        */
     }
 
     handleTextInput(inputDescription, variableName){
@@ -80,14 +75,24 @@ class Main{
         console.log("");
     }
 
+
+    handleConsequence(consequence){
+        this.variableDictionary[consequence.getVariableName()] = consequence.getVariableValue();
+    }
+
+
     restrictionSatisfied(restriction){
-        if(restriction === ""){
-            return false;
+        let restrictions = restriction.getRestrictions();
+        for(let i=0;i<restrictions.length;i++){
+            let res = restrictions[i].split(constantsModule.MARKER_VARIABLE_EQUALS);
+            let variableName = res[0].trim();
+            let variableValue = res[1].trim();
+            if(this.variableDictionary[variableName] !== variableValue){
+                return false;
+            }
         }
-        let restrictionParts = restriction.split("=");
-        let restrictionVariable = (restrictionParts[0] || "").trim().toUpperCase();
-        let restrictionValue = (restrictionParts[1] || "").trim().toUpperCase();
-        return this.variableDictionary[restrictionVariable] !== restrictionValue;
+
+        return true;
     }
 }
 

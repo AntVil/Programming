@@ -1,4 +1,5 @@
 const constantsModule = require("./constants");
+const restrictionModule = require("./Restriction");
 const consequenceModule = require("./Consequence");
 
 class Story{
@@ -9,7 +10,7 @@ class Story{
         this.text;
         this.consequences = [];
         if(story.length === 1){
-            this.restriction = "";
+            this.restriction = new restrictionModule.Restriction("");
 
             let storyParts = story[0].split(constantsModule.MARKER_CONSEQUENCE_START);
             if(storyParts.length === 1){
@@ -22,7 +23,7 @@ class Story{
                 }
             }
         }else{
-            this.restriction = story[0];
+            this.restriction = new restrictionModule.Restriction(story[0]);
 
             let storyParts = story[1].split(constantsModule.MARKER_CONSEQUENCE_START);
             if(storyParts.length === 1){
@@ -37,8 +38,8 @@ class Story{
         }
     }
 
-    getRestrictions(){
-        return [this.restriction];
+    getRestriction(){
+        return this.restriction;
     }
 
     getText(){

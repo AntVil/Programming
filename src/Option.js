@@ -1,4 +1,5 @@
 const constantsModule = require("./constants");
+const restrictionModule = require("./Restriction");
 const consequenceModule = require("./Consequence");
 
 class Option{
@@ -9,7 +10,7 @@ class Option{
         this.text;
         this.consequences = [];
         if(option.length === 1){
-            this.restriction = "";
+            this.restriction = new restrictionModule.Restriction("");
 
             let optionParts = option[0].split(constantsModule.MARKER_CONSEQUENCE_START);
             if(optionParts.length === 1){
@@ -22,7 +23,7 @@ class Option{
                 }
             }
         }else{
-            this.restriction = option[0];
+            this.restriction = new restrictionModule.Restriction(option[0]);
 
             let optionParts = option[1].split(constantsModule.MARKER_CONSEQUENCE_START);
             if(optionParts.length === 1){
@@ -37,8 +38,8 @@ class Option{
         }
     }
 
-    getRestrictions(){
-        return [this.restriction];
+    getRestriction(){
+        return this.restriction;
     }
 
     getText(){
