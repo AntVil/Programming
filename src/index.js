@@ -1,5 +1,6 @@
 const dayHandlerModule = require("./DayHandler");
 const inputHandlerModule = require("./InputHandler");
+const constantsModule = require("./constants");
 
 class Main{
     constructor(){
@@ -21,29 +22,24 @@ class Main{
     }
 
     runStep(){
-        let eventType = this.dayHandler.getEventType();
-        
-        if(eventType === "STORY"){
-            let story = this.dayHandler.popEventData();
-            this.handleStory(story.RESTRICTION, story.TEXT, story.CONSEQUENCES);
-        }else if(eventType === "INTERACTION"){
-            let interaction = this.dayHandler.popEventData();
-            let options = this.dayHandler.popOptions();
-            this.handleInteraction(interaction.RESTRICTION, interaction.TEXT, options);
-        }else if(eventType === "TEXT_INPUT"){
-            let input = this.dayHandler.popEventData();
-            this.handleTextInput(input.TEXT, input.VARIABLE_NAME);
+        let event = this.dayHandler.popEvent();
+        if(event.getType() === constantsModule.TYPE_STORY){
+            this.handleStory(event);
+        }else if(event.getType() === constantsModule.TYPE_INTERACTION){
+            this.handleInteraction(event);
+        }else if(event.getType() === constantsModule.TYPE_TEXT_INPUT){
+            this.handleTextInput(event);
         }else{
             throw new Error(`Error: Unexpected event: '${eventType}'`);
         }
     }
 
-    handleStory(restriction, storyText, consequences){
-        if(this.validRestriction(restriction)){
+    handleStory(story){
+        if(this.restrictionSatisfied(story.getRestrictions()[0])){
             return;
         }
 
-        console.log(storyText + "\n");
+        console.log(story.getText() + "\n");
 
         for(let i=0;i<consequences.length;i++){
             let consequenceParts = consequences[i].split("=");
@@ -53,25 +49,29 @@ class Main{
         }
     }
 
-    handleInteraction(restriction, interactionText, options){
-        if(this.validRestriction(restriction)){
+    handleInteraction(interaction){
+        if(this.restrictionSatisfied(interaction.getRestrictions()[0])){
             return;
         }
         
-        console.log(interactionText + "\n");
+        console.log(interaction.getText() + "\n");
 
+        let options = interaction.getOptions();
         for(let i=0;i<options.length;i++){
-            console.log(`[${i}]\n` + options[i].TEXT + "\n");
+            console.log(`[${i}] ${options[i].getText()}\n`);
         }
 
         let takenOption = this.inputHandler.getOptionInput(options.length);
-        let consequences = options[takenOption].CONSEQUENCES;
+        let consequences = options[takenOption].getConsequences();
+        
+        /*
         for(let i=0;i<consequences.length;i++){
             let consequenceParts = consequences[i].split("=");
             let consequenceVariable = (consequenceParts[0] || "").trim().toUpperCase();
             let consequenceValue = (consequenceParts[1] || "").trim().toUpperCase();
             this.variableDictionary[consequenceVariable] = consequenceValue;
         }
+        */
     }
 
     handleTextInput(inputDescription, variableName){
@@ -80,7 +80,7 @@ class Main{
         console.log("");
     }
 
-    validRestriction(restriction){
+    restrictionSatisfied(restriction){
         if(restriction === ""){
             return false;
         }

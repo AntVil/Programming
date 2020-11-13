@@ -1,22 +1,9 @@
+const constantsModule = require("./constants");
+const storyModule = require("./Story");
+const interactionModule = require("./Interaction");
+const optionModule = require("./Option");
+const textInputModule = require("./TextInput");
 const fileReaderModule = require("fs");
-
-const MARKER_COMMENT = "%";
-const MARKER_RESTRICTION = "@";
-const MARKER_STORY = "$";
-const MARKER_STYLE_CHANGE = "[";
-const MARKER_STYLE_RED = "r";
-const MARKER_STYLE_GREEN = "g";
-const MARKER_STYLE_BLUE = "b";
-const MARKER_STYLE_UNDERLINE = "_";
-const MARKER_STYLE_BOLD = "+";
-const MARKER_STYLE_END = "]";
-const MARKER_INTERACTION_START = "{";
-const MARKER_INTERACTION_END = "}";
-const MARKER_OPTION_START = "<";
-const MARKER_OPTION_END = ">";
-const MARKER_CONSEQUENCE = "#";
-const MARKER_TEXT_INPUT = "|";
-const MARKER_VARIABLE_DECLARATION = "~";
 
 class Day {
     constructor(filePath) {
@@ -30,10 +17,11 @@ class Day {
             console.log(error);
         }
 
+        /*
         for(let i=0;i<this.agenda.length;i++){
-            //console.log(this.agenda[i]);
+            console.log(this.agenda[i]);
         }
-
+        */
 
     }
 
@@ -81,7 +69,7 @@ class Day {
 
         const TEXT_INPUT = 14;
 
-        const VARIABLE_DECLARATION = 15;
+        const VARIABLE_START = 15;
 
         let state = STATE0;
         let eventText = "";
@@ -89,182 +77,182 @@ class Day {
         for (var i = 0; i < dayMarkup.length; i++) {
             let character = dayMarkup.charAt(i);
             if (state === STATE0) {
-                if (character === MARKER_COMMENT) {
+                if (character === constantsModule.MARKER_COMMENT) {
                     state = COMMENT;
-                } else if (character === MARKER_RESTRICTION) {
+                } else if (character === constantsModule.MARKER_RESTRICTION) {
                     state = RESTRICTION;
-                } else if (character === MARKER_STORY) {
+                } else if (character === constantsModule.MARKER_STORY_START) {
                     state = STORY;
-                } else if (character === MARKER_INTERACTION_START) {
+                } else if (character === constantsModule.MARKER_INTERACTION_START) {
                     state = INTERACTION;
-                } else if (character === MARKER_TEXT_INPUT) {
+                } else if (character === constantsModule.MARKER_TEXT_INPUT) {
                     state = TEXT_INPUT;
                 }
             } else if (state === COMMENT) {
-                if (character === MARKER_COMMENT) {
+                if (character === constantsModule.MARKER_COMMENT) {
                     state = STATE0;
                 }
             } else if (state === RESTRICTION) {
-                if (character === MARKER_STORY) {
+                if (character === constantsModule.MARKER_STORY_START) {
                     state = STORY;
                     eventText += character;
-                } else if (character === MARKER_INTERACTION_START) {
+                } else if (character === constantsModule.MARKER_INTERACTION_START) {
                     state = INTERACTION;
                     eventText += character;
-                } else if (character === MARKER_OPTION_START) {
+                } else if (character === constantsModule.MARKER_OPTION_START) {
                     state = OPTION;
                     eventText += character;
                 } else {
                     eventText += character;
                 }
             } else if (state === STORY) {
-                if (character === MARKER_STYLE_CHANGE) {
+                if (character === constantsModule.MARKER_STYLE_CHANGE) {
                     state = STORY_STYLE_CHANGE;
-                } else if (character === MARKER_STORY) {
-                    this.addToAgenda("STORY", eventText);
+                } else if (character === constantsModule.MARKER_STORY_END) {
+                    this.addToAgenda(constantsModule.TYPE_STORY, eventText);
                     eventText = "";
                     state = STATE0;
-                } else if(character === MARKER_CONSEQUENCE){
+                } else if(character === constantsModule.MARKER_CONSEQUENCE_START){
                     state = STORY_CONSEQUENCE;
                     eventText += character;
                 }else {
                     eventText += character;
                 }
             } else if (state === STORY_STYLE_CHANGE) {
-                if (character === MARKER_STYLE_RED) {
+                if (character === constantsModule.MARKER_STYLE_RED) {
                     eventText += "\x1b[31m";
                     state = STORY_STYLED;
-                } else if (character === MARKER_STYLE_GREEN) {
+                } else if (character === constantsModule.MARKER_STYLE_GREEN) {
                     eventText += "\x1b[32m";
                     state = STORY_STYLED;
-                } else if (character === MARKER_STYLE_BLUE) {
+                } else if (character === constantsModule.MARKER_STYLE_BLUE) {
                     eventText += "\x1b[34m";
                     state = STORY_STYLED;
-                } else if (character === MARKER_STYLE_UNDERLINE) {
+                } else if (character === constantsModule.MARKER_STYLE_UNDERLINE) {
                     eventText += "\x1b[4m";
                     state = STORY_STYLED;
-                } else if (character === MARKER_STYLE_BOLD) {
+                } else if (character === constantsModule.MARKER_STYLE_BOLD) {
                     eventText += "\x1b[1m";
                     state = STORY_STYLED;
                 } else {
                     throw new Error(`Error: invalid style character. (line: ${atLine})`);
                 }
             } else if (state === STORY_STYLED) {
-                if (character === MARKER_STYLE_END) {
+                if (character === constantsModule.MARKER_STYLE_END) {
                     eventText += "\x1b[0m";
                     state = STORY;
                 } else {
                     eventText += character;
                 }
             } else if(state === STORY_CONSEQUENCE){
-                if (character === MARKER_STORY) {
-                    this.addToAgenda("STORY", eventText);
+                if (character === constantsModule.MARKER_STORY_END) {
+                    this.addToAgenda(constantsModule.TYPE_STORY, eventText);
                     eventText = "";
                     state = STATE0;
                 } else {
                     eventText += character;
                 }
             }else if (state === INTERACTION) {
-                if (character === MARKER_STYLE_CHANGE) {
+                if (character === constantsModule.MARKER_STYLE_CHANGE) {
                     state = INTERACTION_STYLE_CHANGE;
-                } else if (character === MARKER_RESTRICTION) {
-                    this.addToAgenda("INTERACTION", eventText);
+                } else if (character === constantsModule.MARKER_RESTRICTION) {
+                    this.addToAgenda(constantsModule.TYPE_INTERACTION, eventText);
                     eventText = "";
                     state = RESTRICTION;
-                } else if (character === MARKER_OPTION_START) {
-                    this.addToAgenda("INTERACTION", eventText);
+                } else if (character === constantsModule.MARKER_OPTION_START) {
+                    this.addToAgenda(constantsModule.TYPE_INTERACTION, eventText);
                     eventText = "";
                     state = OPTION;
-                } else if (character === MARKER_INTERACTION_END) {
-                    this.addToAgenda("INTERACTION", eventText);
+                } else if (character === constantsModule.MARKER_INTERACTION_END) {
+                    this.addToAgenda(constantsModule.TYPE_INTERACTION, eventText);
                     eventText = "";
                     state = STATE0;
                 } else {
                     eventText += character;
                 }
             } else if (state === INTERACTION_STYLE_CHANGE) {
-                if (character === MARKER_STYLE_RED) {
+                if (character === constantsModule.MARKER_STYLE_RED) {
                     eventText += "\x1b[31m";
                     state = INTERACTION_STYLED;
-                } else if (character === MARKER_STYLE_GREEN) {
+                } else if (character === constantsModule.MARKER_STYLE_GREEN) {
                     eventText += "\x1b[32m";
                     state = INTERACTION_STYLED;
-                } else if (character === MARKER_STYLE_BLUE) {
+                } else if (character === constantsModule.MARKER_STYLE_BLUE) {
                     eventText += "\x1b[34m";
                     state = INTERACTION_STYLED;
-                } else if (character === MARKER_STYLE_UNDERLINE) {
+                } else if (character === constantsModule.MARKER_STYLE_UNDERLINE) {
                     eventText += "\x1b[4m";
                     state = INTERACTION_STYLED;
-                } else if (character === MARKER_STYLE_BOLD) {
+                } else if (character === constantsModule.MARKER_STYLE_BOLD) {
                     eventText += "\x1b[1m";
                     state = INTERACTION_STYLED;
                 } else {
                     throw new Error(`Error: invalid style character (line: ${atLine})`);
                 }
             } else if (state === INTERACTION_STYLED) {
-                if (character === MARKER_STYLE_END) {
+                if (character === constantsModule.MARKER_STYLE_END) {
                     eventText += "\x1b[0m";
                     state = INTERACTION;
                 } else {
                     eventText += character;
                 }
             } else if (state === OPTION) {
-                if (character === MARKER_STYLE_CHANGE) {
+                if (character === constantsModule.MARKER_STYLE_CHANGE) {
                     state = OPTION_STYLE_CHANGE;
-                } else if (character === MARKER_CONSEQUENCE) {
+                } else if (character === constantsModule.MARKER_CONSEQUENCE_START) {
                     state = OPTION_CONSEQUENCE;
                     eventText += character;
-                } else if (character === MARKER_OPTION_END) {
-                    this.addToAgenda("OPTION", eventText);
+                } else if (character === constantsModule.MARKER_OPTION_END) {
+                    this.addToAgenda(constantsModule.TYPE_OPTION, eventText);
                     eventText = "";
                     state = INTERACTION;
                 } else {
                     eventText += character;
                 }
             } else if (state === OPTION_STYLE_CHANGE) {
-                if (character === MARKER_STYLE_RED) {
+                if (character === constantsModule.MARKER_STYLE_RED) {
                     eventText += "\x1b[31m";
                     state = OPTION_STYLED;
-                } else if (character === MARKER_STYLE_GREEN) {
+                } else if (character === constantsModule.MARKER_STYLE_GREEN) {
                     eventText += "\x1b[32m";
                     state = OPTION_STYLED;
-                } else if (character === MARKER_STYLE_BLUE) {
+                } else if (character === constantsModule.MARKER_STYLE_BLUE) {
                     eventText += "\x1b[34m";
                     state = OPTION_STYLED;
-                } else if (character === MARKER_STYLE_UNDERLINE) {
+                } else if (character === constantsModule.MARKER_STYLE_UNDERLINE) {
                     eventText += "\x1b[4m";
                     state = OPTION_STYLED;
-                } else if (character === MARKER_STYLE_BOLD) {
+                } else if (character === constantsModule.MARKER_STYLE_BOLD) {
                     eventText += "\x1b[1m";
                     state = OPTION_STYLED;
                 } else {
                     throw new Error(`Error: invalid style character (line: ${atLine})`);
                 }
             } else if (state === OPTION_STYLED) {
-                if (character === MARKER_STYLE_END) {
+                if (character === constantsModule.MARKER_STYLE_END) {
                     eventText += "\x1b[0m";
                     state = OPTION;
                 } else {
                     eventText += character;
                 }
             } else if (state === OPTION_CONSEQUENCE) {
-                if (character === MARKER_OPTION_END) {
-                    this.addToAgenda("OPTION", eventText);
+                if (character === constantsModule.MARKER_OPTION_END) {
+                    this.addToAgenda(constantsModule.TYPE_OPTION, eventText);
                     eventText = "";
                     state = INTERACTION;
                 } else {
                     eventText += character;
                 }
             } else if (state === TEXT_INPUT) {
-                if (character === MARKER_VARIABLE_DECLARATION) {
-                    state = VARIABLE_DECLARATION;
+                if (character === constantsModule.MARKER_VARIABLE_START) {
+                    state = VARIABLE_START;
                     eventText += character;
                 } else {
                     eventText += character;
                 }
-            } else if (state = VARIABLE_DECLARATION) {
-                if (character === MARKER_TEXT_INPUT) {
-                    this.addToAgenda("TEXT_INPUT", eventText);
+            } else if (state = VARIABLE_START) {
+                if (character === constantsModule.MARKER_TEXT_INPUT) {
+                    this.addToAgenda(constantsModule.TYPE_TEXT_INPUT, eventText);
                     eventText = "";
                     state = STATE0;
                 } else {
@@ -284,130 +272,27 @@ class Day {
     addToAgenda(eventType, eventText) {
         eventText = eventText.trim();
         if (eventText !== "") {
-            
-            if (eventType === "STORY") {
-                let story = eventText.split(MARKER_STORY);
-                
-                let restriction;
-                let text;
-                let consequences;
-                if(story.length === 1){
-                    restriction = "";
-
-                    let storyParts = story[0].split(MARKER_CONSEQUENCE);
-                    if(storyParts.length === 1){
-                        text = storyParts[0];
-                        consequences = [];
-                    }else{
-                        text = storyParts[0];
-                        consequences = storyParts.splice(1, storyParts.length-1);
-                    }
+            if (eventType === constantsModule.TYPE_STORY) {
+                this.agenda.push(new storyModule.Story(eventText));
+            }else if(eventType === constantsModule.TYPE_INTERACTION){
+                this.agenda.push(new interactionModule.Interaction(eventText));
+            }else if(eventType === constantsModule.TYPE_OPTION){
+                let lastAgendaEvent = this.agenda[this.agenda.length-1];
+                if(lastAgendaEvent.getType() === constantsModule.TYPE_INTERACTION){
+                    lastAgendaEvent.addOption(new optionModule.Option(eventText));
                 }else{
-                    restriction = story[0];
-
-                    let storyParts = story[1].split(MARKER_CONSEQUENCE);
-                    if(storyParts.length === 1){
-                        text = storyParts[0];
-                        consequences = [];
-                    }else{
-                        text = storyParts[0];
-                        consequences = storyParts.splice(1, storyParts.length-1);
-                    }
+                    throw new Error("Error: Unexpected option without interaction!");
                 }
-
-                for(let i=0;i<consequences.length;i++){
-                    consequences[i] = consequences[i].trim();
-                }
-                
-                this.agenda.push([eventType, {
-                    RESTRICTION: restriction,
-                    TEXT: text.trim(),
-                    CONSEQUENCES: consequences
-                }]);
-            }else if(eventType === "INTERACTION"){
-                let interaction = eventText.split(MARKER_INTERACTION_START);
-                
-                let restriction;
-                let text;
-                if(interaction.length === 1){
-                    restriction = "";
-                    text = interaction[0];
-                }else{
-                    restriction = interaction[0];
-                    text = interaction[1];
-                }
-                
-                this.agenda.push([eventType, {
-                    RESTRICTION: restriction,
-                    TEXT: text.trim()
-                }]);
-            }else if(eventType === "OPTION"){
-                let option = eventText.split(MARKER_OPTION_START);
-                
-                let restriction;
-                let text;
-                let consequences;
-                if(option.length === 1){
-                    restriction = "";
-
-                    let optionParts = option[0].split(MARKER_CONSEQUENCE);
-                    if(optionParts.length === 1){
-                        text = optionParts[0];
-                        consequences = [];
-                    }else{
-                        text = optionParts[0];
-                        consequences = optionParts.splice(1, optionParts.length-1);
-                    }
-                }else{
-                    restriction = option[0];
-
-                    let optionParts = option[1].split(MARKER_CONSEQUENCE);
-                    if(optionParts.length === 1){
-                        text = optionParts[0];
-                        consequences = [];
-                    }else{
-                        text = optionParts[0];
-                        consequences = optionParts.splice(1, optionParts.length-1);
-                    }
-                }
-
-                for(let i=0;i<consequences.length;i++){
-                    consequences[i] = consequences[i].trim();
-                }
-                
-                this.agenda.push([eventType, {
-                    RESTRICTION: restriction,
-                    TEXT: text.trim(),
-                    CONSEQUENCES: consequences
-                }]);
-            }else if(eventType === "TEXT_INPUT"){
-                let textInput = eventText.split(MARKER_VARIABLE_DECLARATION);
-                let text;
-                let variableName;
-
-                if(textInput.length === 1){
-                    text = textInput[0];
-                }else{
-                    text = textInput[0];
-                    variableName = textInput[1];
-                }
-
-                this.agenda.push([eventType, {
-                    TEXT: text.trim(),
-                    VARIABLE_NAME: variableName
-                }]);
+            }else if(eventType === constantsModule.TYPE_TEXT_INPUT){
+                this.agenda.push(new textInputModule.TextInput(eventText));
             }else{
-                this.agenda.push([eventType, eventText]);
+                throw new Error("Error: Unexpected event!");
             }
         }
     }
 
-    getEventType() {
-        return this.agenda[this.atEvent][0];
-    }
-
-    popEventData() {
-        return this.agenda[this.atEvent++][1];
+    popEvent(){
+        return this.agenda.shift();
     }
 
     isDone() {

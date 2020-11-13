@@ -1,0 +1,12 @@
+{
+Language
+<
+English
+#Language = English
+#123 = 2
+>
+<
+Deutsch
+#Language = Deutsch
+>
+}

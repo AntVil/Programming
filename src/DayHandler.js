@@ -5,6 +5,7 @@ const daysFolderPath = pathModule.join(__dirname, "/days");
 class DayHandler{
     constructor(){
         this.DAYS = [
+            "day0.txt",
             "day1.txt"
         ];
 
@@ -20,24 +21,9 @@ class DayHandler{
         this.currentDay = new dayModule.Day(dayFilePath);
     }
 
-    getEventType(){
-        return this.currentDay.getEventType();
-    }
 
-    popOptions(){
-        let options = [];
-        while(!this.dayIsDone()){
-            if(this.getEventType() === "OPTION"){
-                options.push(this.popEventData());
-            }else{
-                break;
-            }
-        }
-        return options;
-    }
-
-    popEventData(){
-        return this.currentDay.popEventData();
+    popEvent(){
+        return this.currentDay.popEvent();
     }
 
     dayIsDone(){
