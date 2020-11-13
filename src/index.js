@@ -19,6 +19,10 @@ class Main{
         while(!this.dayHandler.dayIsDone()){
             this.runStep();
         }
+        this.dayHandler.loadNextDay();
+        while(!this.dayHandler.dayIsDone()){
+            this.runStep();
+        }
     }
 
     runStep(){

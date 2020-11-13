@@ -11,7 +11,7 @@ class Interaction{
             this.restriction = new restrictionModule.Restriction("");
             this.text = interaction[0];
         }else{
-            this.restriction = interaction[0];
+            this.restriction = new restrictionModule.Restriction(interaction[0]);
             this.text = new restrictionModule.Restriction(interaction[1]);
         }
 
