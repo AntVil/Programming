@@ -3,11 +3,9 @@
 
 You had a hard time sleeping last night. The fact that there was this anomaly in time and space, an undiscovered phenomenon right in front of you,
 was just too exciting and frightening at once. You got up way before your time this morning, staring at the screen, while the navigation device was running.
-Something in you says you should try. TRY? try what? 
-.
-.
-.
-Yea.... you got that right. THAT.
+
+In a short moment of regret, you think about the chance you are missing, being the first human to fly inside of a wormhole, a real one. But you catch your thoughts fast: 
+What's it matter anyway, when you are 99.9% DEAD if you'd do it??
 $
 
 @Language = English & StoryBlock = 3.0{
@@ -26,7 +24,7 @@ trajectory option 2: course correction 0.00034793° , new estimated km left: 4.1
 >
 
 <
-trajectory option 2: course correction 0.00045744° , new estimated km left: 6.434.497 km
+trajectory option 3: course correction 0.00045744° , new estimated km left: 6.434.497 km
 
 #StoryBlock = 3.1
 >
@@ -36,8 +34,6 @@ trajectory option 2: course correction 0.00045744° , new estimated km left: 6.4
 It can't be a good choice seeking any dangerous and most-likely suicidal adventures right now. You are just over 2 weeks from your destination, after 3 years and 10 months of travel.
 With the energy levels of the generator constantly falling, the safe route will be the way to go, without any surprises.
 
-In a short moment of regret, you think about the chance you are missing, being the first human to fly inside of a wormhole, a real one. But you catch your thoughts fast: 
-What's it matter anyway, when you are 99.9% DEAD if you'd do it??
 
 You reach over to give the input to choose the correct trajectory. 
 .
@@ -45,13 +41,38 @@ You reach over to give the input to choose the correct trajectory.
 .
 ...but your eyes are still tired, and without realising, you chose the input that would lead to the greatest adventure of your lifetime!
 A moment later, you squint your eyes and you know, the course can't be changed no more, and maybe... maybe it was destiny. 
-
-[bCalculating new trajectory: trajectory option 2: course correction 0.00034793° , new estimated km left:] [r4.186] [bkm . . . . . . . . . . . . . . . . . . ]
-
 #StoryBlock = 3.3
 $
 
 @Language = English & StoryBlock = 3.2$
-You take a deep breath. This could be the most difficult descision of your life. 
+Something in you says you should try. TRY? try what? 
+.
+.
+.
+Yea.... you got that right. THAT. You take a deep breath. This could be the most difficult decision of your life.
+With the energy levels of the generator constantly falling, your survival could depend on it. And if that what they say about wormholes turns out true,... then... 
+Alright lets go for it!
+You press the button on your Keyboard, and choose the input that could become the greatest adventure of your lifetime!
 #StoryBlock = 3.3
+$
+
+@Language = English & StoryBlock = 3.3$
+[b
+.
+.
+.
+.
+.
+Calculating new trajectory: trajectory option 2: course correction 0.00034793° , new estimated km left:] [r4.186] [bkm . . . . . . . . . . . . . . . . . . 
+Calculations complete.
+.
+Course set.]
+
+
+
+
+
+
+
+#StoryBlock = 4.0
 $

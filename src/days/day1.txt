@@ -115,7 +115,7 @@ Anyway, what does the BoardComputer say?
 You float out of your cabin and find yourself in the command section. 
 You check all the instruments, daily routine for you. [b"Good Morning General ~N"], is displayed on top of the monitor. But today... this was the only thing on the screen that didn't surprise you.
 
-#energy = energy-1 
+#lessPower = true
 #StoryBlock = 2.0
 $
 
