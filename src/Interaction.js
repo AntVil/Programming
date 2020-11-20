@@ -1,16 +1,16 @@
 const constantsModule = require("./constants");
 const restrictionModule = require("./Restriction");
 
-class Interaction{
-    constructor(description){
+class Interaction {
+    constructor(description) {
         let interaction = description.split(constantsModule.MARKER_INTERACTION_START);
-                
+
         this.restriction;
         this.text;
-        if(interaction.length === 1){
+        if (interaction.length === 1) {
             this.restriction = new restrictionModule.Restriction("");
             this.text = interaction[0];
-        }else{
+        } else {
             this.restriction = new restrictionModule.Restriction(interaction[0]);
             this.text = interaction[1];
         }
@@ -18,27 +18,27 @@ class Interaction{
         this.options = [];
     }
 
-    addOption(option){
+    addOption(option) {
         this.options.push(option);
     }
 
-    getRestriction(){
+    getRestriction() {
         return this.restriction;
     }
 
-    getText(){
+    getText() {
         return this.text;
     }
 
-    getConsequences(){
+    getConsequences() {
         return [];
     }
 
-    getType(){
+    getType() {
         return constantsModule.TYPE_INTERACTION;
     }
 
-    getOptions(){
+    getOptions() {
         return this.options;
     }
 }
