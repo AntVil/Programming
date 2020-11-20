@@ -17,7 +17,7 @@ Deutsch
 }
 
 @Language = English$
-English was selected.
+English has been selected.
 $
 
 

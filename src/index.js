@@ -15,13 +15,12 @@ class Main {
     run() {
         console.log("running program");
         console.log("loading day");
-        this.dayHandler.loadNextDay();
-        while (!this.dayHandler.dayIsDone()) {
-            this.runStep();
-        }
-        this.dayHandler.loadNextDay();
-        while (!this.dayHandler.dayIsDone()) {
-            this.runStep();
+
+        for (let i = 0; i < 5; i++) {
+            this.dayHandler.loadNextDay();
+            while (!this.dayHandler.dayIsDone()) {
+                this.runStep();
+            }
         }
     }
 
@@ -41,7 +40,7 @@ class Main {
     handleStory(story) {
         if (this.restrictionSatisfied(story.getRestriction())) {
 
-             this.typeWriter(this.customVariableChanger(story.getText()));
+            this.typeWriter(this.customVariableChanger(story.getText()));
 
             let consequences = story.getConsequences();
             for (let i = 0; i < consequences.length; i++) {
@@ -100,17 +99,17 @@ class Main {
         return true;
     }
     customVariableChanger(input) {
-        let changer = input +  "\n";
+        let changer = input + "\n";
         while (changer.includes("~N") === true) {
             changer = changer.replace("~N", this.variableDictionary.N);
         }
         return changer;
     }
     typeWriter(input) {
-        let index = 0 ;
-        while(index < input.length){
+        let index = 0;
+        while (index < input.length) {
             process.stdout.write(input.charAt(index))
-            this.sleep(50);
+            this.sleep(1);
             ++index;
         }
     }
@@ -118,9 +117,9 @@ class Main {
         const date = Date.now();
         let currentDate = null;
         do {
-          currentDate = Date.now();
+            currentDate = Date.now();
         } while (currentDate - date < milliseconds);
-      }
+    }
 }
 
 let main = new Main();

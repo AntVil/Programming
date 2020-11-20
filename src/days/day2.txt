@@ -14,26 +14,26 @@ $
 Press the Button to select your trajectory and feed the coordinates to the boardcomputer:
 
 <
-trajectory option 1: course correction 0.00032472° , new estimated km left: [r6.434.534] km
+trajectory option 1: course correction 0.00032472° , new estimated km left: 6.434.534 km
 
 #StoryBlock = 3.1
 >
 
 <
-trajectory option 2: course correction 0.00034793° , new estimated km left: [r4.186] km
+trajectory option 2: course correction 0.00034793° , new estimated km left: 4.186 km
 
 #StoryBlock = 3.2
 >
 
 <
-trajectory option 2: course correction 0.00045744° , new estimated km left: [r6.434.497] km
+trajectory option 2: course correction 0.00045744° , new estimated km left: 6.434.497 km
 
 #StoryBlock = 3.1
 >
 }
 
 @Language = English & StoryBlock = 3.1$
-It can't be a good choice seeking any dangerous and most-likely suicidal adventures right now. You are just over 2 weeks from your destination, after 3 years and 1 months of travel.
+It can't be a good choice seeking any dangerous and most-likely suicidal adventures right now. You are just over 2 weeks from your destination, after 3 years and 10 months of travel.
 With the energy levels of the generator constantly falling, the safe route will be the way to go, without any surprises.
 
 In a short moment of regret, you think about the chance you are missing, being the first human to fly inside of a wormhole, a real one. But you catch your thoughts fast: 
@@ -43,13 +43,15 @@ You reach over to give the input to choose the correct trajectory.
 .
 .
 .
-...but your eyes are still tired, and without realising what you have done, you chose the input that would lead to the greatest adventure of your lifetime!
-A moment later, you squint your eyes and know, the course can't be changed no more. 
+...but your eyes are still tired, and without realising, you chose the input that would lead to the greatest adventure of your lifetime!
+A moment later, you squint your eyes and you know, the course can't be changed no more, and maybe... maybe it was destiny. 
+
+[bCalculating new trajectory: trajectory option 2: course correction 0.00034793° , new estimated km left:] [r4.186] [bkm . . . . . . . . . . . . . . . . . . ]
 
 #StoryBlock = 3.3
 $
 
 @Language = English & StoryBlock = 3.2$
-
+You take a deep breath. This could be the most difficult descision of your life. 
 #StoryBlock = 3.3
 $
