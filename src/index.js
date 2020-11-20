@@ -16,12 +16,14 @@ class Main {
         console.log("running program");
         console.log("loading day");
 
-        for (let i = 0; i < 5; i++) {
+        while (!this.dayHandler.isDone()) {
             this.dayHandler.loadNextDay();
             while (!this.dayHandler.dayIsDone()) {
                 this.runStep();
             }
         }
+
+        console.log("game done");
     }
 
     runStep() {

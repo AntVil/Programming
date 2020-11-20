@@ -24,6 +24,10 @@ class DayHandler {
         return this.currentDay.popEvent();
     }
 
+    isDone() {
+        return this.dayIndex + 1 >= this.DAYS.length;
+    }
+
     dayIsDone() {
         return this.currentDay.isDone();
     }
