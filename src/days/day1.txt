@@ -35,22 +35,21 @@ $
 
 <
 play Intro
-#StoryBlock = 0.0
+#Intro = True
 
 >
 
 <
 skip Intro
-#StoryBlock = 0.1
+#Intro = False
 >
 }
 
-@StoryBlock = 0.0$
-%playAudio%
-#StoryBlock = 0.1
-$
+@Intro = True^
+spacetrack
+^
 
-@StoryBlock = 0.1$
+$
 .
 .
 .

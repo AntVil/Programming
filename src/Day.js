@@ -18,11 +18,11 @@ class Day {
             console.log(error);
         }
 
-        /*
+        
         for(let i=0;i<this.agenda.length;i++){
             console.log(this.agenda[i]);
         }
-        */
+        
 
     }
 

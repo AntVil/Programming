@@ -2,7 +2,7 @@ const dayHandlerModule = require("./DayHandler");
 const inputHandlerModule = require("./InputHandler");
 const audioHandlerModule = require("./AudioHandler");
 const constantsModule = require("./constants");
-const audioHandlerModule = require("./AudioHandler");
+
 
 class Main {
     constructor() {
@@ -37,6 +37,8 @@ class Main {
             this.handleInteraction(event);
         } else if (event.getType() === constantsModule.TYPE_TEXT_INPUT) {
             this.handleTextInput(event);
+        } else if (event.getType() === constantsModule.TYPE_AUDIO) {
+            this.handleAudio(event);
         } else {
             throw new Error(`Error: Unexpected event: '${eventType}'`);
         }
@@ -90,6 +92,12 @@ class Main {
         this.variableDictionary[consequence.getVariableName()] = consequence.getVariableValue();
     }
 
+    handleAudio(audio) {
+        if (this.restrictionSatisfied(audio.getRestriction())) {
+            this.audioHandler.playAudio("spacetrack");//audio.getText());
+        }
+    }
+
 
     restrictionSatisfied(restriction) {
         let variables = restriction.getVariables();
@@ -115,7 +123,7 @@ class Main {
         let index = 0;
         while (index < input.length) {
             process.stdout.write(input.charAt(index))
-            this.sleep(55);
+            this.sleep(0);//55);
             ++index;
         }
     }
@@ -131,3 +139,9 @@ class Main {
 
 let main = new Main();
 main.run();
+
+
+//audioHandler = new audioHandlerModule.AudioHandler();
+//audioHandler.playAudio("spacetrack");
+
+//console.log("going on");

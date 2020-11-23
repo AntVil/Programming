@@ -1,4 +1,5 @@
 const constantsModule = require("./constants");
+const restrictionModule = require("./Restriction");
 
 class AudioContainer{
     constructor(description) {
@@ -12,7 +13,7 @@ class AudioContainer{
             this.fileName = audio[0].trim();
         }else{
             this.restriction = new restrictionModule.Restriction(audio[0]);
-            this.fileName = audio[1].tim();
+            this.fileName = audio[1].trim();
         }
     }
 
