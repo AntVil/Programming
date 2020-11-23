@@ -6,7 +6,10 @@ const portAudio = require('naudiodon');
 
 class AudioHandler {
     constructor() {
-        this.audioIO = new portAudio.AudioIO({
+        
+    }
+    initializeAudio(){
+       let audioIO = new portAudio.AudioIO({
             outOptions: {
                 channelCount: 2,
                 sampleFormat: portAudio.SampleFormat16Bit,
@@ -14,14 +17,16 @@ class AudioHandler {
                 deviceId: -1,
                 closeOnError: true
             }
-        });
-
-        this.rs = fs.createReadStream('./src/audio/spacetrack.wav');
-        this.rs.pipe(this.audioIO);
-        this.audioIO.start();
+        });return audioIO
+    }
+    playAudio(filename){
+        let filename = filename + ".wav";
+        filename = './audio/' + filename;
+        let audioIO = this.initializeAudio();
+        rs = fs.createReadStream(filename);
+        rs.pipe(audioIO);
+        audioIO.start();
     }
 }
+exports.AudioHandler = AudioHandler;
 
-
-
-//audioHandler = new AudioHandler();

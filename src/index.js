@@ -2,7 +2,7 @@ const dayHandlerModule = require("./DayHandler");
 const inputHandlerModule = require("./InputHandler");
 const audioHandlerModule = require("./AudioHandler");
 const constantsModule = require("./constants");
-
+const audioHandlerModule = require("./AudioHandler");
 
 class Main {
     constructor() {
