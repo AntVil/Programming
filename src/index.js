@@ -129,4 +129,4 @@ class Main {
 }
 
 let main = new Main();
-//main.run();
+main.run();

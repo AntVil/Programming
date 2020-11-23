@@ -3,6 +3,7 @@ const storyModule = require("./Story");
 const interactionModule = require("./Interaction");
 const optionModule = require("./Option");
 const textInputModule = require("./TextInput");
+const audioContainerModule = require("./AudioContainer");
 const fileReaderModule = require("fs");
 
 class Day {
@@ -71,6 +72,8 @@ class Day {
 
         const VARIABLE_START = 15;
 
+        const AUDIO = 16;
+
         let state = STATE0;
         let eventText = "";
         let atLine = 0;
@@ -87,6 +90,8 @@ class Day {
                     state = INTERACTION;
                 } else if (character === constantsModule.MARKER_TEXT_INPUT) {
                     state = TEXT_INPUT;
+                } else if (character === constantsModule.MARKER_AUDIO_START) {
+                    state = AUDIO;
                 }
             } else if (state === COMMENT) {
                 if (character === constantsModule.MARKER_COMMENT) {
@@ -250,12 +255,20 @@ class Day {
                 } else {
                     eventText += character;
                 }
-            } else if (state = VARIABLE_START) {
+            } else if (state === VARIABLE_START) {
                 if (character === constantsModule.MARKER_TEXT_INPUT) {
                     this.addToAgenda(constantsModule.TYPE_TEXT_INPUT, eventText);
                     eventText = "";
                     state = STATE0;
                 } else {
+                    eventText += character;
+                }
+            } else if(state === AUDIO){
+                if(character === constantsModule.MARKER_AUDIO_END){
+                    this.addToAgenda(constantsModule.TYPE_AUDIO, eventText);
+                    eventText = "";
+                    state = STATE0;
+                }else{
                     eventText += character;
                 }
             }
@@ -285,6 +298,8 @@ class Day {
                 }
             }else if(eventType === constantsModule.TYPE_TEXT_INPUT){
                 this.agenda.push(new textInputModule.TextInput(eventText));
+            }else if(eventType === constantsModule.TYPE_AUDIO){
+                this.agenda.push(new audioContainerModule.AudioContainer(eventText));
             }else{
                 throw new Error("Error: Unexpected event!");
             }

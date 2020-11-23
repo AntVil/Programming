@@ -19,15 +19,9 @@ class AudioHandler {
         this.rs = fs.createReadStream('./src/audio/spacetrack.wav');
         this.rs.pipe(this.audioIO);
         this.audioIO.start();
-
-        //by me xD
-        this.rs.once("close", function(){
-            this.audioIO.abort();
-            audioHandler = new AudioHandler();
-        })
     }
 }
 
 
 
-audioHandler = new AudioHandler();
+//audioHandler = new AudioHandler();
