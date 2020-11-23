@@ -110,7 +110,7 @@ class Main {
         let index = 0;
         while (index < input.length) {
             process.stdout.write(input.charAt(index))
-            this.sleep(1);
+            this.sleep(55);
             ++index;
         }
     }
