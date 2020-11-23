@@ -79,7 +79,6 @@ class Main {
         console.log(textInput.getText());
         this.variableDictionary[textInput.getVariableName()] = this.inputHandler.getTextInput();
         console.log("");
-        console.log(this.variableDictionary);
     }
 
 
@@ -99,6 +98,7 @@ class Main {
 
         return true;
     }
+
     customVariableChanger(input) {
         let changer = input + "\n";
         while (changer.includes("~N") === true) {
@@ -106,6 +106,7 @@ class Main {
         }
         return changer;
     }
+
     typeWriter(input) {
         let index = 0;
         while (index < input.length) {
@@ -114,6 +115,7 @@ class Main {
             ++index;
         }
     }
+
     sleep(milliseconds) {
         const date = Date.now();
         let currentDate = null;

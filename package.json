@@ -1,0 +1,28 @@
+{
+  "name": "programming",
+  "version": "1.0.0",
+  "description": "a simple textadventure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htcryme/Programming.git"
+  },
+  "keywords": [
+    "textadventure",
+    "game",
+    "sci-fi",
+    "sci-fi-game"
+  ],
+  "author": "htcryme, A-lex323, Jandorid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/htcryme/Programming/issues"
+  },
+  "homepage": "https://github.com/htcryme/Programming#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
