@@ -10,6 +10,48 @@ Name X,Y; Engineer & Kosmonaut, chosen from competence list in the emergency pro
 %
 
 @Language = English$
+
+Hi ~N! 
+Thank you for playing the Game!
+Here are some recommendations for optimal user experience: 
+- make your Terminal Fullscreen
+- use headphones or good quality speakers
+- have fun!
+.
+.
+.
+$
+@Language = English{
+[b
+ ________  ________  ___  ___  _________  ________   ___  ___  __             _______  ________   ________  ________         
+|\   ____\|\   __  \|\  \|\  \|\___   ___\\   ___  \|\  \|\  \|\  \          /  ___  \|\   __  \ |\_____  \|\   __  \        
+\ \  \___|\ \  \|\  \ \  \\\  \|___ \  \_\ \  \\ \  \ \  \ \  \/  /|_       /__/|_/  /\ \  \|\  \ \|___/  /\ \  \|\  \       
+ \ \_____  \ \   ____\ \  \\\  \   \ \  \ \ \  \\ \  \ \  \ \   ___  \      |__|//  / /\ \  \\\  \    /  / /\ \   __  \      
+  \|____|\  \ \  \___|\ \  \\\  \   \ \  \ \ \  \\ \  \ \  \ \  \\ \  \         /  /_/__\ \  \\\  \  /  / /  \ \  \|\  \     
+    ____\_\  \ \__\    \ \_______\   \ \__\ \ \__\\ \__\ \__\ \__\\ \__\       |\________\ \_______\/__/ /    \ \_______\    
+   |\_________\|__|     \|_______|    \|__|  \|__| \|__|\|__|\|__| \|__|        \|_______|\|_______||__|/      \|_______|    
+   \|_________|
+]
+
+<
+play Intro
+#StoryBlock = 0.0
+
+<
+skip Intro
+#StoryBlock = 0.1
+>
+}
+
+@StoryBlock = 0.0$
+%playAudio%
+#StoryBlock = 0.1
+$
+
+@StoryBlock = 0.1$
+.
+.
+.
 [bMission:]
 reaching habitable Planet
 .
@@ -172,11 +214,12 @@ $
 
 
 @Language = English & StoryBlock = 2.2$
-Your Knowledge about wormholes may be a tad rusty, but you're sure, that there can be no other way a trajectory can be of a distance over 1500 times shorter, than the one that differs 0.00002321°. 
+Your knowledge about wormholes may be a tad rusty, but you're sure, that there can be no other way a trajectory can be of a distance over 1500 times shorter, than the one that differs 0.00002321°. 
 Since the existance of wormholes was confirmed in 2043, nobody has ever encountered one that has not been created in the laboratory, billion times smaller in scale than the thing you are facing right now.
 You are going to dive into this topic the rest of the day, maybe there is something else you can find out about that.
-
-
+.
+.
+.
 #StoryBlock = 3.0
 $
 

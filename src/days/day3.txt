@@ -1,3 +1,42 @@
 @Language = English & StoryBlock = 4.0$
+[gDay 3]
+
+Tody is the day. After a short night you prepare everything on the ship for the jump. As you approach the coordinates of the entrance point, the starlight seems to get dimmer, 
+all the stars you see are now warping behind you, leaving only darkness in front of you. Suddenly, all the stars are gone and you can't locate the source of light that is still 
+present, it looks unreal, as if the space itself was slightly glowing. 
+From this point on you feel like everything you perceive has no real connection to all the things you've known for your whole life - the instuments in the control room don't show any
+valid data, looking out the small window gives you a feeling of slight dizziness, even though there is nothing outside but this strange glow.
+Are you in yet? Why is this route not feeling "faster"? According to your calculations your speed should now be over 6000 km/s. 
+You look out the window again. Is that a toolbag? Is that [+YOUR] Toolbag?? Must be, but how did it get out there? Sh*t.
+Now you gotta act fast. What will you do?
+
+$
+
+@Language = English & StoryBlock = 4.0{
+
+<
+I have to get out there. Without these tools I am helpless in the event of an error. Let me get my spacesuit.
+
+#items = toolbag
+#StoryBlock = 4.1
+>
+
+<
+It's too risky to get out there. You have to think about what happened a year ago... don't want that to happen again.
+
+#StoryBlock = 4.2
+>
+
+}
+
+@Language = English & StoryBlock = 4.1$
+Suiting up has been your favourite part of the spacewalks at the times when [rVlad] was still with you - now you have to help yourself with getting into the airtight material's many layers.
+[rVladimir Lituskij] was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year. You don't like to think about it for too long, so you don't. 
+Approaching the hatch to leave the spaceship, you turn around and check your safety cord. 
+$
+
+
+
+@Language = English & StoryBlock = 4.2$
 
 $

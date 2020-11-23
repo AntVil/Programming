@@ -14,8 +14,20 @@ Journey started in : September 2080
 Speed: 4,23627 km/s
 Days left: 17 - day_n
 Date: december 13+n, 2083
+ship: SPUTNIK 2078
 
 Ideas: 
-between days: zzz...zzz...zzz...
+Items from earth floating near the wormhole: toolbag
+choose between toolbag & mysteryious thing. 
+
+
+-toolbag helps repair reactor 
+-mysterious thing can power up his ship
+
+
+finds own toolbag in his spaceship: it was not his.
+
+end: wormhole leads back to earth, toolbag was from another mission
+
 
 %
