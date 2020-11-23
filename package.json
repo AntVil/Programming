@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/htcryme/Programming#readme",
   "dependencies": {
+    "naudiodon": "^2.2.4",
     "readline-sync": "^1.4.10"
   }
 }

@@ -1,0 +1,40 @@
+PID 17724 received SIGSEGV for address: 0xdf543e49
+SymInit: Symbol-SearchPath: '.;D:\Documents\Projects\Web\pure JS\Programming;D:\Applications\Programming\Programming Environments\Node;C:\Windows;C:\Windows\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'anton'
+OS-Version: 10.0.19041 () 0x300-0x1
+d:\documents\projects\web\pure js\programming\node_modules\segfault-handler\src\stackwalker.cpp (924): StackWalker::ShowCallstack
+d:\documents\projects\web\pure js\programming\node_modules\segfault-handler\src\segfault-handler.cpp (242): segfault_handler
+00007FF8E1E081CC (ntdll): (filename not available): RtlDeleteAce
+00007FF8E1DDB296 (ntdll): (filename not available): RtlRaiseException
+00007FF8E1DDB1C5 (ntdll): (filename not available): RtlRaiseException
+00007FF8DF543E49 (KERNELBASE): (filename not available): RaiseException
+d:\agent\_work\2\s\src\vctools\crt\vcruntime\src\eh\throw.cpp (133): _CxxThrowException
+d:\documents\projects\web\pure js\programming\node_modules\naudiodon\src\pacontext.cc (113): streampunk::PaContext::start
+d:\documents\projects\web\pure js\programming\node_modules\naudiodon\src\audioio.cc (139): streampunk::AudioIO::Start
+d:\documents\projects\web\pure js\programming\node_modules\node-addon-api\napi-inl.h (76): Napi::details::WrapCallback<<lambda_b96c304043f23be0e10f4e09efc9bcb3> >
+d:\documents\projects\web\pure js\programming\node_modules\node-addon-api\napi-inl.h (3510): Napi::ObjectWrap<streampunk::AudioIO>::InstanceMethodCallbackWrapper
+00007FF77A29AF39 (node): (filename not available): node::Stop
+00007FF77AA58280 (node): (filename not available): v8::internal::Builtins::builtin_handle
+00007FF77AA577C7 (node): (filename not available): v8::internal::Builtins::builtin_handle
+00007FF77AA57B08 (node): (filename not available): v8::internal::Builtins::builtin_handle
+00007FF77AA5790E (node): (filename not available): v8::internal::Builtins::builtin_handle
+00007FF77AEF9A3D (node): (filename not available): v8::internal::SetupIsolateDelegate::SetupHeap
+PID 3660 received SIGSEGV for address: 0xdf543e49
+SymInit: Symbol-SearchPath: '.;D:\Documents\Projects\Web\pure JS\Programming;D:\Applications\Programming\Programming Environments\Node;C:\Windows;C:\Windows\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'anton'
+OS-Version: 10.0.19041 () 0x300-0x1
+d:\documents\projects\web\pure js\programming\node_modules\segfault-handler\src\stackwalker.cpp (924): StackWalker::ShowCallstack
+d:\documents\projects\web\pure js\programming\node_modules\segfault-handler\src\segfault-handler.cpp (242): segfault_handler
+00007FF8E1E081CC (ntdll): (filename not available): RtlDeleteAce
+00007FF8E1DDB296 (ntdll): (filename not available): RtlRaiseException
+00007FF8E1DDB1C5 (ntdll): (filename not available): RtlRaiseException
+00007FF8DF543E49 (KERNELBASE): (filename not available): RaiseException
+d:\agent\_work\2\s\src\vctools\crt\vcruntime\src\eh\throw.cpp (133): _CxxThrowException
+d:\documents\projects\web\pure js\programming\node_modules\naudiodon\src\pacontext.cc (113): streampunk::PaContext::start
+d:\documents\projects\web\pure js\programming\node_modules\naudiodon\src\audioio.cc (139): streampunk::AudioIO::Start
+d:\documents\projects\web\pure js\programming\node_modules\node-addon-api\napi-inl.h (76): Napi::details::WrapCallback<<lambda_b96c304043f23be0e10f4e09efc9bcb3> >
+d:\documents\projects\web\pure js\programming\node_modules\node-addon-api\napi-inl.h (3510): Napi::ObjectWrap<streampunk::AudioIO>::InstanceMethodCallbackWrapper
+00007FF77A29AF39 (node): (filename not available): node::Stop
+00007FF77AA58280 (node): (filename not available): v8::internal::Builtins::builtin_handle
+00007FF77AA577C7 (node): (filename not available): v8::internal::Builtins::builtin_handle
+00007FF77AA57B08 (node): (filename not available): v8::internal::Builtins::builtin_handle
+00007FF77AA5790E (node): (filename not available): v8::internal::Builtins::builtin_handle
+00007FF77AEF9A3D (node): (filename not available): v8::internal::SetupIsolateDelegate::SetupHeap
