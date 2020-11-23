@@ -1,13 +1,9 @@
 
-^
-spacetrack
-^
-
-
 |
 Name:
 ~N
 |
+
 
 {
 Language
@@ -22,6 +18,8 @@ Deutsch
 >
 }
 
+
+
 @Language = English$
 English has been selected.
 $
@@ -30,3 +28,41 @@ $
 @Language = Deutsch$
 Es wurde Deutsch ausgewählt.
 $
+
+
+
+@Language = English{
+Typing speed
+<
+slow
+#typeSpeed = 55
+>
+<
+fast
+#typeSpeed = 20
+>
+<
+instant
+#typeSpeed = 0
+>
+}
+
+
+
+@Language = Deutsch{
+Schreibgeschwindigkeit
+<
+langsam
+#typeSpeed = 55
+>
+<
+schnell
+#typeSpeed = 20
+>
+<
+sofort
+#typeSpeed = 0
+>
+}
+
+

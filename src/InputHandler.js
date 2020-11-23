@@ -1,40 +1,44 @@
-const readline = require('readline-sync');
+const readline = require("readline-sync");
 
-class InputHandler {
-    constructor() {
-
+class InputHandler{
+    constructor(){
+        
     }
+
     getOptionInput(options) {
         let viableNumber = false;
+        let optionInput;
         do {
-            const optionInput = readline.questionInt();
-            if (typeof optionInput === "number" && optionInput < options && optionInput >= 0) {
+            optionInput = readline.questionInt();
+            if (typeof optionInput === "number" && optionInput <= options && optionInput >= 1) {
                 viableNumber = true;
-                return optionInput;
             }
         } while (viableNumber != true);
-
+        return optionInput;
     }
 
     getTextInput() {
         let viableString = false;
-        const textInput = readline.question().trim();
+        let textInput;
         do {
+            textInput = readline.question().trim();
             if (typeof textInput === "string" && textInput.length > 0) {
                 viableString = true;
-                return textInput;
             }
         } while (viableString != true);
+        return textInput;
     }
+
     getNumberInput() {
         let viableNumber = false;
+        let optionInput;
         do {
-            const optionInput = readline.questionInt();
+            optionInput = readline.questionInt();
             if (typeof optionInput === "number") {
                 viableNumber = true;
-                return optionInput;
             }
         } while (viableNumber != true);
+        return optionInput;
     }
 }
 

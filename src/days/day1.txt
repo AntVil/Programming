@@ -34,13 +34,13 @@ $
 ]
 
 <
-play Intro
+play Intro Music (15sec)
 #Intro = True
 
 >
 
 <
-skip Intro
+skip
 #Intro = False
 >
 }
