@@ -37,6 +37,8 @@ $
 play Intro
 #StoryBlock = 0.0
 
+>
+
 <
 skip Intro
 #StoryBlock = 0.1
