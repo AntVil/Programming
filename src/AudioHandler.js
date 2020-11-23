@@ -5,7 +5,7 @@ const portAudio = require('naudiodon');
 
 
 class AudioHandler {
-    constructor(file) {
+    constructor() {
         this.audioIO = new portAudio.AudioIO({
             outOptions: {
                 channelCount: 2,

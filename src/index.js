@@ -1,13 +1,14 @@
 const dayHandlerModule = require("./DayHandler");
 const inputHandlerModule = require("./InputHandler");
+const audioHandlerModule = require("./AudioHandler");
 const constantsModule = require("./constants");
 
-const audioHandlerModule = require("./AudioHandler");
 
 class Main {
     constructor() {
         this.dayHandler = new dayHandlerModule.DayHandler();
         this.inputHandler = new inputHandlerModule.InputHandler();
+        this.audioHandler = new audioHandlerModule.AudioHandler();
 
         this.variableDictionary = {
             "N": "Username"

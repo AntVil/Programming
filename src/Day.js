@@ -107,7 +107,10 @@ class Day {
                 } else if (character === constantsModule.MARKER_OPTION_START) {
                     state = OPTION;
                     eventText += character;
-                } else {
+                } else if(character === constantsModule.MARKER_AUDIO_START){
+                    state = AUDIO;
+                    eventText += character;
+                }else {
                     eventText += character;
                 }
             } else if (state === STORY) {
