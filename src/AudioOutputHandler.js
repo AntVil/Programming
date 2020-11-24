@@ -1,13 +1,15 @@
 const fs = require('fs');
+const pathModule = require('path');
 const portAudio = require('naudiodon');
 const mainModule = require("./Main");
+const audioFolderPath = pathModule.join(__dirname, "/audio");
 
 class AudioOutputHandler{
     constructor(){
         
     }
 
-    playFile(){
+    playFile(filename){
         let ao = new portAudio.AudioIO({
             outOptions: {
                 channelCount: 2,
@@ -18,7 +20,7 @@ class AudioOutputHandler{
             }
         });
     
-        let rs = fs.createReadStream('src/audio/spacetrack.wav');
+        let rs = fs.createReadStream(`${audioFolderPath}/${filename}.wav`);
     
         rs.pipe(ao);
         ao.start();
