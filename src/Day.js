@@ -347,7 +347,7 @@ class Day {
     }
 
     isDone() {
-        return this.atEvent >= this.agenda.length;
+        return this.agenda.length === 0;
     }
 }
 

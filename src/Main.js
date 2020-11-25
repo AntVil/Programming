@@ -30,8 +30,10 @@ class Main{
             if(!this.dayHandler.dayIsDone()){
                 this.handleStep();
             }else{
-                this.dayHandler.loadNextDay();
-                this.runStep();
+                if(this.dayHandler.hasNextDay()){
+                    this.dayHandler.loadNextDay();
+                    this.runStep();
+                }
             }
         }else{
             this.textOutputHandlerandler.printText("game done");
