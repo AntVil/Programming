@@ -37,22 +37,63 @@ The display on the side of the exit says
 #StoryBlock = 4.1.1
 $
 
-
+@Language = English & StoryBlock = 4.1.1
 |
-[bвведите пароль для открытия двери: (enter the passcode for opening the exit door:)_________](4 digits)
+[bвведите пароль для открытия двери: (enter the passcode for opening the exit door:) _________] [g(4 digits)]
 ~Pin
 |
 
 
-@Language = English & Pin = 2078
-$
+@Language = English & Pin = 2078 $
+.
+.
+.
+[bthe passcode is correct]
+
 As the hermetic door opens, you grab onto the siderails to avoid being sucked out by the enormous pressure of the air, that is shooting out the door opening. With it getting wider and wider,
 revealing the open space, you look around and check your safety cord again. Without it, there would be no chance of getting back onto the ship, you would be lost in the eternal and never 
 ending depths of empty space. 
+Floating outside the SPUTNIK was a majestic scenery, the unpainted metal reflected in the mysterious glow, and for a short moment you were caught in this sight, before proceeding to approach the toolbag.
+The never ending view into the dark made the 60 meters seem shorter than expected, a few times you were worried that your cord would not be long enough. 
+Finally, you get in range of the toolbag, and you can almost grab it but... your attention shifts towards another item, floating not far from you. It's pulsating glow has a strange effect on your eyes.
+You turn around and focus it for a while, trying to figure out what it is. There is a feeling... inside of you... that attracts you to it. 
+
+Now you are right between the two items, and you have to descide which one to take with you, the timer on your built in display shows the little time you have left, before the oxygen in your Suit
+will be gone. 
+#StoryBlock = 4.1.2
+$
+
+@Language = English & StoryBlock = 4.1.2{
+
+<
+choose the toolbag
+#StoryBlock = 4.1.2.1
+>
+
+<
+choose the mysterious thing
+#StoryBlock = 4.1.2.2
+>
+
+}
+
+@Language = English & StoryBlock = 4.1.2.1$
+
+$
+
+@Language = English & StoryBlock = 4.1.2.2$
+
 $
 
 
 
-@Language = English & StoryBlock = 4.2$
 
+@Language = English & StoryBlock = 4.1.1$
+
+door didn't open
+$
+
+
+@Language = English & StoryBlock = 4.2$
+stay inside
 $
