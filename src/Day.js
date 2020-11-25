@@ -69,10 +69,12 @@ class Day {
         const OPTION_CONSEQUENCE = 13;
 
         const TEXT_INPUT = 14;
+        const TEXT_INPUT_STYLE_CHANGE = 15;
+        const TEXT_INPUT_STYLED = 16;
 
-        const VARIABLE_START = 15;
+        const VARIABLE_START = 17;
 
-        const AUDIO = 16;
+        const AUDIO = 18;
 
         let state = STATE0;
         let eventText = "";
@@ -82,13 +84,13 @@ class Day {
             if (state === STATE0) {
                 if (character === constantsModule.MARKER_COMMENT) {
                     state = COMMENT;
-                } else if (character === constantsModule.MARKER_RESTRICTION) {
+                } else if (character === constantsModule.MARKER_RESTRICTION_START) {
                     state = RESTRICTION;
                 } else if (character === constantsModule.MARKER_STORY_START) {
                     state = STORY;
                 } else if (character === constantsModule.MARKER_INTERACTION_START) {
                     state = INTERACTION;
-                } else if (character === constantsModule.MARKER_TEXT_INPUT) {
+                } else if (character === constantsModule.MARKER_TEXT_INPUT_START) {
                     state = TEXT_INPUT;
                 } else if (character === constantsModule.MARKER_AUDIO_START) {
                     state = AUDIO;
@@ -107,10 +109,13 @@ class Day {
                 } else if (character === constantsModule.MARKER_OPTION_START) {
                     state = OPTION;
                     eventText += character;
+                } else if(character === constantsModule.MARKER_TEXT_INPUT_START){
+                    state = TEXT_INPUT;
+                    eventText += character;
                 } else if(character === constantsModule.MARKER_AUDIO_START){
                     state = AUDIO;
                     eventText += character;
-                }else {
+                } else {
                     eventText += character;
                 }
             } else if (state === STORY) {
@@ -163,7 +168,7 @@ class Day {
             }else if (state === INTERACTION) {
                 if (character === constantsModule.MARKER_STYLE_CHANGE) {
                     state = INTERACTION_STYLE_CHANGE;
-                } else if (character === constantsModule.MARKER_RESTRICTION) {
+                } else if (character === constantsModule.MARKER_RESTRICTION_START) {
                     this.addToAgenda(constantsModule.TYPE_INTERACTION, eventText);
                     eventText = "";
                     state = RESTRICTION;
@@ -255,11 +260,39 @@ class Day {
                 if (character === constantsModule.MARKER_VARIABLE_START) {
                     state = VARIABLE_START;
                     eventText += character;
+                } else if(character === constantsModule.MARKER_STYLE_CHANGE){
+                    state = TEXT_INPUT_STYLE_CHANGE;
+                } else {
+                    eventText += character;
+                }
+            } else if (state === TEXT_INPUT_STYLE_CHANGE) {
+                if (character === constantsModule.MARKER_STYLE_RED) {
+                    eventText += "\x1b[31m";
+                    state = TEXT_INPUT_STYLED;
+                } else if (character === constantsModule.MARKER_STYLE_GREEN) {
+                    eventText += "\x1b[32m";
+                    state = TEXT_INPUT_STYLED;
+                } else if (character === constantsModule.MARKER_STYLE_BLUE) {
+                    eventText += "\x1b[34m";
+                    state = TEXT_INPUT_STYLED;
+                } else if (character === constantsModule.MARKER_STYLE_UNDERLINE) {
+                    eventText += "\x1b[4m";
+                    state = TEXT_INPUT_STYLED;
+                } else if (character === constantsModule.MARKER_STYLE_BOLD) {
+                    eventText += "\x1b[1m";
+                    state = TEXT_INPUT_STYLED;
+                } else {
+                    throw new Error(`Error: invalid style character. (line: ${atLine})`);
+                }
+            } else if (state === TEXT_INPUT_STYLED) {
+                if (character === constantsModule.MARKER_STYLE_END) {
+                    eventText += "\x1b[0m";
+                    state = TEXT_INPUT;
                 } else {
                     eventText += character;
                 }
             } else if (state === VARIABLE_START) {
-                if (character === constantsModule.MARKER_TEXT_INPUT) {
+                if (character === constantsModule.MARKER_TEXT_INPUT_END) {
                     this.addToAgenda(constantsModule.TYPE_TEXT_INPUT, eventText);
                     eventText = "";
                     state = STATE0;

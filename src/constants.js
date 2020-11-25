@@ -1,6 +1,7 @@
-exports.MARKER_COMMENT = "%";
+exports.MARKER_COMMENT_START = "%";
+exports.MARKER_COMMENT_END = "%";
 
-exports.MARKER_RESTRICTION = "@";
+exports.MARKER_RESTRICTION_START = "@";
 
 exports.MARKER_STORY_START = "$";
 exports.MARKER_STORY_END = "$";
@@ -21,7 +22,8 @@ exports.MARKER_OPTION_END = ">";
 
 exports.MARKER_CONSEQUENCE_START = "#";
 
-exports.MARKER_TEXT_INPUT = "|";
+exports.MARKER_TEXT_INPUT_START = "|";
+exports.MARKER_TEXT_INPUT_END = "|";
 
 exports.MARKER_VARIABLE_START = "~";
 exports.MARKER_VARIABLE_EQUALS = "=";
