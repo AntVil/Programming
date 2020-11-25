@@ -34,10 +34,9 @@ Suiting up has been your favourite part of the spacewalks at the times when [rVl
 [rVladimir Lituskij] was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year. You don't like to think about it for too long, so you don't. 
 Approaching the hatch to leave the spaceship, you turn around and check your safety cord.
 The display on the side of the exit says
-#StoryBlock = 4.1.1
 $
 
-@Language = English & StoryBlock = 4.1.1
+@Language = English & StoryBlock = 4.1
 |
 [bвведите пароль для открытия двери: (enter the passcode for opening the exit door:) _________] [g(4 digits)]
 ~Pin
@@ -60,37 +59,44 @@ You turn around and focus it for a while, trying to figure out what it is. There
 
 Now you are right between the two items, and you have to descide which one to take with you, the timer on your built in display shows the little time you have left, before the oxygen in your Suit
 will be gone. 
-#StoryBlock = 4.1.2
+#StoryBlock = 4.1.1.1
 $
 
-@Language = English & StoryBlock = 4.1.2{
+@Language = English & StoryBlock = 4.1.1.1{
 
 <
 choose the toolbag
-#StoryBlock = 4.1.2.1
+#StoryBlock = 4.1.1.1.1
 >
 
 <
 choose the mysterious thing
-#StoryBlock = 4.1.2.2
+#StoryBlock = 4.1.1.1.2
 >
 
 }
 
-@Language = English & StoryBlock = 4.1.2.1$
-
+@Language = English & StoryBlock = 4.1.1.1.1$
+For a short moment you are not shure if that was the correct decision, but it was the safer on for sure.
 $
 
-@Language = English & StoryBlock = 4.1.2.2$
-
+@Language = English & StoryBlock = 4.1.1.1.2$
+You float towards the shining thing, it starts glowing brighter as you approach it, and you could swear it came a bit closer to you in the moment you grabbed it. Inspecting it a little, you notice 
+it's surface consists of many little chrystals, forming grooves and wrinkles like canyons, in which all the light seems to get lost, way deeper than you can see. 
 $
 
 
 
 
-@Language = English & StoryBlock = 4.1.1$
+@Language = English & StoryBlock = 4.1$
 
 door didn't open
+$
+
+
+@Language = English & StoryBlock = 4.1.2.1$
+
+door didn't open - punch it
 $
 
 

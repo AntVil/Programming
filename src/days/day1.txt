@@ -187,7 +187,7 @@ Must be an error, run calculations again.
 >
 
 <
-Can't be. The computer has never made any mistakes. Is it what I think it is?
+The computer has never made any mistakes. Is it what I think it is?
 #StoryBlock = 2.2
 >
 

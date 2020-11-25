@@ -34,7 +34,7 @@ $
 @Language = English{
 Typing speed
 <
-slow
+standard
 #typeSpeed = 55
 >
 <
