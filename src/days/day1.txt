@@ -69,13 +69,11 @@ Story Block :0
 WW3 made the russian federation revive their space program, a last resort solution to escape the earth while the US. nuked Moscow and the surrounding districts. 
 There were three different teams sent out to visit the planet-like asteroid named “надежда”(nadezhda), around 489.396.264 km away, 
 from which the scientists in Dolgoprudny, Moscow kept receiving strange messages since december 2068.
-
-
-
 $
 
 
 @Language = English$
+
 [gDay 1]
 
 It is another lonely morning on board of the SPUTNIK 2078. 

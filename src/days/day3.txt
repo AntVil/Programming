@@ -22,7 +22,7 @@ I have to get out there. Without these tools I am helpless in the event of an er
 >
 
 <
-It's too risky to get out there. You have to think about what happened a year ago... don't want that to happen again.
+It's too risky to get out there. You have to think about what happened a year ago... you don't want that to happen again.
 
 #StoryBlock = 4.2
 >
@@ -32,7 +32,23 @@ It's too risky to get out there. You have to think about what happened a year ag
 @Language = English & StoryBlock = 4.1$
 Suiting up has been your favourite part of the spacewalks at the times when [rVlad] was still with you - now you have to help yourself with getting into the airtight material's many layers.
 [rVladimir Lituskij] was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year. You don't like to think about it for too long, so you don't. 
-Approaching the hatch to leave the spaceship, you turn around and check your safety cord. 
+Approaching the hatch to leave the spaceship, you turn around and check your safety cord.
+The display on the side of the exit says
+#StoryBlock = 4.1.1
+$
+
+
+|
+[bвведите пароль для открытия двери: (enter the passcode for opening the exit door:)_________](4 digits)
+~Pin
+|
+
+
+@Language = English & Pin = 2078
+$
+As the hermetic door opens, you grab onto the siderails to avoid being sucked out by the enormous pressure of the air, that is shooting out the door opening. With it getting wider and wider,
+revealing the open space, you look around and check your safety cord again. Without it, there would be no chance of getting back onto the ship, you would be lost in the eternal and never 
+ending depths of empty space. 
 $
 
 

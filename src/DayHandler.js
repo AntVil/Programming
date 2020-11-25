@@ -25,7 +25,7 @@ class DayHandler {
     }
 
     isDone() {
-        return this.dayIndex + 1 >= this.DAYS.length;
+        return this.dayIndex >= this.DAYS.length;
     }
 
     dayIsDone() {

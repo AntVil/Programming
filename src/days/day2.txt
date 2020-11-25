@@ -39,7 +39,7 @@ You reach over to give the input to choose the correct trajectory.
 .
 .
 .
-...but your eyes are still tired, and without realising, you chose the input that would lead to the greatest adventure of your lifetime!
+...but your eyes... they are still tired, and without realising, you chose the input that would lead your ship right into the wormhole.
 A moment later, you squint your eyes and you know, the course can't be changed no more, and maybe... maybe it was destiny. 
 #StoryBlock = 3.3
 $
@@ -52,7 +52,7 @@ Something in you says you should try. TRY? try what?
 Yea.... you got that right. THAT. You take a deep breath. This could be the most difficult decision of your life.
 With the energy levels of the generator constantly falling, your survival could depend on it. And if that what they say about wormholes turns out true,... then... 
 Alright lets go for it!
-You press the button on your Keyboard, and choose the input that could become the greatest adventure of your lifetime!
+You press the button on your Keyboard, and choose the input.
 #StoryBlock = 3.3
 $
 
@@ -67,12 +67,5 @@ Calculating new trajectory: trajectory option 2: course correction 0.00034793° 
 Calculations complete.
 .
 Course set.]
-
-
-
-
-
-
-
 #StoryBlock = 4.0
 $
