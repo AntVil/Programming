@@ -147,7 +147,7 @@ You don't even think about the toolbag you left behind in space, the stone seems
 Finally you approach the Sputnik, and a few moments later the hermetic door closes behind you, seperating the dark from the light and giving you a sense of security again. 
 Before you even think about getting out of your spacesuit, you inspect the chrystal closer for a while, you almost can't get your eyes off it. You get up and look around, then at the crystal again.
 What should you do with it?
-StoryBlock = 4.1.2
+#StoryBlock = 4.1.2
 $
 
 @Language = English & StoryBlock = 4.1.2{
