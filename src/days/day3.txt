@@ -200,7 +200,7 @@ $
 
 @Language = English & StoryBlock = 4.4$
 
-You look around and seem lost.
+You look around and feel a little lost inside.
 It has been a rough day, and it has become very late. 
 Time to go to sleep.
 .
