@@ -247,9 +247,55 @@ $
 Deutsch
 %
 
-@Language = Deutsch$
-Mission: 
+@Language = English$
+
+Hallo ~N! 
+Danke für's spielen!
+Ein paar Empfehlungen für optimales Spielerlebnis:
+- Mache den Terminal auf Vollbildschirm
+- benutze Kopfhörer oder gute Lautsprecher
+- viel Spaß!
+.
+.
+.
+$
+@Language = Deutsch{
+[b
+ ________  ________  ___  ___  _________  ________   ___  ___  __             _______  ________   ________  ________         
+|\   ____\|\   __  \|\  \|\  \|\___   ___\\   ___  \|\  \|\  \|\  \          /  ___  \|\   __  \ |\_____  \|\   __  \        
+\ \  \___|\ \  \|\  \ \  \\\  \|___ \  \_\ \  \\ \  \ \  \ \  \/  /|_       /__/|_/  /\ \  \|\  \ \|___/  /\ \  \|\  \       
+ \ \_____  \ \   ____\ \  \\\  \   \ \  \ \ \  \\ \  \ \  \ \   ___  \      |__|//  / /\ \  \\\  \    /  / /\ \   __  \      
+  \|____|\  \ \  \___|\ \  \\\  \   \ \  \ \ \  \\ \  \ \  \ \  \\ \  \         /  /_/__\ \  \\\  \  /  / /  \ \  \|\  \     
+    ____\_\  \ \__\    \ \_______\   \ \__\ \ \__\\ \__\ \__\ \__\\ \__\       |\________\ \_______\/__/ /    \ \_______\    
+   |\_________\|__|     \|_______|    \|__|  \|__| \|__|\|__|\|__| \|__|        \|_______|\|_______||__|/      \|_______|    
+   \|_________|
+]
+
+<
+Intro Musik abspielen (15sec)
+#Intro = True
+
+>
+
+<
+überspringen
+#Intro = False
+>
+}
+
+@Intro = True^
+spacetrack
+^
+
+@Language = English$
+.
+.
+.
+[bMission:]
 bewohnbaren Planeten erreichen
+.
+.
+.
 $
 
 @Language = Deutsch$
@@ -363,47 +409,21 @@ Die Berechnungen brauchen vielleicht einige Stunden, aber hoffentlich erhälst d
 .
 .
 .
-Während der Computer rechnet fängst du an zu forschen.
+Während der Computer rechnet schaust du dir die Analyse genauer an.
 .
 .
 .
 .
-
-$
-
-
-@Language = Deutsch & StoryBlock = 2.2$
-Dein Wissen über Wurmlöcher ist vielleicht etwas eingerostet, aber du bist dir sicher, dass es unmöglich ist, dass eine Strecke sich um mehr als das 1500-fache verringert, durch eine Differenz von 0.00002321°.
-$
-
-
-
-
-
-
-
-@Language = English & StoryBlock = 2.1$
-Alright, running the calculations again might take a few hours, but it'll hopefully give you some answers.
-.
-.
-.
-.
-You proceed to study the protocol while the computer is calculating.
-.
-.
-.
-.
-03:55 pm: You cannot believe seeing the same results again - the calculation was correct the first time. That could only mean one thing. Your trajectory crosses a wormhole. 
-
+03:55 pm: Du kannst es nicht glauben - die Rechnungen von davor waren korrekt. Das kann nur eins bedeuten. Dein Kurs geht durch ein Wumrloch.
 
 #StoryBlock = 2.2
 $
 
 
-@Language = English & StoryBlock = 2.2$
-Your knowledge about wormholes may be a tad rusty, but you're sure, that there can be no other way a trajectory can be of a distance over 1500 times shorter, than the one that differs 0.00002321°. 
-Since the existance of wormholes was confirmed in 2043, nobody has ever encountered one that has not been created in the laboratory, billion times smaller in scale than the thing you are facing right now.
-You are going to dive into this topic the rest of the day, maybe there is something else you can find out about that.
+@Language = Deutsch & StoryBlock = 2.2$
+Seit die Existenz von Wurmlöchern im Jahre 2043 bestätigt wurde, gab es keinen Menschen der je eines in "freier Wildbahn" entdeckt hatte. 
+Diejenige, die damals den Beweis lieferten, waren kleine, im Labor erzeugte Konstrukte, die im Größenverhältnis weit entfernt von dem sind, was du hier vor dir hast-
+Du schaust dir für den Rest des Tages an, was die Database des Schiffs dazu ausspuckt, vielleicht gibt es noch etwas was man darüber herausfinden kann.
 .
 .
 .
