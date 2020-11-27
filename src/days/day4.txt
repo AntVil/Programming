@@ -1,0 +1,4 @@
+@Language = English & StoryBlock = 5.0$
+[gDay 4]
+
+$

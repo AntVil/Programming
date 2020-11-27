@@ -34,20 +34,70 @@ Suiting up has been your favourite part of the spacewalks at the times when [rVl
 [rVladimir Lituskij] was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year. You don't like to think about it for too long, so you don't. 
 Approaching the hatch to leave the spaceship, you turn around and check your safety cord.
 The display on the side of the exit says
+#StoryBlock = 4.1.0
 $
 
-@Language = English & StoryBlock = 4.1
+
+
+@Language = English & StoryBlock = 4.1.0
 |
 [bвведите пароль для открытия двери: (enter the passcode for opening the exit door:) _________] [g(4 digits)]
 ~Pin
 |
 
-
-@Language = English & Pin = 2078 $
+@Language = English & StoryBlock = 4.1.0 & Pin = 2078 $
 .
 .
 .
 [bthe passcode is correct]
+#StoryBlock = 4.1.1
+$
+
+
+@Language = English & StoryBlock = 4.1.0
+|
+[bневерный пароль (invalid passcode)
+введите пароль для открытия двери: (enter the passcode for opening the exit door:) _________] [g(4 digits)]
+~Pin
+|
+
+
+@Language = English & StoryBlock = 4.1.0 & Pin = 2078 $
+.
+.
+.
+[bthe passcode is correct]
+#StoryBlock = 4.1.1
+$
+
+
+@Language = English & StoryBlock = 4.1.0
+|
+Come on.
+
+[bневерный пароль (invalid passcode)
+введите пароль для открытия двери: (enter the passcode for opening the exit door:) _________] [g(4 digits)]
+~Pin
+|
+
+
+@Language = English & StoryBlock = 4.1.0 & Pin = 2078 $
+.
+.
+.
+[bthe passcode is correct]
+#StoryBlock = 4.1.1
+$
+
+
+@Language = English & StoryBlock = 4.1.0$
+
+Door's jamming again. Typical. You give it a strong punch to help.
+#StoryBlock = 4.1.1
+$
+
+
+@Language = English & StoryBlock = 4.1.1$
 
 As the hermetic door opens, you grab onto the siderails to avoid being sucked out by the enormous pressure of the air, that is shooting out the door opening. With it getting wider and wider,
 revealing the open space, you look around and check your safety cord again. Without it, there would be no chance of getting back onto the ship, you would be lost in the eternal and never 
@@ -59,47 +109,103 @@ You turn around and focus it for a while, trying to figure out what it is. There
 
 Now you are right between the two items, and you have to descide which one to take with you, the timer on your built in display shows the little time you have left, before the oxygen in your Suit
 will be gone. 
-#StoryBlock = 4.1.1.1
+#StoryBlock = 4.1.1
 $
 
-@Language = English & StoryBlock = 4.1.1.1{
+@Language = English & StoryBlock = 4.1.1{
 
 <
 choose the toolbag
-#StoryBlock = 4.1.1.1.1
+#StoryBlock = 4.1.1.1
+#Items = toolbag
 >
 
 <
 choose the mysterious thing
-#StoryBlock = 4.1.1.1.2
+#StoryBlock = 4.1.1.2
+#Items = mysterious
 >
 
 }
 
-@Language = English & StoryBlock = 4.1.1.1.1$
-For a short moment you are not shure if that was the correct decision, but it was the safer on for sure.
+@Language = English & StoryBlock = 4.1.1.1$
+For a short moment you are not sure if that was the correct decision, but it was the safer one for sure. Though, as you are on your way back to the ship, 
+slowly pulling yourself closer, you cannot resist looking back at the chrystal - slowly vanishing in the deep dark.
+With the toolbag in your hands, holding it tight, you get to the ship.
+When the hermetic door finally closes behind you, and you look out the little window, you get a last glimse at the light of it, warm and cold at the same time. 
+The toolbag is still in your hands.
+#StoryBlock = 4.3
 $
 
-@Language = English & StoryBlock = 4.1.1.1.2$
-You float towards the shining thing, it starts glowing brighter as you approach it, and you could swear it came a bit closer to you in the moment you grabbed it. Inspecting it a little, you notice 
-it's surface consists of many little chrystals, forming grooves and wrinkles like canyons, in which all the light seems to get lost, way deeper than you can see. 
+@Language = English & StoryBlock = 4.1.1.2$
+You float towards the shining thing, it starts glowing brighter as you approach it, and you could swear it came a bit closer to you in the moment you grabbed it. Inspecting it a little, you notice:
+it's surface consists of many little chrystals, forming grooves and wrinkles like canyons, in which all the light seems to get lost, warm and cold at the same time, way deeper than you can see.
+You hold the stone firm in your left hand, while you pull yourself back to the ship. You feel it slightly vibrating in your hand, a feeling as if it wasn't just any crystal, unlike anything you've ever encountered
+on earth or on your journey so far. 
+You don't even think about the toolbag you left behind in space, the stone seems like the only important thing to you right now.
+
+Finally you approach the Sputnik, and a few moments later the hermetic door closes behind you, seperating the dark from the light and giving you a sense of security again. 
+Before you even think about getting out of your spacesuit, you inspect the chrystal closer for a while, you almost can't get your eyes off it. You get up and look around, then at the crystal again.
+What should you do with it?
 $
 
+@Language = English & StoryBlock = 4.1.1.2{
 
+<
+Put it in the storage section
+#StoryBlock = 4.3
+>
 
+<
+The stone seems too strange. Is it dangerous?
+Throw it away
+#StoryBlock = 4.1.2.1
+>
 
-@Language = English & StoryBlock = 4.1$
-
-door didn't open
-$
-
+}
 
 @Language = English & StoryBlock = 4.1.2.1$
+You look at the stone - with more fear in your eyes. Could it be a bad decision to keep it? Do you really want to take that risk? 
+No.
+You carry it to the waste ejector module, put it in the container, and look at it's beauty for the last time. 
+Then you press the button. 
 
-door didn't open - punch it
+It's gone.
+Suddenly, the ship gets a little colder. Or maybe it was just you...
+#StoryBlock = 4.4
 $
 
 
 @Language = English & StoryBlock = 4.2$
-stay inside
+
+You rarely think about it, because that's what you're trained to do. Blending out negative memorys and keeping your emotions under control is one of the key abilitys the space program recruiters look for. 
+Vlad also had them, and maybe he was better at it than you are. 
+[rVladimir Lituskij] was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year.
+You two passed the selection process together, and had become close friends during the training and first years of the space journey.
+
+It happened near the xiastea-63507 asteroid belt, where you were supposed to extract minerals in order to fill up our resources. 
+The rock that hit him weighed more than 3 tons, he had no chance of surival. The collision of two nearby asteroids caused the rocks to fire at your location, there were craters everywhere after the dust went away. 
+The majority of mineral crates were already on board, but all those that were still outside were lost. Just as Vlad. 
+
+#StoryBlock 4.4
+$
+
+@Language = English & StoryBlock = 4.3$
+You put it in the storage section, where you would find it again if you need to. 
+
+#StoryBlock = 4.4
+$
+
+@Language = English & StoryBlock = 4.4$
+
+You look around and seem lost.
+It has been a rough day, and it has become very late. 
+Time to go to sleep.
+.
+.
+.
+.
+.
+.
+#StoryBlock = 5.0
 $
