@@ -30,8 +30,8 @@ It's too risky to get out there. You have to think about what happened a year ag
 }
 
 @Language = English & StoryBlock = 4.1$
-Suiting up has been your favourite part of the spacewalks at the times when [rVlad] was still with you - now you have to help yourself with getting into the airtight material's many layers.
-[rVladimir Lituskij] was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year. You don't like to think about it for too long, so you don't. 
+Suiting up has been your favourite part of the spacewalks at the times when Vlad was still with you - now you have to help yourself with getting into the airtight material's many layers.
+Vladimir Lituskij was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year. You don't like to think about it for too long, so you don't. 
 Approaching the hatch to leave the spaceship, you turn around and check your safety cord.
 The display on the side of the exit says
 #StoryBlock = 4.1.0
@@ -180,7 +180,7 @@ $
 
 You rarely think about it, because that's what you're trained to do. Blending out negative memorys and keeping your emotions under control is one of the key abilitys the space program recruiters look for. 
 Vlad also had them, and maybe he was better at it than you are. 
-[rVladimir Lituskij] was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year.
+Vladimir Lituskij was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year.
 You two passed the selection process together, and had become close friends during the training and first years of the space journey.
 
 It happened near the xiastea-63507 asteroid belt, where you were supposed to extract minerals in order to fill up our resources. 
