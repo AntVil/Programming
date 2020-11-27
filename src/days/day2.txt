@@ -4,8 +4,8 @@
 You had a hard time sleeping last night. The fact that there was this anomaly in time and space, an undiscovered phenomenon right in front of you,
 was just too exciting and frightening at once. You got up way before your time this morning, staring at the screen, while the navigation device was running.
 
-In a short moment of regret, you think about the chance you are missing, being the first human to fly inside of a wormhole, a real one. But you catch your thoughts fast: 
-What's it matter anyway, when you are 99.9% DEAD if you'd do it??
+You think about the chance you are missing, being the first human to fly inside of a wormhole, a real one. But you catch your thoughts fast: 
+Why does it even matter anyway, when you are about 99.9% sure you DIE if you'd do it??
 $
 
 @Language = English & StoryBlock = 3.0{
@@ -57,6 +57,106 @@ You press the button on your Keyboard, and choose the input.
 $
 
 @Language = English & StoryBlock = 3.3$
+[b
+.
+.
+.
+.
+.
+Calculating new trajectory: trajectory option 2: course correction 0.00034793° , new estimated km left:] [r4.186] [bkm . . . . . . . . . . . . . . . . . . 
+Calculations complete.
+.
+Course set.]
+#StoryBlock = 4.0
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Language = Deutsch & StoryBlock = 3.0$
+[gTag 2]
+
+Du hattest es schwer Gestern zu schlafen. Diese Anomalie von Raum und Zeit, ein unentdecktes Phänomen direkt vor deinen Augen, war einfach zu aufregend und beängstigend zu gleich.
+Heute bist du viel früher als aufgestanden als nötig. Du starst den Bildschirm an während die Navigation läuft.
+
+Du denkst über deine Chance der erste Mensch zu sein, welcher durch ein Wurmloch fliegt, ein echtes. Aber du fängst dich schnell wieder:
+Was bedeutet es denn überhaupt, der Erste zu sein, wenn du dir 99.9% sicher bist, dass du STRIBST, wenn du es tust??
+$
+
+@Language = Deutsch & StoryBlock = 3.0{
+Drücke den Knopf um auszuwählen, welchen Kurs du dem Bordcomputer vorgeben willst:
+
+<
+trajectory option 1: course correction 0.00032472° , new estimated km left: 6.434.534 km
+
+#StoryBlock = 3.1
+>
+
+<
+trajectory option 2: course correction 0.00034793° , new estimated km left: 4.186 km
+
+#StoryBlock = 3.2
+>
+
+<
+trajectory option 3: course correction 0.00045744° , new estimated km left: 6.434.497 km
+
+#StoryBlock = 3.1
+>
+}
+
+@Language = Deutsch & StoryBlock = 3.1$
+Es kann keine gute Entscheidung sein auf gefährliche und höchst wahrscheinlich todbringende Abenteuer zu gehen. Du bist nur zwei Wochen entfernt von deinem Ziel, nach drei Jahren und zehn Monaten reise.
+Während die Reaktoreffizients konstant fällt, ist es besser die sichere Option zu wählen, ohne irgendwelche Überraschungen.
+
+Du streckst deine Hand aus um die richtige Kurs zu wählen.
+.
+.
+.
+...aber deine Augen... sie sind immernoch müde und ohne es zu merken, wählst du die Option, welche direkt in das Wurmloch führt.
+Einen Moment später kneifst du deine Augen zusammen und du weißt, der Kurs kann nicht mehr geändert werden, und vielleicht... vielleicht war es Schicksal.
+#StoryBlock = 3.3
+$
+
+@Language = Deutsch & StoryBlock = 3.2$
+Etwas in dir sagt du solltest es versuchen. VERSUCHEN? Was versuchen?
+.
+.
+.
+Ja.... du hast richtig verstanden. DAS. Du machst einen großen Atemzug. Das könnte die schwerste Entscheidung deines Lebens sein.
+Solange die Reaktoreffizients ständig fällt, könnte dein Überleben davon abhängen. Und wenn das, was über Wurmlöcher gesagt wird stimmt,... dann...
+Also auf geht's!
+Du drückst den Knopf auf der Tastatur.
+#StoryBlock = 3.3
+$
+
+@Language = Deutsch & StoryBlock = 3.3$
 [b
 .
 .

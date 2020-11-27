@@ -49,7 +49,7 @@ skip
 spacetrack
 ^
 
-$
+@Language = English$
 .
 .
 .
@@ -359,9 +359,53 @@ Der Computer hat noch nie einen Fehler gemacht. Ist es das was ich denke, was es
 
 @Language = Deutsch & StoryBlock = 2.1$
 Die Berechnungen brauchen vielleicht einige Stunden, aber hoffentlich erhälst du mehr Informationen.
+.
+.
+.
+.
+Während der Computer rechnet fängst du an zu forschen.
+.
+.
+.
+.
+
 $
 
 
 @Language = Deutsch & StoryBlock = 2.2$
 Dein Wissen über Wurmlöcher ist vielleicht etwas eingerostet, aber du bist dir sicher, dass es unmöglich ist, dass eine Strecke sich um mehr als das 1500-fache verringert, durch eine Differenz von 0.00002321°.
+$
+
+
+
+
+
+
+
+@Language = English & StoryBlock = 2.1$
+Alright, running the calculations again might take a few hours, but it'll hopefully give you some answers.
+.
+.
+.
+.
+You proceed to study the protocol while the computer is calculating.
+.
+.
+.
+.
+03:55 pm: You cannot believe seeing the same results again - the calculation was correct the first time. That could only mean one thing. Your trajectory crosses a wormhole. 
+
+
+#StoryBlock = 2.2
+$
+
+
+@Language = English & StoryBlock = 2.2$
+Your knowledge about wormholes may be a tad rusty, but you're sure, that there can be no other way a trajectory can be of a distance over 1500 times shorter, than the one that differs 0.00002321°. 
+Since the existance of wormholes was confirmed in 2043, nobody has ever encountered one that has not been created in the laboratory, billion times smaller in scale than the thing you are facing right now.
+You are going to dive into this topic the rest of the day, maybe there is something else you can find out about that.
+.
+.
+.
+#StoryBlock = 3.0
 $
