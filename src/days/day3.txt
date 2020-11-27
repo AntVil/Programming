@@ -30,8 +30,8 @@ It's too risky to get out there. You have to think about what happened a year ag
 }
 
 @Language = English & StoryBlock = 4.1$
-Suiting up has been your favourite part of the spacewalks at the times when Vlad was still with you - now you have to help yourself with getting into the airtight material's many layers.
-Vladimir Lituskij was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year. You don't like to think about it for too long, so you don't. 
+Suiting up has been your favourite part of the spacewalks at the times when Vlad was still with you - now you have to help yourself get into the airtight material's many layers.
+Vladimir Lituskij was the second cosmonaut on board of the SPUTNIK 2078, until the horrible incident last year. You don't like to think about it for too long, so you don't. 
 Approaching the hatch to leave the spaceship, you turn around and check your safety cord.
 The display on the side of the exit says
 #StoryBlock = 4.1.0
@@ -107,8 +107,8 @@ The never ending view into the dark made the 60 meters seem shorter than expecte
 Finally, you get in range of the toolbag, and you can almost grab it but... your attention shifts towards another item, floating not far from you. It's pulsating glow has a strange effect on your eyes.
 You turn around and focus it for a while, trying to figure out what it is. There is a feeling... inside of you... that attracts you to it. 
 
-Now you are right between the two items, and you have to descide which one to take with you, the timer on your built in display shows the little time you have left, before the oxygen in your Suit
-will be gone. 
+Now you are right between the two items, and you have to decide which one to take with you, the timer on your built in display shows the little time you have left, before the oxygen in your Suit
+runs out. 
 #StoryBlock = 4.1.1
 $
 
@@ -139,8 +139,8 @@ $
 
 @Language = English & StoryBlock = 4.1.1.2$
 You float towards the shining thing, it starts glowing brighter as you approach it, and you could swear it came a bit closer to you in the moment you grabbed it. Inspecting it a little, you notice:
-it's surface consists of many little chrystals, forming grooves and wrinkles like canyons, in which all the light seems to get lost, warm and cold at the same time, way deeper than you can see.
-You hold the stone firm in your left hand, while you pull yourself back to the ship. You feel it slightly vibrating in your hand, a feeling as if it wasn't just any crystal, unlike anything you've ever encountered
+it's surface consists of many little chrystals, forming grooves and cracks like canyons, in which all the light seems to get lost, warm and cold at the same time, way deeper than you can see.
+You hold the stone firmly in your left hand, while you pull yourself back to the ship. You feel it slightly vibrating in your hand, a feeling as if it wasn't just any crystal, unlike anything you've ever encountered
 on earth or on your journey so far. 
 You don't even think about the toolbag you left behind in space, the stone seems like the only important thing to you right now.
 
@@ -181,7 +181,7 @@ $
 
 You rarely think about it, because that's what you're trained to do. Blending out negative memorys and keeping your emotions under control is one of the key abilitys the space program recruiters look for. 
 Vlad also had them, and maybe he was better at it than you are. 
-Vladimir Lituskij was the second kosmonaut on board of the SPUTNIK 2078, until the horrible incident last year.
+Vladimir Lituskij was the second cosmonaut on board of the SPUTNIK 2078, until the horrible incident last year.
 You two passed the selection process together, and had become close friends during the training and first years of the space journey.
 
 It happened near the xiastea-63507 asteroid belt, where you were supposed to extract minerals in order to fill up our resources. 
@@ -203,6 +203,242 @@ $
 You look around and feel a little lost inside.
 It has been a rough day, and it has become very late. 
 Time to go to sleep.
+.
+.
+.
+.
+.
+.
+#StoryBlock = 5.0
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Language = Deutsch & StoryBlock = 4.0$
+[gTag 3]
+
+Heute ist der Tag. Nach einer kurzen Nacht breitest du alles vor für den Sprung. Während du dich den Koordinaten des eingangs Punkt näherst, wird das Sternenlicht dunkler.
+Alle Sterne verschwinden hinter dir und die Dunkelheit breitet sich vor dir aus. Auf einmal sind alle Sterne weg und nur noch ein leichtes Leuchten ist übrig, 
+als obder Raum selbst leuchtet.
+Ab diesem Zeitpunkt fühlt sich alles was du wahrnimmst unecht an, als ob es nicht mit der Realität verbunden wäre. Die Instrumente im Control Raum zeigen keine korrekten 
+Daten an. Sobald du aus dem Fenster schaust bekommst du Überlkeit, auch wenn dort draußen nichts ist außer dieses komische Leuchten.
+Bist du schon drinnen? Warum fühlt sich die Route nicht "schneller" an? Den Rechnungen zu folge solltest du 6000 km/s schnell sein.
+Du schaust nochmals aus dem Fenster. Ist das dein Werkzeugtasche? Ist das [+DEINE] Werkzeugtasche?? Das muss er sein, aber wie ist des dort hin gekommen? Verdammt.
+Du musst schnell Handeln. Was wirst du tun?
+$
+
+@Language = Deutsch & StoryBlock = 4.0{
+
+<
+Ich muss da raus. Ohne die Werkzeuge werde ich im Fall eines Defektes hoffnungslos verloren sein. ...Wo ist mein Raumanzug.
+
+#StoryBlock = 4.1
+>
+
+<
+Es ist ein zu großes Risiko. Du musst daran denken, was letztes Jahr passiert ist... sowas darf nicht nochmal passieren.
+
+#StoryBlock = 4.2
+>
+
+}
+
+@Language = Deutsch & StoryBlock = 4.1$
+Das Anlegen des Raumanzuges war immer eins der Highlights eines Weltraumspaziergangs, zumindest als Vlad noch mit dir war. Jetzt musst du den vielen Schichten des Raumanzuges selbst anlegen.
+Vladimir Lituskij war der zweite Kosmonaut an Bord der SPUTNIK 2078, bis zu dem schrecklichen Vorfall letztes Jahr. Du denkst nicht gerne darüber nach.
+Als du dich dem Ausgang des Schiffs näherst, drehst du dich noch einmals um und prüfst deine sicherheits Leine.
+Der Bildschrim auf der Seite des Ausgang liest
+
+#StoryBlock = 4.1.0
+$
+
+
+
+@Language = Deutsch & StoryBlock = 4.1.0
+|
+[bвведите пароль для открытия двери: (gib den Passcode für die Tür ein:) _________] [g(4 digits)]
+~Pin
+|
+
+@Language = Deutsch & StoryBlock = 4.1.0 & Pin = 2078 $
+.
+.
+.
+[bthe passcode is correct]
+#StoryBlock = 4.1.1
+$
+
+
+@Language = Deutsch & StoryBlock = 4.1.0
+|
+[bневерный пароль (invalid passcode)
+введите пароль для открытия двери: (gib den Passcode für die Tür ein:) _________] [g(4 digits)]
+~Pin
+|
+
+
+@Language = Deutsch & StoryBlock = 4.1.0 & Pin = 2078 $
+.
+.
+.
+[bthe passcode is correct]
+#StoryBlock = 4.1.1
+$
+
+
+@Language = Deutsch & StoryBlock = 4.1.0
+|
+Komm schon.
+
+[bневерный пароль (invalid passcode)
+введите пароль для открытия двери: (gib den Passcode für die Tür ein:) _________] [g(4 digits)]
+~Pin
+|
+
+
+@Language = Deutsch & StoryBlock = 4.1.0 & Pin = 2078 $
+.
+.
+.
+[bthe passcode is correct]
+#StoryBlock = 4.1.1
+$
+
+
+@Language = Deutsch & StoryBlock = 4.1.0$
+Die Tür klemmt schonwieder. Typisch... Du gibst ihr einen starken Stoß.
+
+#StoryBlock = 4.1.1
+$
+
+
+@Language = Deutsch & StoryBlock = 4.1.1$
+Um nicht von dem gewaltigen Durck der herausströmenden Luft rausgesaugt zu werden, hälst du dich an den Seitenschienen fest. Während sich die Tür immer weiter öffnet und immer mehr der leere Raum
+vor dir ausbreitet, schaust du dich um und prüfst nochmals deine sicherheits Leine. Ohne sie hättest du keine Möglichkeit wieder ins Schiff zu kommen. Mit anderen Worten, du würdest in den unendlichen
+weiten des Weltraums verloren sein.
+Draußen erhälst du einen unglaublichen Blick von dem Schiff welches in ein misteriöses Leuchten getunkt ist, in dem du dich kurzzeitig verlierst, bevor du dich in Richtung Werkzeugtasche auf machst.
+Der unendliche Blick in die Leere lies die 60 Meter kurzer Vorkommen als erwartet. Einige Male hattest du die Befürchtung, dass die Leine nicht ausreicht.
+Schlussendlich bist du in der Nähe der Werkzeugtasche und du kannst sie fast greifen, aber... deine Aufmerksamkeit wendet sich einem anderem nicht weit von dir entferntem Gegenstand zu. 
+Das pulsierende Lechten des Gegenstandes hat einen komischen Effekt auf deine Augen.
+Du wendest dich eine Weile dem Gegenstand zu, um herauszufinden, was es sein mag. Du bemerkst ein Gefühl... tief in dir... welches dich zu dem Gegenstand zieht.
+
+Du befindest dich jetzt genau zwischen den Beiden. Du musst dich entscheiden, was du mitnehmen willst, da die Anzeige an deinem Anzug dir sagt, dass sich dein Sauerstoff dem Ende zuneigt.
+
+#StoryBlock = 4.1.1
+$
+
+@Language = Deutsch & StoryBlock = 4.1.1{
+
+<
+wähl die Werkzeugtasche
+#StoryBlock = 4.1.1.1
+#Items = toolbag
+>
+
+<
+wähl das misteriöse Etwas
+#StoryBlock = 4.1.1.2
+#Items = mysterious
+>
+
+}
+
+@Language = Deutsch & StoryBlock = 4.1.1.1$
+Für einen kurzen Moment bist du dir nicht sicher, ob dass es die Richtige Entscheidung war, aber es ist auf jedenfall sie sicherere. 
+Auf dem Weg zurück zum Schiff kannst du nicht widerstehen dich noch einmal umzudrehen. Langsam verschindet das Leuchten in der tiefen Dunkelheit.
+Mit der Werkzeugtasche fest in deiner Hand kommst du zurück zum Schiff.
+Als sich endlich die hermetische Tür hinter dir schließt, kannst du nicht anders als nochmal einen Blick nach dem Gegenstand zu werfen, welcher eine Wärme und gleichzeitig Kälte ausstrahlt.
+Die Werkzeugtasche ist immernoch in deiner Hand.
+
+#StoryBlock = 4.3
+$
+
+@Language = Deutsch & StoryBlock = 4.1.1.2$
+Du schwebst auf den scheinenden Gegenstand zu, welcher immer heller wird. Du bist dir sicher, dass der Gegenstand in dem Moment als du nach ihm greifst näher kommt. 
+Du untersuchst den Gegenstand ein wenig und bemerkst: seine Oberfläche besteht aus vielen kleinen Kristallen, die Rillen und Risse wie Schluchten formen, in denen sich das Licht zu verlieren scheint.
+Während du dich zum Schiff zurück ziehst hälst du den Kristall fest in der Hand. Es fühlt sich so an als ob der Kristall vibriert; ein Gefühl, als ob es kein normaler Kristall wäre.
+Zumindest keiner der mir bis jetzt bekannt ist. 
+Der Kristall bekommt deine volle Aufmerksamkeit und du denkst nicht einmal mehr an die Werkzeugtasche.
+
+Als sich endlich die hermetische Tür hinter dir schließt und Dunkelheit damit abriegelst, empfindest du wieder ein Gefühl von Sicherheit.
+Bevor du überhaupt daran denkst aus dem Anzug zu steigen, inspizierst du den Kristall für eine Weile. Du kannst deine Augen fast nicht von ihm nehmen.
+Du stehst auf und schaust dich um, dann schaust du den Kristall wieder an.
+Was solltest du mit ihm tun?
+
+#StoryBlock = 4.1.2
+$
+
+@Language = Deutsch & StoryBlock = 4.1.2{
+
+<
+Lege ihn in den Lagerraum
+#StoryBlock = 4.3
+>
+
+<
+Der Kristall scheint sehr komisch zu sein. Ist er vielleicht Gefährlich? 
+Wirf ihn weg.
+#StoryBlock = 4.1.2.1
+>
+
+}
+
+@Language = Deutsch & StoryBlock = 4.1.2.1$
+Du siehst den Stein nun mit anderen Augen - Angst macht sich in dir bemerkbar. Ist es eine gute Idee ihn zu behalten? Willst du dich dieser Gefahr wirklich aussetzen und das Risiko des Unbakannten eingehen?
+Nein.
+Du nimmst den Stein und bringst ihn zum Müllentsorgungsmodul, wo du ihn in den Behälter legst der die Abfälle ins Weltall schießt. 
+Du siehst den Stein ein letzes Mal an.
+Dann drückst du den Knopf.
+Er ist verschwunden. Auf einmal fühlt sich die Atmosphäre um dich etwas kälter an. Könnte aber auch an dir liegen.
+#StoryBlock = 4.4
+$
+
+
+@Language = Deutsch & StoryBlock = 4.2$
+Du denkst nur sehr selten daran, denn dir wurde immer eingeredet negative Gedanken und Emotionen auf der Mission zu unterdrücken.  Die Fähigkeit dies zu können erwies sich als sehr nützlich. Es ist besser fokussiert zu bleiben, Vlad konnte das besonders gut, vielleicht sogar besser als du.
+Vladimir Lituskij war sein Name, er war der zweite Kosmonaut an Board der Sputnik 2078, bis zum schrecklichen Ereignis von vor einem Jahr.  Ihr beide wart gute Freunde, ihr hattet den Auswahlvorgang für diese Mission gemeinsam bestanden. 
+
+Es passierte in der Nähe des Xiastea-63507 Asteroidengürtels, eine kleinere Mission die dem Aufstocken der Mineralienvorräte diente. 
+Der Gesteinsbrocken der Vlad erwischte wog über 3 Tonnen, er hatte keine Chance. Der Zusammenstoß zweier Asteroiden unweit eurer Position ließ einen Sturm aus Gestein auf das Areal niederprasseln. Als der Staub sich legte war von Vlad und den Kisten die er in Richtung Schiff trug keine Spur mehr.
+
+#StoryBlock 4.4
+$
+
+@Language = Deutsch & StoryBlock = 4.3$
+Du legst ihn in den Lagerraum, damit du später wieder findest.
+
+#StoryBlock = 4.4
+$
+
+
+@Language = Deutsch & StoryBlock = 4.4$
+Du schaust dich um und fühlst dich innerlich etwas verloren.
+Heute war ein harter Tag und es ist schon sehr spät.
+Zeit für's Bett.
 .
 .
 .
