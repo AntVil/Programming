@@ -1,4 +1,3 @@
-
 |
 Name:
 ~N
@@ -10,7 +9,6 @@ Language
 <
 English
 #Language = English
-#123 = true
 >
 <
 Deutsch

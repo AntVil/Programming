@@ -95,8 +95,15 @@ class Main{
     }
 
     handleTextInput(textInput) {
-        this.textOutputHandlerandler.printText(textInput.getText());
-        this.variableDictionary[textInput.getVariableName()] = this.inputHandler.getTextInput();
+        if (this.restrictionSatisfied(textInput.getRestriction())) {
+            this.textOutputHandlerandler.printText(textInput.getText());
+            this.variableDictionary[textInput.getVariableName()] = this.inputHandler.getTextInput();
+
+            let consequences = textInput.getConsequences();
+            for (let i = 0; i < consequences.length; i++) {
+                this.handleConsequence(consequences[i]);
+            }
+        }
     }
 
 

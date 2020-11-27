@@ -72,9 +72,11 @@ class Day {
         const TEXT_INPUT_STYLE_CHANGE = 15;
         const TEXT_INPUT_STYLED = 16;
 
-        const VARIABLE_START = 17;
+        const TEXT_INPUT_CONSEQUENCE = 17;
 
-        const AUDIO = 18;
+        const VARIABLE_START = 18;
+
+        const AUDIO = 19;
 
         let state = STATE0;
         let eventText = "";
@@ -262,6 +264,9 @@ class Day {
                     eventText += character;
                 } else if(character === constantsModule.MARKER_STYLE_CHANGE){
                     state = TEXT_INPUT_STYLE_CHANGE;
+                } else if(character === constantsModule.MARKER_CONSEQUENCE_START){
+                    state = TEXT_INPUT_CONSEQUENCE;
+                    eventText += character;
                 } else {
                     eventText += character;
                 }
@@ -292,6 +297,17 @@ class Day {
                     eventText += character;
                 }
             } else if (state === VARIABLE_START) {
+                if (character === constantsModule.MARKER_TEXT_INPUT_END) {
+                    this.addToAgenda(constantsModule.TYPE_TEXT_INPUT, eventText);
+                    eventText = "";
+                    state = STATE0;
+                } else if(character === constantsModule.MARKER_CONSEQUENCE_START){
+                    state = TEXT_INPUT_CONSEQUENCE;
+                    eventText += character;
+                } else {
+                    eventText += character;
+                }
+            } else if(state === TEXT_INPUT_CONSEQUENCE){
                 if (character === constantsModule.MARKER_TEXT_INPUT_END) {
                     this.addToAgenda(constantsModule.TYPE_TEXT_INPUT, eventText);
                     eventText = "";
