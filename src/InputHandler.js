@@ -1,44 +1,32 @@
 const readline = require("readline-sync");
 
-class InputHandler{
-    constructor(){
-        
+class InputHandler {
+    constructor() {
+
     }
 
     getOptionInput(options) {
-        let viableNumber = false;
         let optionInput;
         do {
             optionInput = readline.questionInt();
-            if (typeof optionInput === "number" && optionInput <= options && optionInput >= 1) {
-                viableNumber = true;
-            }
-        } while (viableNumber != true);
+        } while (typeof optionInput !== "number" || optionInput > options || optionInput < 1);
         return optionInput;
     }
 
     getTextInput() {
-        let viableString = false;
         let textInput;
         do {
             textInput = readline.question().trim();
-            if (typeof textInput === "string" && textInput.length > 0) {
-                viableString = true;
-            }
-        } while (viableString != true);
+        } while (typeof textInput !== "string" || textInput.length <= 0);
         return textInput;
     }
 
     getNumberInput() {
-        let viableNumber = false;
-        let optionInput;
+        let numberInput;
         do {
-            optionInput = readline.questionInt();
-            if (typeof optionInput === "number") {
-                viableNumber = true;
-            }
-        } while (viableNumber != true);
-        return optionInput;
+            numberInput = readline.questionInt();
+        } while (typeof numberInput !== "number");
+        return numberInput;
     }
 }
 

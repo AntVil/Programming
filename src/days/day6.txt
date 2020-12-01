@@ -1,0 +1,126 @@
+@Language = English$
+.
+.
+.
+Thanks for playing [bSputnik 2078]!
+
+This game is a project by 
+- Jan Broer
+- Alexander Dietrich
+- Anton Böhler
+
+GitHub: [bhttps://github.com/htcryme/Programming]
+
+In this project, we were restricted to only use [gNode-js].
+Our imports are (not including transitiv imports):
+- [greadline-sync]  [ghttps://www.npmjs.com/package/readline-sync]
+- [gnaudiodon]      [ghttps://github.com/Streampunk/naudiodon]
+- [gpath]           [gnative]
+- [gfs]             [gnative]
+
+Design choices:
+In the project we use an [_OOP style].
+- The class [+DayHandler] accesses the textfiles containing the days
+- The class [+Day] takes the filepath and generates the agenda of the day
+    -> the textfiles contain a self created mark-up which the [+Day] can parse
+- The agenda stored in the [+Day] is made up of different events, which all are handeled differently
+    -> Events are: [+Story], [+AudioContainer], [+Interaction], [+TextInput]
+- Each event stores a [+Restriction] and an Array of [+Consequence]-s
+    -> An [+Interaction] stores an Array of [+Option]-s
+- The class [+Main] uses these classes to determine what happens and interacts with the user with special classes
+    -> [+AudioOutputHandler], [+TextOutputHandler], [+InputHandler]
+- The file [_constants.js] holds most constant values so things like the mark-up can be edited quickly and easily
+
+Additional:
+Due to the use of [gnaudiodon] the code had to be changed, to use [_async] and [_await]. 
+This way the program would wait until the audio was done playing.
+Otherwise the program would have continued and the audio would have only started playing at the end.
+
+Check out [_dev/] to view some of the development decisions.
+(Caution: they might be outdated!)
+
+Feature-list:
+- text-input (includes numbers)
+- option-input
+- audio-output
+- typewritter-output (adjustable)
+- modular code/story
+- decisions affect future
+- german and english
+- readable code
+- expandable code
+$
+
+
+
+
+
+@Language = Deutsch$
+.
+.
+.
+Vielen Dank, dass du [bSputnik 2078] gespielt hast!
+
+Dieses Spiel ist ein Projekt erstellt von
+- Jan Broer
+- Alexander Dietrich
+- Anton Böhler
+
+GitHub: [bhttps://github.com/htcryme/Programming]
+
+In diesem Projekt waren wir beschränkt nur [gNode-js] zu benutzen.
+Unsere Imports (transitive nicht beinhaltet):
+- [greadline-sync]  [ghttps://www.npmjs.com/package/readline-sync]
+- [gnaudiodon]      [ghttps://github.com/Streampunk/naudiodon]
+- [gpath]           [gnative]
+- [gfs]             [gnative]
+
+Design Entscheidungen:
+In dem Projekt benutzen wir einen [_OOP style].
+- Die Klasse [+DayHandler] untersucht, welche Textdatein, welche die Tage enthält, als nächstes geöffnet werden soll
+- Die Klasse [+Day] bekommt den Dateipfad und erstellt die Agenda des Tages
+    -> die Textdateien beinhalten einen selbst erstellten Mark-up, welchen [+Day] parsen kann
+- Die Agenda welche im [+Day] gespeichert wird besteht aus verschiedenen Events, welche verschieden behandelt werden
+    -> Events sind: [+Story], [+AudioContainer], [+Interaction], [+TextInput]
+- Jedes Event speichert eine [+Restriction] einen Array an [+Consequence]-n
+    -> Eine [+Interaction] speichert ein Array an [+Option]-s
+- Die Klasse [+Main] benutzt diese Klassen um zu entscheiden, was als nächstes passiert und interagiert mit dem Benutzer mit speziellen Klassen
+    -> [+AudioOutputHandler], [+TextOutputHandler], [+InputHandler]
+- Die Datei [_constants.js] speichert fast alle Konstanten, sodass Dinge wie der Mark-up schnell und einfach verändert werden können
+
+Zusätzlich:
+Wegen der Benutzung von [gnaudiodon] musste der Code verändert werden und viel [_async] und [_await] verwenden.
+Auf diese Art wartet das Programm, bis das Audio fertig ist.
+Ansonsten würde das Programm fortfahren und das Audio erst am Ende abspielen.
+
+Unter [_dev/] kann man einige Entwickler Entscheidungen sehen.
+(Achtung: könnte veraltet sein!)
+
+Feature-Liste:
+- Text-input (beinhaltet Zahlen)
+- Option-input
+- Audio-output
+- Tippmaschinen-output (änderbar)
+- modularer Code/Geschichte
+- Entscheidungen beeinflussen Zukunft
+- Deutsch und Englisch
+- lesbarer Code
+- erweiterbarer Code
+$
+
+
+
+$
+[b
+ ________  ________  ___  ___  _________  ________   ___  ___  __             _______  ________   ________  ________         
+|\   ____\|\   __  \|\  \|\  \|\___   ___\\   ___  \|\  \|\  \|\  \          /  ___  \|\   __  \ |\_____  \|\   __  \        
+\ \  \___|\ \  \|\  \ \  \\\  \|___ \  \_\ \  \\ \  \ \  \ \  \/  /|_       /__/|_/  /\ \  \|\  \ \|___/  /\ \  \|\  \       
+ \ \_____  \ \   ____\ \  \\\  \   \ \  \ \ \  \\ \  \ \  \ \   ___  \      |__|//  / /\ \  \\\  \    /  / /\ \   __  \      
+  \|____|\  \ \  \___|\ \  \\\  \   \ \  \ \ \  \\ \  \ \  \ \  \\ \  \         /  /_/__\ \  \\\  \  /  / /  \ \  \|\  \     
+    ____\_\  \ \__\    \ \_______\   \ \__\ \ \__\\ \__\ \__\ \__\\ \__\       |\________\ \_______\/__/ /    \ \_______\    
+   |\_________\|__|     \|_______|    \|__|  \|__| \|__|\|__|\|__| \|__|        \|_______|\|_______||__|/      \|_______|    
+   \|_________|
+]
+
+#_UNLOCKEDINSTANT = TRUE
+$

@@ -18,6 +18,10 @@ class Consequence{
     getVariableValue(){
         return this.variableValue;
     }
+
+    isUnlock(){
+        return this.variableName.startsWith(constantsModule.MARKER_UNLOCK_START);
+    }
 }
 
 

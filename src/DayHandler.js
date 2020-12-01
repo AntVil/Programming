@@ -28,7 +28,7 @@ class DayHandler {
         return this.dayIndex - 1 === this.DAYS.length;
     }
 
-    hasNextDay(){
+    hasNextDay() {
         return this.dayIndex + 1 < this.DAYS.length;
     }
 

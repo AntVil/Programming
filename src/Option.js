@@ -14,9 +14,9 @@ class Option{
 
             let optionParts = option[0].split(constantsModule.MARKER_CONSEQUENCE_START);
             if(optionParts.length === 1){
-                this.text = optionParts[0];
+                this.text = optionParts[0].trim();
             }else{
-                this.text = optionParts[0];
+                this.text = optionParts[0].trim();
                 let consequences = optionParts.splice(1, optionParts.length-1);
                 for(var i=0;i<consequences.length;i++){
                     this.consequences.push(new consequenceModule.Consequence(consequences[i]));
@@ -27,9 +27,9 @@ class Option{
 
             let optionParts = option[1].split(constantsModule.MARKER_CONSEQUENCE_START);
             if(optionParts.length === 1){
-                this.text = optionParts[0];
+                this.text = optionParts[0].trim();
             }else{
-                this.text = optionParts[0];
+                this.text = optionParts[0].trim();
                 let consequences = optionParts.splice(1, optionParts.length-1);
                 for(var i=0;i<consequences.length;i++){
                     this.consequences.push(new consequenceModule.Consequence(consequences[i]));

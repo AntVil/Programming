@@ -32,6 +32,8 @@ exports.MARKER_VARIABLE_AND = "&";
 exports.MARKER_AUDIO_START = "^";
 exports.MARKER_AUDIO_END = "^";
 
+exports.MARKER_UNLOCK_START = "_";
+
 
 exports.TYPE_STORY = 0;
 exports.TYPE_INTERACTION = 1;
