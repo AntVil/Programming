@@ -1,12 +1,12 @@
 %
 Layout:
 Day x, 26385km left
-BoardComputer (daily tasks) [idea: virus-
+Board Computer (daily tasks) [idea: virus-
 Dilemma tasks: easy now, hard later/ hard now, easy later
-Tasks: Message decription
+Tasks: Message description
 
 Character:
-Name X,Y; Engineer & Kosmonaut, chosen from competence list in the emergency program
+Name X,Y; Engineer & Cosmonaut, chosen from competence list in the emergency program
 %
 
 @Language = English$
@@ -66,9 +66,9 @@ Story Block :0
 %
 
 @Language = English$
-WW3 made the russian federation revive their space program, a last resort solution to escape the earth while the US. nuked Moscow and the surrounding districts. 
+WW3 made the Russian federation revive their space program, a last resort solution to escape the earth while the US. nuked Moscow and the surrounding districts. 
 There were three different teams sent out to visit the planet-like asteroid named “надежда”(nadezhda), around 489.396.264 km away, 
-from which the scientists in Dolgoprudny, Moscow kept receiving strange messages since december 2068.
+from which the scientists in Dolgoprudny, Moscow kept receiving strange messages since December 2068.
 $
 
 
