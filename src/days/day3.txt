@@ -67,7 +67,7 @@ $
 .
 .
 .
-@Intro = True^
+@Intro = True & Language = English^
 safecodeopen
 ^
 [bthe passcode is correct]
@@ -329,7 +329,7 @@ Komm schon.
 .
 .
 .
-@Intro = True^
+@Intro = True & Language = Deutsch^
 safecodeopen
 ^
 [bthe passcode is correct]
