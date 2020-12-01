@@ -34,13 +34,13 @@ $
 ]
 
 <
-play Intro Music (15sec)
+Sound: on
 #Intro = True
 
 >
 
 <
-skip
+Sound: off
 #Intro = False
 >
 }
@@ -247,7 +247,7 @@ $
 Deutsch
 %
 
-@Language = English$
+@Language = Deutsch$
 
 Hallo ~N! 
 Danke für's spielen!
@@ -272,13 +272,13 @@ $
 ]
 
 <
-Intro Musik abspielen (15sec)
+Ton: an
 #Intro = True
 
 >
 
 <
-überspringen
+Ton: aus
 #Intro = False
 >
 }
@@ -287,7 +287,7 @@ Intro Musik abspielen (15sec)
 spacetrack
 ^
 
-@Language = English$
+@Language = Deutsch$
 .
 .
 .
