@@ -1,8 +1,8 @@
 const readline = require("readline-sync");
 
-class InputHandler{
-    constructor(){
-        
+class InputHandler {
+    constructor() {
+
     }
 
     getOptionInput(options) {

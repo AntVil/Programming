@@ -3,6 +3,7 @@ const inputHandlerModule = require("./InputHandler");
 const textOutputHandlerModule = require("./TextOutputHandler");
 const audioOutputHandlerModule = require("./AudioOutputHandler");
 const constantsModule = require("./constants");
+const fileReaderModule = require("fs");
 
 
 
@@ -19,7 +20,7 @@ class Main{
         };
     }
 
-    async  run(){
+    async run(){
         this.textOutputHandlerandler.printText("running program");
         this.dayHandler.loadNextDay();
 
@@ -29,9 +30,12 @@ class Main{
             }else{
                 if(this.dayHandler.hasNextDay()){
                     this.dayHandler.loadNextDay();
+                }else{
+                    break;
                 }
             }
         }
+        
         this.textOutputHandlerandler.printText("game done");
     }
 
@@ -73,13 +77,13 @@ class Main{
                     possibleOptions.push(options[i]);
                 }
             }
-            for (let i = 0; i < options.length; i++) {
-                this.textOutputHandlerandler.printText(`[${i+1}] ${options[i].getText()}\n`);
+            for (let i = 0; i < possibleOptions.length; i++) {
+                this.textOutputHandlerandler.printText(`[${i+1}] ${possibleOptions[i].getText()}\n`);
             }
 
-            let takenOption = this.inputHandler.getOptionInput(options.length) - 1;
+            let takenOption = this.inputHandler.getOptionInput(possibleOptions.length) - 1;
 
-            let consequences = options[takenOption].getConsequences();
+            let consequences = possibleOptions[takenOption].getConsequences();
             for (let i = 0; i < consequences.length; i++) {
                 this.handleConsequence(consequences[i]);
             }
@@ -101,6 +105,12 @@ class Main{
 
     async handleConsequence(consequence) {
         this.variableDictionary[consequence.getVariableName()] = consequence.getVariableValue();
+        if(consequence.isUnlock()){
+            let filepath = "src/unlocks.txt";
+            let json = JSON.parse(fileReaderModule.readFileSync(filepath));
+            json[consequence.getVariableName()] = consequence.getVariableValue();
+            fileReaderModule.writeFileSync(filepath, JSON.stringify(json));
+        }
     }
 
     async handleAudio(audio) {
@@ -114,7 +124,14 @@ class Main{
         let variables = restriction.getVariables();
         for (let i = 0; i < variables.length; i++) {
             let variable = variables[i];
-            if (this.variableDictionary[variable.getVariableName()] !== variable.getVariableValue()) {
+
+            if(variable.isUnlock()){
+                let filepath = "src/unlocks.txt";
+                let json = JSON.parse(fileReaderModule.readFileSync(filepath));
+                if(json[variable.getVariableName()] !== variable.getVariableValue()){
+                    return false;
+                }
+            }else if (this.variableDictionary[variable.getVariableName()] !== variable.getVariableValue()) {
                 return false;
             }
         }

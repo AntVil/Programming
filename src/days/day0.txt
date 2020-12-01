@@ -39,7 +39,7 @@ standard
 fast
 #typeSpeed = 20
 >
-<
+@_UNLOCKEDINSTANT = TRUE<
 instant
 #typeSpeed = 0
 >

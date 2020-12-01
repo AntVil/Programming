@@ -15,6 +15,9 @@ class Restriction {
                     },
                     getVariableValue: function () {
                         return this.value;
+                    },
+                    isUnlock: function(){
+                        return this.name.startsWith(constantsModule.MARKER_UNLOCK_START);
                     }
                 }
                 this.variables.push(variable);
