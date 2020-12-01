@@ -46,6 +46,9 @@ $
 ~Pin
 |
 
+@Intro = True & Language = English & StoryBlock = 4.1.0 & Pin = 2078^
+safecodeopen
+^
 @Language = English & StoryBlock = 4.1.0 & Pin = 2078 $
 .
 .
@@ -62,14 +65,13 @@ $
 ~Pin
 |
 
-
+@Intro = True & Language = English & StoryBlock = 4.1.0 & Pin = 2078^
+safecodeopen
+^
 @Language = English & StoryBlock = 4.1.0 & Pin = 2078 $
 .
 .
 .
-@Intro = True & Language = English^
-safecodeopen
-^
 [bthe passcode is correct]
 #StoryBlock = 4.1.1
 $
@@ -84,7 +86,9 @@ Come on.
 ~Pin
 |
 
-
+@Intro = True & Language = English & StoryBlock = 4.1.0 & Pin = 2078^
+safecodeopen
+^
 @Language = English & StoryBlock = 4.1.0 & Pin = 2078 $
 .
 .
@@ -289,6 +293,9 @@ $
 ~Pin
 |
 
+@Intro = True & Language = Deutsch & StoryBlock = 4.1.0 & Pin = 2078^
+safecodeopen
+^
 @Language = Deutsch & StoryBlock = 4.1.0 & Pin = 2078 $
 .
 .
@@ -305,7 +312,9 @@ $
 ~Pin
 |
 
-
+@Intro = True & Language = Deutsch & StoryBlock = 4.1.0 & Pin = 2078^
+safecodeopen
+^
 @Language = Deutsch & StoryBlock = 4.1.0 & Pin = 2078 $
 .
 .
@@ -324,14 +333,13 @@ Komm schon.
 ~Pin
 |
 
-
+@Intro = True & Language = Deutsch & StoryBlock = 4.1.0 & Pin = 2078^
+safecodeopen
+^
 @Language = Deutsch & StoryBlock = 4.1.0 & Pin = 2078 $
 .
 .
 .
-@Intro = True & Language = Deutsch^
-safecodeopen
-^
 [bthe passcode is correct]
 #StoryBlock = 4.1.1
 $
