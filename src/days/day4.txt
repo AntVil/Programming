@@ -51,10 +51,11 @@ $
 
 @Language = English & StoryBlock = 5.1.1 & Items = toolbag$
 You are more than glad that you got your toolbag right now, it's the only thing that could help you out in this situation. You grab it and head back to the reactor room.
-
+$
 @Intro = True & Language = English^
 alarm
 ^
+@Language = English & StoryBlock = 5.1.1 & Items = toolbag$
 [bfatal error] 
 
 shows on the screen
