@@ -84,10 +84,10 @@ $
 
 @Language = English$
 Orientation. One of the challenges you are facing is maintaining the correct course at daytime, as you are required to turn off the navigation system while you are not sleeping.
-The BoardComputer uses too much energy, the tiny reactor on board of the SPUTNIK 2078 became less efficient during the last few months. Engineered in a rush, 
+The board computer uses too much energy, the tiny reactor on board of the SPUTNIK 2078 became less efficient during the last few months. Engineered in a rush, 
 it was the first of its kind, nuclear powered and... safe - as they said. 
 
-Your alarm buzzes and the digital clock in the corner of your stateroom shows 04:00AM in the morning. You have slept for 5 hours. It's dark outside... as always. You grab 
+Your alarm buzzes and the digital clock in the corner of your stateroom shows 04:00AM in the morning. You have slept for 5 hours. It is dark outside... as always. You grab 
 your little notebook that is strapped to the container right next to your sleeping cabin. Calculating the amount of sleep that you can allow yourself became a daily routine.
 
 estimated km left: [r6.509.482]
@@ -128,8 +128,8 @@ $
 
 
 @Language = English & StoryBlock = 1.2$
-You have to accept the fact that sleeping less will eventually secure your chances of survival, so you get up, like every morning. There is no coffe in space, obviously, 
-but you are pretty sure that one of the pills in your daily dose of "vitamins" contains something like coffeine, or at least something with the same effect on your body. 
+You have to accept the fact that sleeping less will eventually secure your chances of survival, so you get up, like every morning. There is no coffee in space, obviously, 
+but you are pretty sure that one of the pills in your daily dose of "vitamins" contains something like caffeine, or at least something with the same effect on your body. 
 No clue how you otherwise would be able to sustain this kind of lifestyle. 
 
 You float out of your cabin and find yourself in the command section. 
@@ -140,7 +140,7 @@ $
 
 
 @Language = English & StoryBlock = 1.3$
-No headache. That's nice. Maybe that bit of extra sleep was exactly what you needed. A quick look on your status monitor and - WHAT??? You've never been out of bed so fast. 
+No headache. That's nice. Maybe that bit of extra sleep was exactly what you needed. A quick look on your status monitor and - WHAT??? You have never gotten up so quickly. 
 
 [bDate: december 14, 2083
 Time: 02:53 am]
@@ -148,10 +148,10 @@ Time: 02:53 am]
 That.. That means you've slept for... 21 hours straight.
 
 A glance at the control unit and you knew: Last night was the longest you would be able to sleep in a very long time from now on.
-Although it felt good to catch up on all the sleep you missed out on, you feel miserable. Neglecting your duties was never a thing you felt comfortable with, that's why you've made
+Although it felt good to catch up on all the sleep you missed out on, you feel miserable. Neglecting your duties was never a thing you felt comfortable with, that is why you've made
 it so far in the national space program. Being chosen has been a great honor for you, Vladimir Putin Jr. handed you the award medal "Летчик-космонавт Российской Федерации" 
 (Pilot-Cosmonaut of the Russian Federation) personally, given all the nations pride and hope was pointed on you at that moment. 
-Anyway, what does the BoardComputer say? 
+Anyway, what does the board computer say? 
 
 You float out of your cabin and find yourself in the command section. 
 You check all the instruments, daily routine for you. [b"Good Morning General ~N"], is displayed on top of the monitor. But today... this was the only thing on the screen that didn't surprise you.
@@ -163,11 +163,11 @@ $
 
 
 @Language = English & StoryBlock = 2.0$
-You've never seen anything like this. Neither in Training, which, admittedly hasn't been very long or intense, nor one time in nearly 4 years on this ship, something like [+this] had occured. 
-And [+this] is not to be taken unseriously. For everyday people the numbers on the screen of the boardcomputer would have seemed oridanry or insignificant. But you know what they mean. 
-And you cannot decide yet, if you rather should, or should not, feel happy about that.
+You have never seen anything like this. Neither in Training, which, admittedly hasn't been very long or intense, nor one time in nearly 4 years on this ship, something like [+this] had occurred. 
+And [+this] is nothing to be taken lightly. For everyday people, the numbers on the screen of the board computer would have seemed ordinary or insignificant. But you know what they mean. 
+And you cannot decide yet if you rather should, or should not, feel happy about that.
 
-The trajectorys of the ship are recalculated daily. Usually you wake up to about three or four different options the computer calculated overnight. The problem is, they never looked like this:
+The trajectories of the ship are recalculated daily. Usually you wake up to about three or four different options the computer calculated overnight. The problem is, they never looked like this:
 #StoryBlock = 2.0
 $
 
@@ -195,7 +195,7 @@ The computer has never made any mistakes. Is it what I think it is?
 
 
 @Language = English & StoryBlock = 2.1$
-Alright, running the calculations again might take a few hours, but it'll hopefully give you some answers.
+Alright, running the calculations again might take a few hours, but it will hopefully give you some answers.
 .
 .
 .
@@ -214,7 +214,7 @@ $
 
 @Language = English & StoryBlock = 2.2$
 Your knowledge about wormholes may be a tad rusty, but you're sure, that there can be no other way a trajectory can be of a distance over 1500 times shorter, than the one that differs 0.00002321°. 
-Since the existance of wormholes was confirmed in 2043, nobody has ever encountered one that has not been created in the laboratory, billion times smaller in scale than the thing you are facing right now.
+Since the existence of wormholes was confirmed in 2043, nobody has ever encountered one that has not been created in the laboratory, billion times smaller in scale than the thing you are facing right now.
 You are going to dive into this topic the rest of the day, maybe there is something else you can find out about that.
 .
 .
@@ -250,7 +250,7 @@ Deutsch
 @Language = Deutsch$
 
 Hallo ~N! 
-Danke für's spielen!
+Danke fürs spielen!
 Ein paar Empfehlungen für optimales Spielerlebnis:
 - Mache den Terminal auf Vollbildschirm
 - benutze Kopfhörer oder gute Lautsprecher
@@ -299,7 +299,7 @@ bewohnbaren Planeten erreichen
 $
 
 @Language = Deutsch$
-Der dritte Weltkrieg hat die Russische Federation dazu gebracht ihr Raumfahrtsprogramm wieder zu beleben, um vor der USA zu fliehen, welche Moskau und die Umgebung zerbombt.
+Der dritte Weltkrieg hat die Russische Föderation dazu gebracht ihr Raumfahrtprogramm wieder zu beleben, um vor der USA zu fliehen, welche Moskau und die Umgebung zerbombt.
 Es wurden drei verschiedene Teams ausgesendet, um den planeten-ähnlichen Asteroiden “надежда”(nadezhda), ungefähr 489.396.264 km entfernt, zu untersuchen,
 von welchem Wissenschaftler aus Dolgoprudny, Moskau komische Signale seit Dezember 2068 erhielten.
 $
@@ -308,15 +308,15 @@ $
 @Language = Deutsch$
 Es ist ein weiterer einsamer Morgen an Bord der SPUTNIK 2078.
 Der kleine Anzug, welchen du seit den letzten vier Jahren getragen hast, riecht wie der Inhalt deiner täglichen Portion Nahrrungspaste.
-Obwohl du die Kälte nicht spürst, fühlst du trotzdem ihre stetige Anweseheit, draußen in der Dunkelheit.
+Obwohl du die Kälte nicht spürst, fühlst du trotzdem ihre stetige Anwesenheit, draußen in der Dunkelheit.
 $
 
 @Language = Deutsch$
-Eine deiner täglichen Herrausforderungen ist es stets den richtigen Kurs während des Tages beizubehalten, da du das Navigationssystem ausschalten musst solange du wach bist.
-Der Bordcomputer verbraucht zu viel Strom, für den kleinen Reaktor der SPUTNIK 2078, da er die letzten Monate weniger Effizient wurde. 
-Entwickelt in eile und der Erste seiner Art. Ein sicherer nuklearer Reaktor ... sagten sie zumindest.
+Eine deiner täglichen Herausforderungen ist es stets den richtigen Kurs während des Tages beizubehalten, da du das Navigationssystem ausschalten musst, solange du wach bist.
+Der Bordcomputer verbraucht zu viel Strom, für den kleinen Reaktor der SPUTNIK 2078, da er die letzten Monate weniger effizient wurde. 
+Entwickelt in Eile und der Erste seiner Art. Ein sicherer nuklearer Reaktor ... sagten sie zumindest.
 Dein Wecker klingelt, die digital Uhr in der Ecke deiner Kabine zeigt 04:00Uhr morgens. Du hast fünf Stunden geschlafen. Es ist dunkel draußen... wie immer. Du nimmst 
-dein kleines Notebook, welches neben deiner Schlafkabine an deinem Nachtisch festgebunden ist. Das Ausrechnen der Zeit die du schlafen darfst ist zur Routine geworden.
+dein kleines Notebook, welches neben deiner Schlafkabine an deinem Nachtisch festgebunden ist. Das Ausrechnen der Zeit, die du schlafen darfst ist zur Routine geworden.
 $
 
 
@@ -357,8 +357,8 @@ $
 
 
 @Language = Deutsch & StoryBlock = 1.2$
-Du musst den Fakt akeptieren, dass weniger Schlaf deine Überleben sichert. Also stehst du auf wie jeden Morgen. Es gibt natürlich keinen Kaffee im Weltall, aber 
-du bist dir sehr sicher, dass deine tägliche Dosis "Vitamin" Tabletten, Kofein oder zumindest etwas mit einem ähnlichen Effekt auf den Körper beinhalten.
+Du musst den Fakt akzeptieren, dass weniger Schlaf dein Überleben sichert. Also stehst du auf wie jeden Morgen. Es gibt natürlich keinen Kaffee im Weltall, aber 
+du bist dir sehr sicher, dass deine tägliche Dosis "Vitamin" Tabletten, Koffein oder zumindest etwas mit einem ähnlichen Effekt auf den Körper beinhalten.
 Sonst könntest du so einen Lebensstil nicht lange aufrechterhalten. Du schwebst aus deiner Kabine zur Komandozentrale.
 Als tägliche Routine prüfst du alle Instrumente. Der Bordcomputer zeigt "Good Morning General ~N" an, das war das Einzige was dich nicht überraschte, denn heute war etwas anders.
 #StoryBlock = 2
@@ -374,10 +374,10 @@ $
 
 @Language = Deutsch & StoryBlock = 2$
 Du hast sowas noch nie gesehen. Nicht im Training, welches zugegeben nicht sehr lang oder intensiv war, noch in den vier Jahren auf dem Schiff, ist [+sowas] vorgefallen. 
-Uns [+sowas] sollte nicht auf die leichte Schulter genommen werden. Für "normale" Leute wären solche Zahlen auf dem Bildschirm nichts besonderes. Du jedoch weißt was sie bedeuten.
+Uns [+sowas] sollte nicht auf die leichte Schulter genommen werden. Für "normale" Leute wären solche Zahlen auf dem Bildschirm nichts Besonderes. Du jedoch weißt was sie bedeuten.
 Du bist dir nur noch nicht sicher, ob du dich darüber freuen solltest.
 
-Die Flugbahn des Schiffs wird täglich neu berechnet. Normalerweise erhälst du drei bis vier verschiedene Optionen des Computers. Das Problem ist, sie sahen noch nie so aus, wie diese:
+Die Flugbahn des Schiffs wird täglich neu berechnet. Normalerweise erhältst du drei bis vier verschiedene Optionen des Computers. Das Problem ist, sie sahen noch nie so aus, wie diese:
 #StoryBlock = 2.0
 $
 
@@ -404,7 +404,7 @@ Der Computer hat noch nie einen Fehler gemacht. Ist es das was ich denke, was es
 
 
 @Language = Deutsch & StoryBlock = 2.1$
-Die Berechnungen brauchen vielleicht einige Stunden, aber hoffentlich erhälst du mehr Informationen.
+Die Berechnungen brauchen vielleicht einige Stunden, aber hoffentlich erhältst du mehr Informationen.
 .
 .
 .
@@ -414,7 +414,7 @@ Während der Computer rechnet schaust du dir die Analyse genauer an.
 .
 .
 .
-03:55 pm: Du kannst es nicht glauben - die Rechnungen von davor waren korrekt. Das kann nur eins bedeuten. Dein Kurs geht durch ein Wumrloch.
+03:55 pm: Du kannst es nicht glauben - die Rechnungen von davor waren korrekt. Das kann nur eins bedeuten. Dein Kurs geht durch ein Wurmloch.
 
 #StoryBlock = 2.2
 $

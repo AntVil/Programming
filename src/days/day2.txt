@@ -31,7 +31,7 @@ trajectory option 3: course correction 0.00045744° , new estimated km left: 6.4
 }
 
 @Language = English & StoryBlock = 3.1$
-It can't be a good choice seeking any dangerous and most-likely suicidal adventures right now. You are just over 2 weeks from your destination, after 3 years and 10 months of travel.
+It cannot be a good choice seeking any dangerous and most-likely suicidal adventures right now. You are just over 2 weeks from your destination, after 3 years and 10 months of travel.
 With the energy levels of the generator constantly falling, the safe route will be the way to go, without any surprises.
 
 
@@ -39,8 +39,8 @@ You reach over to give the input to choose the correct trajectory.
 .
 .
 .
-...but your eyes... they are still tired, and without realising, you chose the input that would lead your ship right into the wormhole.
-A moment later, you squint your eyes and you know, the course can't be changed no more, and maybe... maybe it was destiny. 
+...but your eyes... they are still tired, and without realizing, you chose the input that would lead your ship right into the wormhole.
+A moment later, you squint your eyes, and you know, the course can't be changed no more, and maybe... maybe it was destiny. 
 #StoryBlock = 3.3
 $
 
@@ -51,8 +51,8 @@ Something in you says you should try. TRY? try what?
 .
 Yea.... you got that right. THAT. You take a deep breath. This could be the most difficult decision of your life.
 With the energy levels of the generator constantly falling, your survival could depend on it. And if that what they say about wormholes turns out true,... then... 
-Alright lets go for it!
-You press the button on your Keyboard, and choose the input.
+Alright let’s go for it!
+You press the button on your Keyboard and choose the input.
 #StoryBlock = 3.3
 $
 
@@ -103,14 +103,14 @@ $
 [gTag 2]
 
 Du hattest es schwer Gestern zu schlafen. Diese Anomalie von Raum und Zeit, ein unentdecktes Phänomen direkt vor deinen Augen, war einfach zu aufregend und beängstigend zu gleich.
-Heute bist du viel früher als aufgestanden als nötig. Du starst den Bildschirm an während die Navigation läuft.
+Heute bist du viel früher als aufgestanden als nötig. Du starrst den Bildschirm an während die Navigation läuft.
 
 Du denkst über deine Chance der erste Mensch zu sein, welcher durch ein Wurmloch fliegt, ein echtes. Aber du fängst dich schnell wieder:
 Was bedeutet es denn überhaupt, der Erste zu sein, wenn du dir 99.9% sicher bist, dass du STRIBST, wenn du es tust??
 $
 
 @Language = Deutsch & StoryBlock = 3.0{
-Drücke den Knopf um auszuwählen, welchen Kurs du dem Bordcomputer vorgeben willst:
+Drücke den Knopf, um auszuwählen, welchen Kurs du dem Bordcomputer vorgeben willst:
 
 <
 trajectory option 1: course correction 0.00032472° , new estimated km left: 6.434.534 km
@@ -133,13 +133,13 @@ trajectory option 3: course correction 0.00045744° , new estimated km left: 6.4
 
 @Language = Deutsch & StoryBlock = 3.1$
 Es kann keine gute Entscheidung sein auf gefährliche und höchst wahrscheinlich todbringende Abenteuer zu gehen. Du bist nur zwei Wochen entfernt von deinem Ziel, nach drei Jahren und zehn Monaten reise.
-Während die Reaktoreffizients konstant fällt, ist es besser die sichere Option zu wählen, ohne irgendwelche Überraschungen.
+Während die Reaktoreffizienz konstant fällt, ist es besser die sichere Option zu wählen, ohne irgendwelche Überraschungen.
 
-Du streckst deine Hand aus um die richtige Kurs zu wählen.
+Du streckst deine Hand aus, um den richtigen Kurs zu wählen.
 .
 .
 .
-...aber deine Augen... sie sind immernoch müde und ohne es zu merken, wählst du die Option, welche direkt in das Wurmloch führt.
+...aber deine Augen... sie sind immer noch müde und ohne es zu merken, wählst du die Option, welche direkt in das Wurmloch führt.
 Einen Moment später kneifst du deine Augen zusammen und du weißt, der Kurs kann nicht mehr geändert werden, und vielleicht... vielleicht war es Schicksal.
 #StoryBlock = 3.3
 $
@@ -150,7 +150,7 @@ Etwas in dir sagt du solltest es versuchen. VERSUCHEN? Was versuchen?
 .
 .
 Ja.... du hast richtig verstanden. DAS. Du machst einen großen Atemzug. Das könnte die schwerste Entscheidung deines Lebens sein.
-Solange die Reaktoreffizients ständig fällt, könnte dein Überleben davon abhängen. Und wenn das, was über Wurmlöcher gesagt wird stimmt,... dann...
+Solange die Reaktoreffizienz ständig fällt, könnte dein Überleben davon abhängen. Und wenn das, was über Wurmlöcher gesagt wird stimmt,... dann...
 Also auf geht's!
 Du drückst den Knopf auf der Tastatur.
 #StoryBlock = 3.3
