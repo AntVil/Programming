@@ -17,14 +17,15 @@ $
 <
 I have to get out there. Without these tools I am helpless in the event of an error. Let me get my spacesuit.
 
-#items = toolbag
 #StoryBlock = 4.1
+#lessPower = true
 >
 
 <
 It's too risky to get out there. You have to think about what happened a year ago... you don't want that to happen again.
 
 #StoryBlock = 4.2
+#Items = none
 >
 
 }
@@ -66,6 +67,9 @@ $
 .
 .
 .
+@Intro = True & Language = English^
+safecodeopen
+^
 [bthe passcode is correct]
 #StoryBlock = 4.1.1
 $
@@ -174,6 +178,7 @@ Then you press the button.
 It's gone.
 Suddenly, the ship gets a little colder. Or maybe it was just you...
 #StoryBlock = 4.4
+#items = none
 $
 
 
@@ -324,6 +329,9 @@ Komm schon.
 .
 .
 .
+@Intro = True & Language = Deutsch^
+safecodeopen
+^
 [bthe passcode is correct]
 #StoryBlock = 4.1.1
 $
