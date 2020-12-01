@@ -45,7 +45,7 @@ Sound: off
 >
 }
 
-@Intro = True^
+@Intro = True & Language = English^
 spacetrack
 ^
 
@@ -283,7 +283,7 @@ Ton: aus
 >
 }
 
-@Intro = True^
+@Intro = True & Language = Deutsch^
 spacetrack
 ^
 
