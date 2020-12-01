@@ -19,13 +19,10 @@ class Main{
         };
     }
 
-    run(){
+    async  run(){
         this.textOutputHandlerandler.printText("running program");
         this.dayHandler.loadNextDay();
-        this.runStep();
-    }
 
-    async  runStep(){
         while(!this.dayHandler.isDone()){
             if(!this.dayHandler.dayIsDone()){
                 await this.handleStep();
