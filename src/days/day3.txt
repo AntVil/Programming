@@ -67,6 +67,9 @@ $
 .
 .
 .
+@Intro = True^
+safecodeopen
+^
 [bthe passcode is correct]
 #StoryBlock = 4.1.1
 $
@@ -326,6 +329,9 @@ Komm schon.
 .
 .
 .
+@Intro = True^
+safecodeopen
+^
 [bthe passcode is correct]
 #StoryBlock = 4.1.1
 $

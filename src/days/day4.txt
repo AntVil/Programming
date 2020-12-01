@@ -50,17 +50,46 @@ $
 
 
 @Language = English & StoryBlock = 5.1.1 & Items = toolbag$
-You are more than glad that you got your toolbag right now, the only thing that could help you out in this situation. You grab it and head back to the reactor room.
+You are more than glad that you got your toolbag right now, it's the only thing that could help you out in this situation. You grab it and head back to the reactor room.
 
-[bfatal error] [rfatal error] [bfatal error] [rfatal error] [bfatal error]
+@Intro = True^
+alarm
+^
+[bfatal error] 
 
-That might take a while.
+shows on the screen
+
+- That might take a while.
 .
 .
 .
 .
 .
+A few hours of hard work later, you are pretty sure that the reactor should work properly again. To put your work to the test, you have to turn it on... and see what happens.
+You connect all the wires under the exposed control panel back together and... you notice a pair of cables that you haven't seen yet, and it wasn't you either who disconnected them, so they must've 
+been like this before the repair. Should you connect them?
 $
+
+@Language = English & StoryBlock = 5.1.1 & Items = toolbag{
+
+<Yes, connect the wires
+#StoryBlock = 5.1.1.1
+>
+
+<No, leave them like they were
+#StoryBlock = 5.1.1.2
+>
+
+}
+
+@Language = English & #StoryBlock = 5.1.1.1$
+
+$
+
+@Language = English & #StoryBlock = 5.1.1.2$
+
+$
+
 
 @Language = English & StoryBlock = 5.1.1 & Items = mysterious$
 Damn it. Instead of your toolbag, the crystal lies at it's place, glowing in innocence, while your fate depends on repairing a nuclear reactor... You feel angry about yourself for choosing
@@ -87,8 +116,8 @@ What? How is that possible? You hold the stone closer to the reactor.
 [benergy efficiency: ][g85/100]
 [benergy efficiency: ][g100/100]
 
-You have never seen something like this before... the crystal was a source of energy, much more powerful than anything known to men. The last goal now, is to get to
-your destination, and now that the reactor is functioning, that should be the lesser problem.
+You have never seen something like this before... the crystal was a source of energy, much more powerful than anything known to men. You place the crystal carefully near the reactor.
+The last goal now, is to finally get to your destination, and now that the reactor is functioning, that should be a lesser problem.
 $
 
 @Language = English & StoryBlock = 5.0$
