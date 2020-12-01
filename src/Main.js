@@ -25,40 +25,35 @@ class Main{
         this.runStep();
     }
 
-    runStep(){
-        if(!this.dayHandler.isDone()){
+    async  runStep(){
+        while(!this.dayHandler.isDone()){
             if(!this.dayHandler.dayIsDone()){
-                this.handleStep();
+                await this.handleStep();
             }else{
                 if(this.dayHandler.hasNextDay()){
                     this.dayHandler.loadNextDay();
-                    this.runStep();
                 }
             }
-        }else{
-            this.textOutputHandlerandler.printText("game done");
         }
+        this.textOutputHandlerandler.printText("game done");
     }
 
-    handleStep(){
+    async handleStep(){
         let event = this.dayHandler.popEvent();
         if (event.getType() === constantsModule.TYPE_STORY) {
-            this.handleStory(event);
-            this.runStep();
+            await this.handleStory(event);
         } else if (event.getType() === constantsModule.TYPE_INTERACTION) {
-            this.handleInteraction(event);
-            this.runStep();
+            await this.handleInteraction(event);
         } else if (event.getType() === constantsModule.TYPE_TEXT_INPUT) {
-            this.handleTextInput(event);
-            this.runStep();
+            await this.handleTextInput(event);
         } else if (event.getType() === constantsModule.TYPE_AUDIO) {
-            this.handleAudio(event);
+            await this.handleAudio(event);
         } else {
             throw new Error(`Error: Unexpected event: '${eventType}'`);
         }
     }
 
-    handleStory(story) {
+    async handleStory(story) {
         if (this.restrictionSatisfied(story.getRestriction())) {
             let consequences = story.getConsequences();
             for (let i = 0; i < consequences.length; i++) {
@@ -69,7 +64,7 @@ class Main{
         }
     }
 
-    handleInteraction(interaction) {
+    async handleInteraction(interaction) {
         if (this.restrictionSatisfied(interaction.getRestriction())) {
 
             this.textOutputHandlerandler.printText(this.customVariableChanger(interaction.getText()));
@@ -94,7 +89,7 @@ class Main{
         }
     }
 
-    handleTextInput(textInput) {
+    async handleTextInput(textInput) {
         if (this.restrictionSatisfied(textInput.getRestriction())) {
             this.textOutputHandlerandler.printText(textInput.getText());
             this.variableDictionary[textInput.getVariableName()] = this.inputHandler.getTextInput();
@@ -107,15 +102,13 @@ class Main{
     }
 
 
-    handleConsequence(consequence) {
+    async handleConsequence(consequence) {
         this.variableDictionary[consequence.getVariableName()] = consequence.getVariableValue();
     }
 
-    handleAudio(audio) {
+    async handleAudio(audio) {
         if (this.restrictionSatisfied(audio.getRestriction())) {
-            this.audioOutputHandler.playFile(audio.getText());
-        }else{
-            this.runStep();
+            await this.audioOutputHandler.playFile(audio.getText());
         }
     }
 
