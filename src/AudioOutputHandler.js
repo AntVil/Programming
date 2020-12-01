@@ -4,12 +4,19 @@ const portAudio = require('naudiodon');
 const mainModule = require("./Main");
 const audioFolderPath = pathModule.join(__dirname, "/audio");
 
+let p;
+let res;
+
 class AudioOutputHandler{
     constructor(){
         
     }
 
-    playFile(filename){
+    async playFile(filename){
+        p = new Promise(function(resolve, reject) { 
+            res = resolve;
+        });
+
         let ao = new portAudio.AudioIO({
             outOptions: {
                 channelCount: 2,
@@ -25,7 +32,11 @@ class AudioOutputHandler{
         rs.pipe(ao);
         ao.start();
     
-        rs.on("end", this.onDone);
+        rs.on("end", function(){
+            res();
+        });
+
+        await p;
     }
 
     onDone(){
