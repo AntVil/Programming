@@ -66,7 +66,7 @@ shows on the screen
 .
 .
 .
-A few hours of hard work later, you are pretty sure that the reactor should work properly again. To put your work to the test, you have to turn it on... and see what happens.
+A few hours of hard work later, you are pretty sure that the reactor should work properly again. To put your work to the test, you must turn it on... and see what happens.
 You connect all the wires under the exposed control panel back together and... you notice a pair of cables that you haven't seen yet, and it wasn't you either who disconnected them, so they must've 
 been like this before the repair. Should you connect them?
 $
@@ -97,9 +97,9 @@ Damn it. Instead of your toolbag, the crystal lies at it's place, glowing in inn
 this [+THING] instead of your toolbag. 
 Dejected you stare at its glow. 
 
-The following hours you spend trying all different kinds of repair actions on the reactor, but it's pointless... Without the necessary tools there's nothing you can do.
+The following hours you spend trying all different kinds of repair actions on the reactor, but it's pointless... Without the necessary tools there is nothing you can do.
 Discouraged you float through the ship, the crystal in your hands. As you come by the reactor section, you notice the stone glowing a little brighter. As you enter the room, it's glow gets
-almost to strong to directly look at it. You take a glimse at the control monitor, you are able to detect a flimmering image: 
+almost to strong too directly look at it. You take a glimpse at the control monitor; you are able to detect a flickering image: 
 
 [benergy efficiency: ][r6/100]
 [benergy efficiency: ][r9/100]
