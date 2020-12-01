@@ -3,17 +3,25 @@
 
 It has been a short night full of anxiety and bad dreams. Have you made the right choices? What if you don't make it alive? 
 These thoughts and many more have been haunting you, so you get up to check the status instruments. You sit there for a while staring at the screen, as you begin to realize:
+The power levels of the ship are getting dangerously low. 
+
 $
 
 @Language = English & StoryBlock = 5.0 & lessPower = true$
-The power levels of the ship are getting dangerously low. 
-
 [benergy efficiency: ][r6/100][b (6% of the original performance)]
+#StoryBlock = 5.1
+$
 
+@Language = English & StoryBlock = 5.0$
+[benergy efficiency: ][r12/100][b (12% of the original performance)]
+#StoryBlock = 5.1
+$
+
+@Language = English & StoryBlock = 5.1$
 You have to do something about that, or, if your estimation is correct, you have little chances of survival. As you float into the reactor room, the control section shows critical status.
 Although you had learned nearly all about this reactor, you have no idea what to do now. Inspecting and repairing the reactor is impossible while it's running. To do that you would have
 to shut it down... 
-#StoryBlock = 5.1
+
 $
 
 @Language = English & StoryBlock = 5.1{
@@ -24,7 +32,7 @@ I won't make it with that little power, I have to shut it down and try to repair
 >
 
 <
-Maybe the energy could last... but till when? Anyway, better keep the reactor running.
+Maybe the energy could last... better keep the reactor running.
 #StoryBlock = 5.1.2
 >
 
@@ -44,8 +52,13 @@ cosmos. It might've been useful now.
 .
 .
 .
-After a few minutes in the reactor section - you realize: Without your tools it could be impossible to fix the reactor - you don't like to say it out loud, but you get a feeling that gets uncomfortably stronger: 
+After a few hours in the reactor section - you realize: Without your tools it could be impossible to fix the reactor - you don't like to say it out loud, but you get a feeling that gets uncomfortably stronger: 
 You are doomed...
+.
+.
+.
+.
+#StoryBlock = 5.2
 $
 
 
@@ -83,12 +96,28 @@ $
 
 }
 
-@Language = English & #StoryBlock = 5.1.1.1$
-
+@Language = English & StoryBlock = 5.1.1.1$
+Carefully you reach down through the tight hole to connect the two wires. Done. 
+Last inspection before turning the reactor on. You enter the passcode to boot the control system but... nothing happens. Maybe you forgot to deactivate the safety lock... 
+You head to the board control room and - 
 $
+@Language = English & StoryBlock = 5.1.1.1^
+explosion
+^
+
 
 @Language = English & #StoryBlock = 5.1.1.2$
+You close up the control panel, enter the passcode to boot the control system and step away a little... who knows.
+After a few seconds of nothing happening, the control panel lights up, and begins to display data of the reactor, [+working]! You are very glad that you didn't mess any of this up, 
+something going wrong with a nuclear reactor would be terrible, especially in space.
 
+With your toolbag in your hands, you head back to the control section of the ship. On your way there, as you float through the small corridors, you notice something: 
+the storage room, that wasn't the room you put your toolbag in, right?
+Yea, you remember: last time you used it, you had put it right near your sleeping cabin. 
+
+Couriously, you check the spot you remembered to have put the toolbag, and yes,
+there it is, strapped to the wall so it can't float around. But if [+your] toolbag is here (you look at the toolbag that you just used, still in your hands), [+whose] is this??
+#StoryBlock = 5.3
 $
 
 
@@ -101,8 +130,6 @@ The following hours you spend trying all different kinds of repair actions on th
 Discouraged you float through the ship, the crystal in your hands. As you come by the reactor section, you notice the stone glowing a little brighter. As you enter the room, it's glow gets
 almost to strong to directly look at it. You take a glimse at the control monitor, you are able to detect a flimmering image: 
 
-[benergy efficiency: ][r6/100]
-[benergy efficiency: ][r9/100]
 [benergy efficiency: ][r13/100]
 [benergy efficiency: ][r18/100]
 [benergy efficiency: ][r25/100]
@@ -119,7 +146,26 @@ What? How is that possible? You hold the stone closer to the reactor.
 
 You have never seen something like this before... the crystal was a source of energy, much more powerful than anything known to men. You place the crystal carefully near the reactor.
 The last goal now, is to finally get to your destination, and now that the reactor is functioning, that should be a lesser problem.
+#StoryBlock = 5.2
 $
 
-@Language = English & StoryBlock = 5.0$
+@Language = English & StoryBlock = 5.2$
+
+You head back to the control section of the ship. On your way there, as you float through the small corridors, you notice something: near your sleeping cabin, is... your [+toolbag], strapped to the wall.
+
+Yes, now you remember: last time you used it, you had put it right there. 
+Wait...
+If [+your] toolbag is here (you look at the toolbag on the wall of the cabin), [+whose] was outside floating in space??
+#StoryBlock = 5.3
+$
+
+
+@Language = English & StoryBlock = 5.3$
+
+Suddenly the outside space changes, the smooth feeling of the wormhole, that you already adapted to, was gone and the cold universe felt as normal as before the jump. Is this your destination already? 
+You float around the ship to find a window and.... what you see leaves you speachless.
+
+Looking out the window reveals... a planet, right in front of the spaceship. And it is not just any planet. 
+
+It's the earth.
 $

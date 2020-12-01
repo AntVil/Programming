@@ -1,0 +1,22 @@
+@Language = English & StoryBlock = 5.4 & Items = none$
+
+[gDay 5]
+
+no power, sees earth
+$
+
+
+@Language = English & StoryBlock = 5.4 & Items = mysterious$
+
+[gDay 5]
+
+arrives on earth
+$
+
+
+@Language = English & StoryBlock = 5.4 & Items = toolbag$
+
+[gDay 5]
+
+arrives on earth
+$
