@@ -1,4 +1,4 @@
-@Language = English$
+@Language = English & StoryBlock = X$
 .
 .
 .
@@ -55,7 +55,7 @@ $
 
 
 
-@Language = Deutsch$
+@Language = Deutsch & StoryBlock = X$
 .
 .
 .

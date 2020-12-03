@@ -197,7 +197,7 @@ It happened near the xiastea-63507 asteroid belt, where you were supposed to ext
 The rock that hit him weighed more than 3 tons; he had no chance of survival. The collision of two nearby asteroids caused the rocks to fire at your location, there were craters everywhere after the dust went away. 
 The majority of mineral crates were already on board, but all those that were still outside were lost. Just as Vlad. 
 
-#StoryBlock 4.4
+#StoryBlock = 4.4
 $
 
 @Language = English & StoryBlock = 4.3$
