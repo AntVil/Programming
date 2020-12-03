@@ -441,7 +441,7 @@ Vladimir Lituskij war sein Name, er war der zweite Kosmonaut an Board der Sputni
 Es passierte in der Nähe des Xiastea-63507 Asteroidengürtels, eine kleinere Mission, die dem Aufstocken der Mineralienvorräte diente. 
 Der Gesteinsbrocken der Vlad erwischte wog über 3 Tonnen, er hatte keine Chance. Der Zusammenstoß zweier Asteroiden unweit eurer Position ließ einen Sturm aus Gestein auf das Areal niederprasseln. Als der Staub sich legte war von Vlad und den Kisten, die er in Richtung Schiff trug keine Spur mehr.
 
-#StoryBlock 4.4
+#StoryBlock = 4.4
 $
 
 @Language = Deutsch & StoryBlock = 4.3$
