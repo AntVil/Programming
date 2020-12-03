@@ -35,7 +35,7 @@ I won't make it with that little power, I have to shut it down and try to repair
 Maybe the energy could last... better keep the reactor running.
 #StoryBlock = 5.1.2
 >
-
+}
 
 
 @Language = English & StoryBlock = 5.1.1$
@@ -128,7 +128,7 @@ Dejected you stare at its glow.
 
 The following hours you spend trying all different kinds of repair actions on the reactor, but it's pointless... Without the necessary tools there is nothing you can do.
 Discouraged you float through the ship, the crystal in your hands. As you come by the reactor section, you notice the stone glowing a little brighter. As you enter the room, it's glow gets
-almost to strong too directly look at it. You take a glimpse at the control monitor; you are able to detect a flickering image: 
+almost to strong too directly look at it. You take a glimpse at the control monitor; you are able to make out a flickering image: 
 
 [benergy efficiency: ][r13/100]
 [benergy efficiency: ][r18/100]
@@ -144,7 +144,7 @@ What? How is that possible? You hold the stone closer to the reactor.
 [benergy efficiency: ][g85/100]
 [benergy efficiency: ][g100/100]
 
-You have never seen something like this before... the crystal was a source of energy, much more powerful than anything known to men. You place the crystal carefully near the reactor.
+You have never seen something like this before... the crystal is a source of energy, much more powerful than anything known to men. You place the crystal carefully near the reactor.
 The last goal now, is to finally get to your destination, and now that the reactor is functioning, that should be a lesser problem.
 #StoryBlock = 5.2
 $
@@ -163,9 +163,225 @@ $
 @Language = English & StoryBlock = 5.3$
 
 Suddenly the outside space changes, the smooth feeling of the wormhole, that you already adapted to, was gone and the cold universe felt as normal as before the jump. Is this your destination already? 
-You float around the ship to find a window and.... what you see leaves you speachless.
+You float around the ship to find a window and.... what you see leaves you speechless.
 
 Looking out the window reveals... a planet, right in front of the spaceship. And it is not just any planet. 
 
 It's the earth.
+#StoryBlock = 5.4
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Language = Deutsch & StoryBlock = 5.0$
+[gTag 4]
+
+Es war eine kurze Nacht von Albträumen geplagt. Hast du die richtige Entscheidung getroffen? Was ist wenn du es nicht überlebst?
+Diese und viele andere Gedanken verfolgen dich, also stehst du auf und überprüfts den Status der Instrumente. Du starst eine Weile auf den Bildschirm, dann bemerkst du:
+Die Energieeffizienz ist verdammt niedrig.
+$
+
+@Language = Deutsch & StoryBlock = 5.0 & lessPower = true$
+[benergy efficiency: ][r6/100][b (6% of the original performance)]
+#StoryBlock = 5.1
+$
+
+@Language = Deutsch & StoryBlock = 5.0$
+[benergy efficiency: ][r12/100][b (12% of the original performance)]
+#StoryBlock = 5.1
+$
+
+@Language = Deutsch & StoryBlock = 5.1$
+Du musst etwas dagegen tun, andernfalls ist deine Chance zu überleben sehr gering. Während du Richtung Reaktorraum schwebst siehst du auf der Anzeige [rcritical status].
+Obwohl du fast alles über diesen Reaktor weisst, hast du keine Ahnung was du nun tun sollst. Den Reaktor zu untersuchen und reparieren ist unmöglich, während er läuft.
+Um etwas an ihm zu tun müsste er heruntergefahren sein...
+$
+
+@Language = Deutsch & StoryBlock = 5.1{
+
+<
+Ich kann es nicht mit so wenig Enegie schaffen, ich muss ihn herrunterfahren und reparieren.
+#StoryBlock = 5.1.1
+>
+
+<
+Viel reicht die Energie... ich lasse ihn lieber laufen.
+#StoryBlock = 5.1.2
+>
+}
+
+
+@Language = Deutsch & StoryBlock = 5.1.1$
+Du gibst den Sicherheitsschlüssel ein um den Reaktor herrunterzufahren. Das Energieniveau sinkt auf ein Minimum, nur die Überlebenswichtigen Systeme werden von einer großen Batterie versorgt.
+Fangen wir an.
+Du gehst zur Lagerraum
+$
+
+
+@Language = Deutsch & StoryBlock = 5.1.1 & Items = none$
+Die einzigen nützlichen Dinge die du findest sind Messwerkzeuge für elektrischen Strom und einen Geigerzähler. Du denkst an deine Werkzeugtasche, welche du draussen im Weltall zurückgelassen hast.
+Die hätte jetzt nützlich sein können.
+.
+.
+.
+Nach einigen Stunden im Reaktorraum merkst du: Ohne das richtige Werkzeug könnte es unmöglich werden den Reaktor zu reparieren. Du willst nicht daran denken, aber du wirst das Gefühl nicht los,
+dass du verloren bist...
+.
+.
+.
+.
+#StoryBlock = 5.2
+$
+
+
+@Language = Deutsch & StoryBlock = 5.1.1 & Items = toolbag$
+Du bist mehr als froh über deine Werkzeugtasche. Sie ist das einige, was dir in so einer Situation von nutzen sein kann. Du schnappst sie dir und schwebst zurück zum Reaktorraum.
+$
+@Intro = True & Language = Deutsch^
+alarm
+^
+@Language = Deutsch & StoryBlock = 5.1.1 & Items = toolbag$
+[bfatal error] 
+
+wird auf dem Bildschirm angezeigt.
+
+- Das könnte eine Weile dauern.
+.
+.
+.
+.
+.
+Ein einigen Stunden harter Arbeit bist du dir ziemlich sicher, dass der Reator wieder normal funktioniert. Um zu prüfen, ob deine Arbeit erfolgreich war, schaltest du ihn an... und schaust was passiert.
+Du verbindest alle Kabel an der offengelegten Schaltfleche und... siehst ein paar Kabel die du bis jetzt noch nicht bemerkt hast. Sie waren anscheinend schon vor der Reperatur nicht verbunden.
+Solltest du sie verbinden?
+$
+
+@Language = Deutsch & StoryBlock = 5.1.1 & Items = toolbag{
+
+<Ja, verbinde die Kabel
+#StoryBlock = 5.1.1.1
+>
+
+<Nein, lass sie hängen
+#StoryBlock = 5.1.1.2
+>
+
+}
+
+@Language = Deutsch & StoryBlock = 5.1.1.1$
+Vorsichtig greifst du durch ein enges Loch nach den Kabeln um sie zu verbinden. Geschafft.
+Ein letztes Prüfen, bevor du den Reaktor wieder einschaltest. Du gibst den Passcode am Kontrollsystem ein um den Reaktor hochzufahren, aber... nichts passiert. Vielleicht hast du vergessen Sicherheitsschloss
+zu deaktivieren. Du gehst zum Kontrollraum und -
+$
+@Language = Deutsch & StoryBlock = 5.1.1.1^
+explosion
+^
+
+
+@Language = Deutsch & #StoryBlock = 5.1.1.2$
+Du verschliesst die Schaltfleche, gibst den Passcode am Kontrollsystem ein um den Reaktor hochzufahren und gehst einen Schritt zurück... wer weiss.
+Nach dem eine Weile nichts passiert, schaltet sich die Schaltfläche ein zeigt den Status des Reaktors an und du merkst alles [+funktioniert]! Du bist sehr froh, dass du nichts Falsch gemacht hast.
+Ein Fehler wäre fatal, vorallem im Weltall.
+
+Mit deiner Werkzeugtasche in der Hand schwebst du zur Komandozentrale des Schiffs. Auf deinem Weg dort hin schwebst du durch die schmalen Korridore des Schiffs, als du etwas bemerkst:
+Du hast deine Werkzeugtasche doch nicht in den Lagerraum gestellt, oder?
+Stimmt, du erinnerst dich: letztes Mal, als du sie benutzt hast, hast du sie in der Nähe deiner Schlafkabine verstaut.
+
+Neugierig überprüfts du die Stelle und tatsächlich findest du dort die Werkzeugtasche angebunden an die Wand, sodass sie nicht verloren geht.
+Wenn das [+deine] Werkzeugtasche ist, dann (du schaust auf die Tasche in deiner Hand) [+wem] gehört die??
+#StoryBlock = 5.3
+$
+
+
+@Language = Deutsch & StoryBlock = 5.1.1 & Items = mysterious$
+Verdammt. Statt deiner Werkzeugtasche liegt dort der Kristall, welcher scheinheilig leuchtet, während dein Schicksal davon abhängt einen Reaktor zu reparieren...
+Du bist wütend über dich selbst, dass du dieses [+DING] statt der Werkzeugtasche gewählt hast.
+Niedergeschlagen schaust du auf sein Leuchten.
+
+Die nächsten Stunden verbringst du damit auf verschieden Arten zu versuchen den Reaktor zu reparieren, aber es ist zwecklos... Ohne das richtige Werkzeug kannst du nichts tun.
+Entmutigt schwebst du durch das Schiff, mit dem Kristall in den Händen. Als du dich dem Reaktorraum näherst, bemerkst du, dass der Kristall etwas heller leuchtet. Im Reatorraum wird sein Leuchten
+so stark, dass du nicht mehr direkt drauf schauen kannst. Du blickst auf den Kontrollbildschirm und erkennst ein flimmerndes Bild:
+
+[benergy efficiency: ][r13/100]
+[benergy efficiency: ][r18/100]
+[benergy efficiency: ][r25/100]
+[benergy efficiency: ][r31/100]
+[benergy efficiency: ][g38/100]
+[benergy efficiency: ][g46/100]
+[benergy efficiency: ][g58/100]
+
+Was? Wie ist das Möglich? Du hälst den Kristall näher an den Reaktor.
+
+[benergy efficiency: ][g67/100]
+[benergy efficiency: ][g85/100]
+[benergy efficiency: ][g100/100]
+
+Sowas hast du noch nie zuvor gesehen... der Kristall ist eine Energiequelle, sehr viel stärker als alles, was der Menschheit bisher bekannt war. Vorsichtig legst den Kristall in die Nähe des Reaktors.
+Jetzt bleibt nur noch übrig dein Ziel zu erreichen, da der Reaktor wieder funktioniert, sollte dies ein geringeres Problem sein.
+#StoryBlock = 5.2
+$
+
+@Language = Deutsch & StoryBlock = 5.2$
+Du begibst dich zurück zur Komandozentrale des Schiffs. Auf deinem Weg dort hin schwebst du durch die schmalen Korridore des Schiffs, als du etwas bemerkst:
+In der Nähe deiner Schlafkabine findest du deine Werkzeugtasche angebunden an die Wand.
+
+Du erinnerst dich: letztes Mal, als du sie benutzt hast, hast du sie hier hin gemacht.
+Moment...
+Wenn [+deine] Werkzeugtasche hier ist (du schaust auf die Werkzeugtasche an der Wand), [+wessen] schwebt dann gerade draussen im Weltall??
+#StoryBlock = 5.3
+$
+
+
+@Language = Deutsch & StoryBlock = 5.3$
+Auf einmal ändert sich der Raum draussen. Das träge Gefühl des Wurmlochs, an welches du dich gewöhnt hast, ist verschwunden und das kalte Universum fühlt sich wieder so an wie vor dem Sprung. Bist du schon da?
+Du schwebst durch das Schiff auf der suche nach einem Fenster.... und was du siehst macht dich sprachlos.
+
+Draussen siehst du... einen Planet, direkt vor dem Schiff. Nicht irgendein Planet sonder...
+
+Die Erde.
+
+#StoryBlock = 5.4
 $
