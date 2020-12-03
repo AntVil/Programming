@@ -4,6 +4,8 @@ const textOutputHandlerModule = require("./TextOutputHandler");
 const audioOutputHandlerModule = require("./AudioOutputHandler");
 const constantsModule = require("./constants");
 const fileReaderModule = require("fs");
+const pathModule = require("path");
+const unlocksPath = pathModule.join(__dirname, "unlocks.txt");
 
 
 
@@ -106,10 +108,9 @@ class Main{
     async handleConsequence(consequence) {
         this.variableDictionary[consequence.getVariableName()] = consequence.getVariableValue();
         if(consequence.isUnlock()){
-            let filepath = "src/unlocks.txt";
-            let json = JSON.parse(fileReaderModule.readFileSync(filepath));
+            let json = JSON.parse(fileReaderModule.readFileSync(unlocksPath));
             json[consequence.getVariableName()] = consequence.getVariableValue();
-            fileReaderModule.writeFileSync(filepath, JSON.stringify(json));
+            fileReaderModule.writeFileSync(unlocksPath, JSON.stringify(json));
         }
     }
 
@@ -126,8 +127,7 @@ class Main{
             let variable = variables[i];
 
             if(variable.isUnlock()){
-                let filepath = "src/unlocks.txt";
-                let json = JSON.parse(fileReaderModule.readFileSync(filepath));
+                let json = JSON.parse(fileReaderModule.readFileSync(unlocksPath));
                 if(json[variable.getVariableName()] !== variable.getVariableValue()){
                     return false;
                 }
