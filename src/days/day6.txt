@@ -110,6 +110,31 @@ $
 
 
 
+
+@Language = English & _UNLOCKEDINSTANT = FALSE$
+[rUNLOCK!]
+Instant typing speed has been unlocked!
+From now on the typing seed can be set to instant.
+
+There are more story paths to explore, if you didn't go outside the ship, you should do, since there are more paths to explore.
+
+[_Check out the story-diagram under][b/dev/diagrams/Story-diagram.pdf][_!]
+
+#_UNLOCKEDINSTANT = TRUE
+$
+
+@Language = Deutsch & _UNLOCKEDINSTANT = FALSE$
+[rFREIGESCHALTEN!]
+Sofortige Schreibgeschwindigkeit wurde freigeschalten!
+Ab sofort kann die Schreibgeschwindigkeit auf sofort gestellt werden.
+
+Es gibt noch viele Handlungsstränge zu entdecken. Falls du zum Beispiel noch nicht aus dem Schiff gegangen bist, solltest du dies tun, da es dort viele interessante Pfade gibt.
+
+[_Unter ][b/dev/diagrams/Story-diagram.pdf][_gibt es ein Diagram des gesamten Spiels!]
+#_UNLOCKEDINSTANT = TRUE
+$
+
+
 $
 [b
  ________  ________  ___  ___  _________  ________   ___  ___  __             _______  ________   ________  ________         
@@ -121,6 +146,4 @@ $
    |\_________\|__|     \|_______|    \|__|  \|__| \|__|\|__|\|__| \|__|        \|_______|\|_______||__|/      \|_______|    
    \|_________|
 ]
-
-#_UNLOCKEDINSTANT = TRUE
 $
