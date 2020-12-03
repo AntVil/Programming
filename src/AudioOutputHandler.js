@@ -13,6 +13,8 @@ class AudioOutputHandler{
     }
 
     async playFile(filename){
+        console.log("\x1b[8m");
+
         p = new Promise(function(resolve, reject) { 
             res = resolve;
         });
@@ -34,6 +36,7 @@ class AudioOutputHandler{
     
         rs.on("end", function(){
             res();
+            console.log("\x1b[0m");
         });
 
         await p;

@@ -42,8 +42,8 @@ $
 
 @Language = English & StoryBlock = 5.4 & Items = mysterious$
 
-The crystal has been analyzed notoriously, but there are still many things unclear about it.
-Sometimes, you drive to the laboratory, Sundays in the early morning, and just look at like you did when you first found it. 
+The crystal has been analyzed meticulously, but there are still many things unclear about it.
+Sometimes, you drive to the laboratory, Sundays in the early morning, and just look at it like you did when you first found it. 
 It still leaves you speechless.
 
 #StoryBlock = X
@@ -54,6 +54,85 @@ $
 At the ceremony two weeks ago, you received the award for extraterrestrial discovery from the united republic, and it was also Vladimirs metaphorical funeral. 
 With tears in your eyes you looked at his grave. 
 He would have been proud.
+
+#StoryBlock = X
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Language = Deutsch & StoryBlock = 5.4 & Items = none$
+Der Status des Schiffs verschlächterst sich jede Minute und du hast keine Möglichkeit den Reaktor zu reparieren oder Hilfe zu erhalten. Jede Minute könnte die Letzte sein.
+Du denkst an Vlad. Vielleicht triffst du ihn bald.
+
+Das Druck-Krontroll-System hat nicht genug Enegie.
+
+Du schaust ein letztes Mal auf die Erde...
+dann schliesst du deine Augen.
+#StoryBlock = X
+$
+
+
+@Language = Deutsch & StoryBlock = 5.4$
+[gTag 5]
+Es sind einige Stunden vergangen, seit dem du angekommen bist. Also du bist in der Nähe, auf kosmischer Ebene praktisch zuhause. 
+Aber wie ist das Möglich?
+Die Werkzeugtasche die du gesehen hast...
+Und die scheinbar langsame Geschwindigkeit bei der Reise durch das Wurmloch...
+
+
+[gTag 97]
+
+Alles ging sehr schnell in den letzten 3 Monaten: Nachdem du die Raumfahrt-Kontrollstation kontaktiert hattest, wurde in Rekordzeit eine Rettungsmission entsandt. 
+Während deiner Abwesenheit hatte sich auf der Erde mittlerweile einiges verändert. Ca. 16 Jahre nach dem Beginn deiner Reise gab es eine umfassende Reform der politischen Systeme der Erde, 
+Grund war der schreckliche Weltkrieg in den 2090ern. Daraufhin beschlossen die Menschen sich zusammenzuschliessen um den Fortschritt der Menschheit zu sichern.
+Du bist damals in Cape Canaveral gelandet, ein Ort, an dem du niemals gedacht hättest, dass du ihn besuchen würdest. Dein Leben lang lag er auf dem Terretorium des Feindes.
+Die Antworten auf all die Fragen die jetzt noch offen waren, wurden von den Wissenschaftlern der Welt beantwortet. Nichtsdestotrotz, klingt das alles zu unglaublich um Wahr zu sein:
+
+Obwohl deine Reise für dich nur vier Jahre dauert, vergingen auf der Erde in der zwischenzeit 27 Jahre, es ist 2114. Ausserdem hast du erfahren, was mit dem übrigen Sputnik Missionen widerfahren ist.
+
+Nur eine der anderen schaffte es sicher ins All, das andere Schiff explodierte beim Verlassen der Stratosphäre.
+
+[bDu:]"Aber die Werkzeugtasche die ich gesehen habe..." 
+[rProf. Peterson:] "Diese war nicht Ihre. Sie war Teil der Ausrüstung des Schiffs, welches explodiert ist."
+[bDu:] "Aber als ich sie sah, war ich 12,155e+7 km weit entfernt von der Erde. Ist sie von der anderen Seite durch das Wurmloch gekommen? Wie kann es sein, dass wir das Wurmloch bis dahin nie entdeckt haben?"
+
+Du bist dir nicht sicher, ob du die Erklärung des Professors verstanden hast. Sie schien logisch, aber trotzdem verrückt.
+$
+
+
+
+@Language = Deutsch & StoryBlock = 5.4 & Items = mysterious$
+Der Kristall wurde sehr genau untersucht, aber es ist noch sehr viel unklar.
+Manchmal fährst du Sonntag früh morgens zum Labor, um den Kristall wieder so zu betrachten wie bei ersten Mal, als du ihn gefunden hattest.
+Der Anblick macht dich immernoch sprachlos.
+
+#StoryBlock = X
+$
+
+@Language = Deutsch & StoryBlock = 5.4 & Items = toolbag$
+
+An der Zeremonie zu Ehren des Wiederkehrers wurdest du mit dem Orden für Kosmische Endteckungen ausgezeichnet. Vlad wurde bei dieser Zeremonie feierlich beigesetzt. 
+Du schaust auf sein Grab mit Tränen in den Augen.
+Er wäre stolz gewesen.
 
 #StoryBlock = X
 $

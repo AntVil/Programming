@@ -57,7 +57,7 @@ langsam
 schnell
 #typeSpeed = 20
 >
-<
+@_UNLOCKEDINSTANT = TRUE<
 sofort
 #typeSpeed = 0
 >

@@ -367,7 +367,7 @@ $
 
 @Language = Deutsch & StoryBlock = 1.3$
 Keine Kopfschmerzen. Das ist nett. Vielleicht ist das genau das was du brauchtest.
-#StoryBlock = 3
+#StoryBlock = 3.0
 $
 
 
