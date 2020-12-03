@@ -1,22 +1,59 @@
 @Language = English & StoryBlock = 5.4 & Items = none$
 
+You have no possibilty of either repairing the reactor, nor calling for help. The ships condition gets worse with every minute. And therefoe any minute could be your last one. 
+You think about Vlad. Maybe you would see him again. 
+
+Then the pressure control system runs out of power. 
+
+You look at the earth one last time...
+then you close your eyes.
+
+#StoryBlock = X
+$
+
+
+@Language = English & StoryBlock = 5.4$
 [gDay 5]
 
-no power, sees earth
+It's been a few hours since you arrived. You arrived at home. Not in the sense of being there where you live. But on a cosmic scale.
+But how is this possible? 
+The toolbag that you saw... 
+And the seemingly low speed of travel while being in the wormhole...
+
+
+[gDay 97]
+
+It all went down really fast in the past 3 months: After you had contacted the space control center, a rescue mission had been sent in record time. On earth meanwhile, many things had changed. 
+Basically all you had known was gone. Roughly 16 Years after you left, a great war ended the governmental systems of all the countrys, and the people decided to bond togehter to build humanitys progress together. 
+You landed in cape canaveral, a place you thought you'd never visit, it had always been on the enemy's land. 
+The answers to all the open questions were found by leading scientists of the world. Nevertheless, to this day, it still sounds unbelievable to you:
+
+Even though your journey took you 4 years, the time on earth has progressed much faster, the year of your arrival was 2114. Also you learned what had happened to the other Sputnik missions...
+Only one of them made it into space safely, the other ship detonated the moment it left the stratosphere. 
+
+[bYou:]"So the toolbag I saw..." 
+[rProf. Peterson:] "Yes, it wasn't yours. It was part of the detonated ships interieur."
+[bYou:] "But I had seen it when I was more than 12,155e+7 km from earth. Did it enter the wormhole from the other side? How is it possible we could't recognize it if it ends right near the earth?"
+
+You are not sure if you understood the explaination prof. Peterson gave to you, it seemed logical, but still insane.
 $
+
 
 
 @Language = English & StoryBlock = 5.4 & Items = mysterious$
 
-[gDay 5]
+The crystal has been analyzed notoriously, but there are still many things unclear about it.
+Sometimes, you drive to the laboratory, Sundays in the early morning, and just look at like you did when you first found it. 
+It still leaves you speechless.
 
-arrives on earth
+#StoryBlock = X
 $
-
 
 @Language = English & StoryBlock = 5.4 & Items = toolbag$
 
-[gDay 5]
+At the ceremony two weeks ago, you received the award for extraterrestrial discovery from the united republic, and it was also Vladimirs metaphorical funeral. 
+With tears in your eyes you looked at his grave. 
+He would have been proud.
 
-arrives on earth
+#StoryBlock = X
 $
