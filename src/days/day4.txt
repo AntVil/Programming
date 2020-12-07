@@ -115,7 +115,7 @@ With your toolbag in your hands, you head back to the control section of the shi
 the storage room, that wasn't the room you put your toolbag in, right?
 Yea, you remember: last time you used it, you had put it right near your sleeping cabin. 
 
-Couriously, you check the spot you remembered to have put the toolbag, and yes,
+Curiously, you check the spot you remembered to have put the toolbag, and yes,
 there it is, strapped to the wall so it can't float around. But if [+your] toolbag is here (you look at the toolbag that you just used, still in your hands), [+whose] is this??
 #StoryBlock = 5.3
 $
@@ -219,8 +219,8 @@ $
 @Language = Deutsch & StoryBlock = 5.0$
 [gTag 4]
 
-Es war eine kurze Nacht von Albträumen geplagt. Hast du die richtige Entscheidung getroffen? Was ist wenn du es nicht überlebst?
-Diese und viele andere Gedanken verfolgen dich, also stehst du auf und überprüfts den Status der Instrumente. Du starst eine Weile auf den Bildschirm, dann bemerkst du:
+Es war eine kurze Nacht von Albträumen geplagt. Hast du die richtige Entscheidung getroffen? Was ist, wenn du es nicht überlebst?
+Diese und viele andere Gedanken verfolgen dich, also stehst du auf und überprüfts den Status der Instrumente. Du starrst eine Weile auf den Bildschirm, dann bemerkst du:
 Die Energieeffizienz ist verdammt niedrig.
 $
 
@@ -243,7 +243,7 @@ $
 @Language = Deutsch & StoryBlock = 5.1{
 
 <
-Ich kann es nicht mit so wenig Energie schaffen, ich muss ihn herrunterfahren und reparieren.
+Ich kann es nicht mit so wenig Energie schaffen, ich muss ihn herunterfahren und reparieren.
 #StoryBlock = 5.1.1
 >
 
@@ -255,14 +255,14 @@ Vielleicht reicht die Energie... ich lasse ihn lieber laufen.
 
 
 @Language = Deutsch & StoryBlock = 5.1.1$
-Du gibst den Sicherheitsschlüssel ein um den Reaktor herrunterzufahren. Das Energieniveau sinkt auf ein Minimum, nur die Überlebenswichtigen Systeme werden von einer großen Batterie versorgt.
+Du gibst den Sicherheitsschlüssel ein, um den Reaktor herunterzufahren. Das Energieniveau sinkt auf ein Minimum, nur die Überlebenswichtigen Systeme werden von einer großen Batterie versorgt.
 Fangen wir an.
-Du gehst zur Lagerraum
+Du gehst zum Lagerraum
 $
 
 
 @Language = Deutsch & StoryBlock = 5.1.1 & Items = none$
-Die einzigen nützlichen Dinge die du findest sind Messwerkzeuge für elektrischen Strom und einen Geigerzähler. Du denkst an deine Werkzeugtasche, welche du draussen im Weltall zurückgelassen hast.
+Die einzigen nützlichen Dinge, die du findest, sind Messwerkzeuge für elektrischen Strom und einen Geigerzähler. Du denkst an deine Werkzeugtasche, welche du draussen im Weltall zurückgelassen hast.
 Die hätte jetzt nützlich sein können.
 .
 .
@@ -278,7 +278,7 @@ $
 
 
 @Language = Deutsch & StoryBlock = 5.1.1 & Items = toolbag$
-Du bist mehr als froh über deine Werkzeugtasche. Sie ist das einige, was dir in so einer Situation von nutzen sein kann. Du schnappst sie dir und schwebst zurück zum Reaktorraum.
+Du bist mehr als froh über deine Werkzeugtasche. Sie ist das einige, was dir in so einer Situation von Nutzen sein kann. Du schnappst sie dir und schwebst zurück zum Reaktorraum.
 $
 @Intro = True & Language = Deutsch^
 alarm
@@ -294,8 +294,8 @@ wird auf dem Bildschirm angezeigt.
 .
 .
 .
-Ein einigen Stunden harter Arbeit bist du dir ziemlich sicher, dass der Reator wieder normal funktioniert. Um zu prüfen, ob deine Arbeit erfolgreich war, schaltest du ihn an... und schaust was passiert.
-Du verbindest alle Kabel an der offengelegten Schaltfleche und... siehst ein paar Kabel die du bis jetzt noch nicht bemerkt hast. Sie waren anscheinend schon vor der Reperatur nicht verbunden.
+Ein einigen Stunden harter Arbeit bist du dir ziemlich sicher, dass der Reaktor wieder normal funktioniert. Um zu prüfen, ob deine Arbeit erfolgreich war, schaltest du ihn an... und schaust was passiert.
+Du verbindest alle Kabel an der offengelegten Schaltfläche und... siehst ein paar Kabel, die du bis jetzt noch nicht bemerkt hast. Sie waren anscheinend schon vor der Reparatur nicht verbunden.
 Solltest du sie verbinden?
 $
 
@@ -312,8 +312,8 @@ $
 }
 
 @Language = Deutsch & StoryBlock = 5.1.1.1$
-Vorsichtig greifst du durch ein enges Loch nach den Kabeln um sie zu verbinden. Geschafft.
-Ein letztes Prüfen, bevor du den Reaktor wieder einschaltest. Du gibst den Passcode am Kontrollsystem ein um den Reaktor hochzufahren, aber... nichts passiert. Vielleicht hast du vergessen Sicherheitsschloss
+Vorsichtig greifst du durch ein enges Loch nach den Kabeln, um sie zu verbinden. Geschafft.
+Ein letzter prüfender Blick, bevor du den Reaktor wieder einschaltest. Du gibst den Passcode am Kontrollsystem ein, um den Reaktor hochzufahren, aber... nichts passiert. Vielleicht hast du vergessen Sicherheitsschloss
 zu deaktivieren. Du gehst zum Kontrollraum und -
 $
 @Language = Deutsch & StoryBlock = 5.1.1.1^
@@ -322,15 +322,15 @@ explosion
 
 
 @Language = Deutsch & #StoryBlock = 5.1.1.2$
-Du verschliesst die Schaltfleche, gibst den Passcode am Kontrollsystem ein um den Reaktor hochzufahren und gehst einen Schritt zurück... wer weiss.
-Nach dem eine Weile nichts passiert, schaltet sich die Schaltfläche ein zeigt den Status des Reaktors an und du merkst alles [+funktioniert]! Du bist sehr froh, dass du nichts Falsch gemacht hast.
-Ein Fehler wäre fatal, vorallem im Weltall.
+Du verschliesst die Schaltfläche, gibst den Passcode am Kontrollsystem ein, um den Reaktor hochzufahren und gehst einen Schritt zurück... wer weiss.
+Nach dem eine Weile nichts passiert, schaltet sich die Schaltfläche ein zeigt den Status des Reaktors an und du merkst alles [+funktioniert]! Du bist sehr froh, dass du nichts falsch gemacht hast.
+Ein Fehler wäre fatal, vor allem im Weltall.
 
-Mit deiner Werkzeugtasche in der Hand schwebst du zur Komandozentrale des Schiffs. Auf deinem Weg dort hin schwebst du durch die schmalen Korridore des Schiffs, als du etwas bemerkst:
+Mit deiner Werkzeugtasche in der Hand schwebst du zur Kommandozentrale des Schiffs. Auf deinem Weg dorthin schwebst du durch die schmalen Korridore des Schiffs, als du etwas bemerkst:
 Du hast deine Werkzeugtasche doch nicht in den Lagerraum gestellt, oder?
 Stimmt, du erinnerst dich: letztes Mal, als du sie benutzt hast, hast du sie in der Nähe deiner Schlafkabine verstaut.
 
-Neugierig überprüfts du die Stelle und tatsächlich findest du dort die Werkzeugtasche angebunden an die Wand, sodass sie nicht verloren geht.
+Neugierig überprüfst du die Stelle und tatsächlich findest du dort die Werkzeugtasche angebunden an die Wand, sodass sie nicht verloren geht.
 Wenn das [+deine] Werkzeugtasche ist, dann (du schaust auf die Tasche in deiner Hand) [+wem] gehört die??
 #StoryBlock = 5.3
 $
@@ -342,7 +342,7 @@ Du bist wütend über dich selbst, dass du dieses [+DING] statt der Werkzeugtasc
 Niedergeschlagen schaust du auf sein Leuchten.
 
 Die nächsten Stunden verbringst du damit auf verschieden Arten zu versuchen den Reaktor zu reparieren, aber es ist zwecklos... Ohne das richtige Werkzeug kannst du nichts tun.
-Entmutigt schwebst du durch das Schiff, mit dem Kristall in den Händen. Als du dich dem Reaktorraum näherst, bemerkst du, dass der Kristall etwas heller leuchtet. Im Reatorraum wird sein Leuchten
+Entmutigt schwebst du durch das Schiff, mit dem Kristall in den Händen. Als du dich dem Reaktorraum näherst, bemerkst du, dass der Kristall etwas heller leuchtet. Im Reaktorraum wird sein Leuchten
 so stark, dass du nicht mehr direkt drauf schauen kannst. Du blickst auf den Kontrollbildschirm und erkennst ein flimmerndes Bild:
 
 [benergy efficiency: ][r13/100]
@@ -353,19 +353,19 @@ so stark, dass du nicht mehr direkt drauf schauen kannst. Du blickst auf den Kon
 [benergy efficiency: ][g46/100]
 [benergy efficiency: ][g58/100]
 
-Was? Wie ist das Möglich? Du hälst den Kristall näher an den Reaktor.
+Was? Wie ist das möglich? Du hältst den Kristall näher an den Reaktor.
 
 [benergy efficiency: ][g67/100]
 [benergy efficiency: ][g85/100]
 [benergy efficiency: ][g100/100]
 
-Sowas hast du noch nie zuvor gesehen... der Kristall ist eine Energiequelle, sehr viel stärker als alles, was der Menschheit bisher bekannt war. Vorsichtig legst den Kristall in die Nähe des Reaktors.
+Sowas hast du noch nie zuvor gesehen... der Kristall ist eine Energiequelle, sehr viel stärker als alles, was der Menschheit bisher bekannt war. Vorsichtig legst du den Kristall in die Nähe des Reaktors.
 Jetzt bleibt nur noch übrig dein Ziel zu erreichen, da der Reaktor wieder funktioniert, sollte dies ein geringeres Problem sein.
 #StoryBlock = 5.2
 $
 
 @Language = Deutsch & StoryBlock = 5.2$
-Du begibst dich zurück zur Komandozentrale des Schiffs. Auf deinem Weg dort hin schwebst du durch die schmalen Korridore des Schiffs, als du etwas bemerkst:
+Du begibst dich zurück zur Kommandozentrale des Schiffs. Auf deinem Weg dorthin schwebst du durch die schmalen Korridore des Schiffs, als du etwas bemerkst:
 In der Nähe deiner Schlafkabine findest du deine Werkzeugtasche angebunden an die Wand.
 
 Du erinnerst dich: letztes Mal, als du sie benutzt hast, hast du sie hier hin gemacht.
@@ -377,9 +377,9 @@ $
 
 @Language = Deutsch & StoryBlock = 5.3$
 Auf einmal ändert sich der Raum draussen. Das träge Gefühl des Wurmlochs, an welches du dich gewöhnt hast, ist verschwunden und das kalte Universum fühlt sich wieder so an wie vor dem Sprung. Bist du schon da?
-Du schwebst durch das Schiff auf der suche nach einem Fenster.... und was du siehst macht dich sprachlos.
+Du schwebst durch das Schiff auf der Suche nach einem Fenster.... und was du siehst macht dich sprachlos.
 
-Draussen siehst du... einen Planet, direkt vor dem Schiff. Nicht irgendein Planet sonder...
+Draussen siehst du... einen Planet, direkt vor dem Schiff. Nicht irgendein Planet sondern...
 
 Die Erde.
 

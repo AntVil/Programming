@@ -20,10 +20,10 @@ Our imports are (not including transitiv imports):
 
 Design choices:
 In the project we use an [_OOP style].
-- The class [+DayHandler] accesses the textfiles containing the days
-- The class [+Day] takes the filepath and generates the agenda of the day
-    -> the textfiles contain a self created mark-up which the [+Day] can parse
-- The agenda stored in the [+Day] is made up of different events, which all are handeled differently
+- The class [+DayHandler] accesses the text files containing the days
+- The class [+Day] takes the file path and generates the agenda of the day
+    -> the text files contain a self-created mark-up which the [+Day] can parse
+- The agenda stored in the [+Day] is made up of different events, which all are handled differently
     -> Events are: [+Story], [+AudioContainer], [+Interaction], [+TextInput]
 - Each event stores a [+Restriction] and an Array of [+Consequence]-s
     -> An [+Interaction] stores an Array of [+Option]-s
@@ -34,7 +34,7 @@ In the project we use an [_OOP style].
 Additional:
 Due to the use of [gnaudiodon] the code had to be changed, to use [_async] and [_await]. 
 This way the program would wait until the audio was done playing.
-Otherwise the program would have continued and the audio would have only started playing at the end.
+Otherwise, the program would have continued and the audio would have only started playing at the end.
 
 Check out [_dev/] to view some of the development decisions.
 (Caution: they might be outdated!)
@@ -43,10 +43,10 @@ Feature-list:
 - text-input (includes numbers)
 - option-input
 - audio-output
-- typewritter-output (adjustable)
+- typewriter-output (adjustable)
 - modular code/story
 - decisions affect future
-- german and english
+- German and English
 - readable code
 - expandable code
 $
@@ -77,14 +77,14 @@ Unsere Imports (transitive nicht beinhaltet):
 
 Design Entscheidungen:
 In dem Projekt benutzen wir einen [_OOP style].
-- Die Klasse [+DayHandler] untersucht, welche Textdatein, welche die Tage enthält, als nächstes geöffnet werden soll
+- Die Klasse [+DayHandler] untersucht, welche Textdateien, welche die Tage enthält, als nächstes geöffnet werden soll
 - Die Klasse [+Day] bekommt den Dateipfad und erstellt die Agenda des Tages
-    -> die Textdateien beinhalten einen selbst erstellten Mark-up, welchen [+Day] parsen kann
+    -> die Textdateien beinhalten einen selbst erstellten Mark-Up, welchen [+Day] parsen kann
 - Die Agenda welche im [+Day] gespeichert wird besteht aus verschiedenen Events, welche verschieden behandelt werden
     -> Events sind: [+Story], [+AudioContainer], [+Interaction], [+TextInput]
 - Jedes Event speichert eine [+Restriction] einen Array an [+Consequence]-n
     -> Eine [+Interaction] speichert ein Array an [+Option]-s
-- Die Klasse [+Main] benutzt diese Klassen um zu entscheiden, was als nächstes passiert und interagiert mit dem Benutzer mit speziellen Klassen
+- Die Klasse [+Main] benutzt diese Klassen, um zu entscheiden, was als nächstes passiert und interagiert mit dem Benutzer mit speziellen Klassen
     -> [+AudioOutputHandler], [+TextOutputHandler], [+InputHandler]
 - Die Datei [_constants.js] speichert fast alle Konstanten, sodass Dinge wie der Mark-up schnell und einfach verändert werden können
 
@@ -116,7 +116,7 @@ $
 Instant typing speed has been unlocked!
 From now on the typing seed can be set to instant.
 
-There are more story paths to explore, if you didn't go outside the ship, you should do, since there are more paths to explore.
+There are more story paths to explore, if you didn't go outside the ship, you should do so, since there are more paths to explore.
 
 [_Check out the story-diagram under][b/dev/diagrams/Story-diagram.pdf][_!]
 
@@ -130,7 +130,7 @@ Ab sofort kann die Schreibgeschwindigkeit auf sofort gestellt werden.
 
 Es gibt noch viele Handlungsstränge zu entdecken. Falls du zum Beispiel noch nicht aus dem Schiff gegangen bist, solltest du dies tun, da es dort viele interessante Pfade gibt.
 
-[_Unter ][b/dev/diagrams/Story-diagram.pdf][_gibt es ein Diagram des gesamten Spiels!]
+[_Unter ][b/dev/diagrams/Story-diagram.pdf][_gibt es ein Diagramm des gesamten Spiels!]
 #_UNLOCKEDINSTANT = TRUE
 $
 

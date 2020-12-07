@@ -1,6 +1,6 @@
 @Language = English & StoryBlock = 5.4 & Items = none$
 
-You have no possibilty of either repairing the reactor, nor calling for help. The ships condition gets worse with every minute. And therefoe any minute could be your last one. 
+You have no possibility of either repairing the reactor, nor calling for help. The ships condition gets worse with every minute. And therefore, any minute could be your last one. 
 You think about Vlad. Maybe you would see him again. 
 
 Then the pressure control system runs out of power. 
@@ -15,7 +15,7 @@ $
 @Language = English & StoryBlock = 5.4$
 [gDay 5]
 
-It's been a few hours since you arrived. You arrived at home. Not in the sense of being there where you live. But on a cosmic scale.
+It has been a few hours since you arrived. You arrived at home. Not in the sense of being there where you live. But on a cosmic scale.
 But how is this possible? 
 The toolbag that you saw... 
 And the seemingly low speed of travel while being in the wormhole...
@@ -24,18 +24,18 @@ And the seemingly low speed of travel while being in the wormhole...
 [gDay 97]
 
 It all went down really fast in the past 3 months: After you had contacted the space control center, a rescue mission had been sent in record time. On earth meanwhile, many things had changed. 
-Basically all you had known was gone. Roughly 16 Years after you left, a great war ended the governmental systems of all the countrys, and the people decided to bond togehter to build humanitys progress together. 
-You landed in cape canaveral, a place you thought you'd never visit, it had always been on the enemy's land. 
+Basically, all you had known was gone. Roughly 16 Years after you left, a great war ended the governmental systems of all the countries, and the people decided to bond together to build humanities progress together. 
+You landed in Cape Canaveral, a place you thought you would never visit, it had always been on the enemy's land. 
 The answers to all the open questions were found by leading scientists of the world. Nevertheless, to this day, it still sounds unbelievable to you:
 
-Even though your journey took you 4 years, the time on earth has progressed much faster, the year of your arrival was 2114. Also you learned what had happened to the other Sputnik missions...
+Even though your journey took you 4 years, the time on earth has progressed much faster, the year of your arrival was 2114. Also, you learned what had happened to the other Sputnik missions...
 Only one of them made it into space safely, the other ship detonated the moment it left the stratosphere. 
 
 [bYou:]"So the toolbag I saw..." 
 [rProf. Peterson:] "Yes, it wasn't yours. It was part of the detonated ships interieur."
-[bYou:] "But I had seen it when I was more than 12,155e+7 km from earth. Did it enter the wormhole from the other side? How is it possible we could't recognize it if it ends right near the earth?"
+[bYou:] "But I had seen it when I was more than 12,155e+7 km from earth. Did it enter the wormhole from the other side? How is it possible we couldn’t recognize it if it ends right near the earth?"
 
-You are not sure if you understood the explaination prof. Peterson gave to you, it seemed logical, but still insane.
+You are not sure if you understood the explanation prof. Peterson gave to you, it seemed logical, but still insane.
 $
 
 
@@ -51,8 +51,8 @@ $
 
 @Language = English & StoryBlock = 5.4 & Items = toolbag$
 
-At the ceremony two weeks ago, you received the award for extraterrestrial discovery from the united republic, and it was also Vladimirs metaphorical funeral. 
-With tears in your eyes you looked at his grave. 
+At the ceremony two weeks ago, you received the award for extraterrestrial discovery from the united republic, and it was also Vladimir’s metaphorical funeral. 
+With tears in your eyes, you looked at his grave. 
 He would have been proud.
 
 #StoryBlock = X
@@ -80,10 +80,10 @@ $
 
 
 @Language = Deutsch & StoryBlock = 5.4 & Items = none$
-Der Status des Schiffs verschlächterst sich jede Minute und du hast keine Möglichkeit den Reaktor zu reparieren oder Hilfe zu erhalten. Jede Minute könnte die Letzte sein.
+Der Status des Schiffs verschlechterst sich jede Minute und du hast keine Möglichkeit den Reaktor zu reparieren oder Hilfe zu erhalten. Jede Minute könnte die Letzte sein.
 Du denkst an Vlad. Vielleicht triffst du ihn bald.
 
-Das Druck-Krontroll-System hat nicht genug Enegie.
+Das Druck-Krontroll-System hat nicht genug Energie.
 
 Du schaust ein letztes Mal auf die Erde...
 dann schliesst du deine Augen.
@@ -93,8 +93,8 @@ $
 
 @Language = Deutsch & StoryBlock = 5.4$
 [gTag 5]
-Es sind einige Stunden vergangen, seit dem du angekommen bist. Also du bist in der Nähe, auf kosmischer Ebene praktisch zuhause. 
-Aber wie ist das Möglich?
+Es sind einige Stunden vergangen, seitdem du angekommen bist. Also du bist in der Nähe, auf kosmischer Ebene praktisch zuhause. 
+Aber wie ist das möglich?
 Die Werkzeugtasche die du gesehen hast...
 Und die scheinbar langsame Geschwindigkeit bei der Reise durch das Wurmloch...
 
@@ -104,10 +104,10 @@ Und die scheinbar langsame Geschwindigkeit bei der Reise durch das Wurmloch...
 Alles ging sehr schnell in den letzten 3 Monaten: Nachdem du die Raumfahrt-Kontrollstation kontaktiert hattest, wurde in Rekordzeit eine Rettungsmission entsandt. 
 Während deiner Abwesenheit hatte sich auf der Erde mittlerweile einiges verändert. Ca. 16 Jahre nach dem Beginn deiner Reise gab es eine umfassende Reform der politischen Systeme der Erde, 
 Grund war der schreckliche Weltkrieg in den 2090ern. Daraufhin beschlossen die Menschen sich zusammenzuschliessen um den Fortschritt der Menschheit zu sichern.
-Du bist damals in Cape Canaveral gelandet, ein Ort, an dem du niemals gedacht hättest, dass du ihn besuchen würdest. Dein Leben lang lag er auf dem Terretorium des Feindes.
-Die Antworten auf all die Fragen die jetzt noch offen waren, wurden von den Wissenschaftlern der Welt beantwortet. Nichtsdestotrotz, klingt das alles zu unglaublich um Wahr zu sein:
+Du bist damals in Cape Canaveral gelandet, ein Ort, an dem du niemals gedacht hättest, dass du ihn besuchen würdest. Dein Leben lang lag er auf dem Territorium des Feindes.
+Die Antworten auf all die Fragen, die jetzt noch offen waren, wurden von den Wissenschaftlern der Welt beantwortet. Nichtsdestotrotz klingt das alles zu unglaublich, um wahr zu sein:
 
-Obwohl deine Reise für dich nur vier Jahre dauert, vergingen auf der Erde in der zwischenzeit 27 Jahre, es ist 2114. Ausserdem hast du erfahren, was mit dem übrigen Sputnik Missionen widerfahren ist.
+Obwohl deine Reise für dich nur vier Jahre dauert, vergingen auf der Erde in der Zwischenzeit 27 Jahre, es ist 2114. Ausserdem hast du erfahren, was mit dem übrigen Sputnik Missionen widerfahren ist.
 
 Nur eine der anderen schaffte es sicher ins All, das andere Schiff explodierte beim Verlassen der Stratosphäre.
 
@@ -123,14 +123,14 @@ $
 @Language = Deutsch & StoryBlock = 5.4 & Items = mysterious$
 Der Kristall wurde sehr genau untersucht, aber es ist noch sehr viel unklar.
 Manchmal fährst du Sonntag früh morgens zum Labor, um den Kristall wieder so zu betrachten wie bei ersten Mal, als du ihn gefunden hattest.
-Der Anblick macht dich immernoch sprachlos.
+Der Anblick macht dich immer noch sprachlos.
 
 #StoryBlock = X
 $
 
 @Language = Deutsch & StoryBlock = 5.4 & Items = toolbag$
 
-An der Zeremonie zu Ehren des Wiederkehrers wurdest du mit dem Orden für Kosmische Endteckungen ausgezeichnet. Vlad wurde bei dieser Zeremonie feierlich beigesetzt. 
+An der Zeremonie zu Ehren des Wiederkehrers wurdest du mit dem Orden für Kosmische Entdeckungen ausgezeichnet. Vlad wurde bei dieser Zeremonie feierlich beigesetzt. 
 Du schaust auf sein Grab mit Tränen in den Augen.
 Er wäre stolz gewesen.
 
