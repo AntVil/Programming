@@ -39,6 +39,16 @@ class AudioOutputHandler{
             console.log("\x1b[0m");
         });
 
+        rs.on("close", function(){
+            res();
+            console.log("\x1b[0m");
+        });
+
+        rs.on("error", function(){
+            res();
+            console.log("\x1b[0m");
+        });
+
         await p;
     }
 
