@@ -12,19 +12,19 @@ $
 Press the Button to select your trajectory and feed the coordinates to the boardcomputer:
 
 <
-trajectory option 1: course correction 0.00032472° , new estimated km left: 6.434.534 km
+trajectory option 1: course correction 0.00032472° , new estimated km left: 6434534 km
 
 #StoryBlock = 3.1
 >
 
 <
-trajectory option 2: course correction 0.00034793° , new estimated km left: 4.186 km
+trajectory option 2: course correction 0.00034793° , new estimated km left: 4186 km
 
 #StoryBlock = 3.2
 >
 
 <
-trajectory option 3: course correction 0.00045744° , new estimated km left: 6.434.497 km
+trajectory option 3: course correction 0.00045744° , new estimated km left: 6434497 km
 
 #StoryBlock = 3.1
 >
@@ -113,19 +113,19 @@ $
 Drücke den Knopf, um auszuwählen, welchen Kurs du dem Bordcomputer vorgeben willst:
 
 <
-trajectory option 1: course correction 0.00032472° , new estimated km left: 6.434.534 km
+trajectory option 1: course correction 0.00032472° , new estimated km left: 6434534 km
 
 #StoryBlock = 3.1
 >
 
 <
-trajectory option 2: course correction 0.00034793° , new estimated km left: 4.186 km
+trajectory option 2: course correction 0.00034793° , new estimated km left: 4186 km
 
 #StoryBlock = 3.2
 >
 
 <
-trajectory option 3: course correction 0.00045744° , new estimated km left: 6.434.497 km
+trajectory option 3: course correction 0.00045744° , new estimated km left: 6434497 km
 
 #StoryBlock = 3.1
 >

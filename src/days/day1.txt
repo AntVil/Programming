@@ -90,8 +90,8 @@ it was the first of its kind, nuclear powered and... safe - as they said.
 Your alarm buzzes and the digital clock in the corner of your stateroom shows 04:00AM in the morning. You have slept for 5 hours. It is dark outside... as always. You grab 
 your little notebook that is strapped to the container right next to your sleeping cabin. Calculating the amount of sleep that you can allow yourself became a daily routine.
 
-estimated km left: [r6.509.482]
-current speed: [r4,23627 km/s]
+estimated km left: [r6509482]
+current speed: [r4.23627 km/s]
 energy efficiency: [r21/100] (21% of the original performance)
 
 How exactly do you calculate that again? Man, your head hurts.
@@ -174,9 +174,9 @@ $
 
 
 @Language = English & StoryBlock = 2.0{
-trajectory option 1: course correction 0.00032472° , new estimated km left: [r6.434.534] km
-trajectory option 2: course correction 0.00034793° , new estimated km left: [r4.186] km
-trajectory option 2: course correction 0.00045744° , new estimated km left: [r6.434.497] km
+trajectory option 1: course correction 0.00032472° , new estimated km left: [r6434534] km
+trajectory option 2: course correction 0.00034793° , new estimated km left: [r4186] km
+trajectory option 2: course correction 0.00045744° , new estimated km left: [r6434497] km
 
 Was there an error?
 
@@ -322,7 +322,7 @@ $
 
 
 @Language = Deutsch{
-geschätzte km verbleibend: [r6.509.482]
+geschätzte km verbleibend: [r6509482]
 momentane Geschwindigkeit: [r4,23627 km/s]
 Reaktor Effizients: [r21/100] (21% der Originalleistung)
 
@@ -367,7 +367,7 @@ $
 
 @Language = Deutsch & StoryBlock = 1.3$
 Keine Kopfschmerzen. Das ist nett. Vielleicht ist das genau das was du brauchtest.
-#StoryBlock = 3.0
+#StoryBlock = 3
 $
 
 
@@ -384,9 +384,9 @@ $
 
 
 @Language = Deutsch & StoryBlock = 2.0{
-trajectory option 1: course correction 0.00032472° , new estimated km left: [r6.434.534] km
-trajectory option 2: course correction 0.00034793° , new estimated km left: [r4.186] km
-trajectory option 2: course correction 0.00045744° , new estimated km left: [r6.434.497] km
+trajectory option 1: course correction 0.00032472° , new estimated km left: [r6434534] km
+trajectory option 2: course correction 0.00034793° , new estimated km left: [r4186] km
+trajectory option 2: course correction 0.00045744° , new estimated km left: [r6434497] km
 
 Gab es einen Fehler?
 
