@@ -366,8 +366,22 @@ $
 
 
 @Language = Deutsch & StoryBlock = 1.3$
-Keine Kopfschmerzen. Das ist nett. Vielleicht ist das genau das was du brauchtest.
-#StoryBlock = 3
+Keine Kopfschmerzen. Sehr schön. Vielleicht ist das genau das was du brauchtest. Du8 schaust auf den Status Monitor... WAS??? Du bist noch nie so schnell aufgestanden.
+
+[bDate: december 14, 2083
+Time: 02:53 am]
+
+Da... Das bedeutet du hast 21 Stunden geschlafen.
+
+Einblick auf den Kontrollmonitor reicht aus, um zu wissen das dies das längste war wie lange du in nächster Zeit schlafen würdest.
+Obwohl es sich gut anfühlt den ganzen versäumten Schlaf aufzuholen fühlst du dich miserabel. Dir war schon immer unwohl dabei deine Pflichten zu vernachlässigen,
+dies war einer der Gründe warum du es als Astronaut so weit gebracht hast. Damals ausgewählt zu werden war eine Grosse Ehre sogar Vladimir Putin Jr. hat dir persönlich die "Летчик-космонавт Российской Федерации" 
+(Piloten-Kosmonaut der Russischen Föderation) Medaille überreicht. Der ganze Stolz und die Hoffnung einer ganzen Nation war in diesem Moment auf dich gerichtet.
+Aber genug der Erinnerungen was sagt der Bordcomputer?
+
+Du schwebst aus deiner Kabine in die Komandozentrale.
+Als tägliche Routine prüfst du alle Instrumente. Der Bordcomputer zeigt "Good Morning General ~N" an, das war das Einzige was dich nicht überraschte, denn heute war etwas anders.
+#StoryBlock = 2
 $
 
 
