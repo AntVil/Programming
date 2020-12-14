@@ -104,11 +104,12 @@ You head to the board control room and -
 $
 @Language = English & StoryBlock = 5.1.1.1^
 explosion
-#StoryBlock = X
 ^
+@Language = English & StoryBlock = 5.1.1.1$
+#StoryBlock = X
+$
 
-
-@Language = English & #StoryBlock = 5.1.1.2$
+@Language = English & StoryBlock = 5.1.1.2$
 You close up the control panel, enter the passcode to boot the control system and step away a little... who knows.
 After a few seconds of nothing happening, the control panel lights up, and begins to display data of the reactor, [+working]! You are very glad that you didn't mess any of this up, 
 something going wrong with a nuclear reactor would be terrible, especially in space.
@@ -251,7 +252,8 @@ Ich kann es nicht mit so wenig Energie schaffen, ich muss ihn herunterfahren und
 
 <
 Vielleicht reicht die Energie... ich lasse ihn lieber laufen.
-#StoryBlock = 5.1.2
+#StoryBlock = 5.2
+#Items = none
 >
 }
 
@@ -308,8 +310,7 @@ $
 >
 
 <Nein, lass sie hängen
-#StoryBlock = 5.2
-#Items = none
+#StoryBlock = 5.1.1.2
 >
 
 }
@@ -321,11 +322,12 @@ zu deaktivieren. Du gehst zum Kontrollraum und -
 $
 @Language = Deutsch & StoryBlock = 5.1.1.1^
 explosion
-#StoryBlock = X
 ^
+@Language = Deutsch & StoryBlock = 5.1.1.1$
+#StoryBlock = X
+$
 
-
-@Language = Deutsch & #StoryBlock = 5.1.1.2$
+@Language = Deutsch & StoryBlock = 5.1.1.2$
 Du verschliesst die Schaltfläche, gibst den Passcode am Kontrollsystem ein, um den Reaktor hochzufahren und gehst einen Schritt zurück... wer weiss.
 Nach dem eine Weile nichts passiert, schaltet sich die Schaltfläche ein zeigt den Status des Reaktors an und du merkst alles [+funktioniert]! Du bist sehr froh, dass du nichts falsch gemacht hast.
 Ein Fehler wäre fatal, vor allem im Weltall.
