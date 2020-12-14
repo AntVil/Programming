@@ -182,7 +182,7 @@ Then you press the button.
 It's gone.
 Suddenly, the ship gets a little colder. Or maybe it was just you...
 #StoryBlock = 4.4
-#items = none
+#Items = none
 $
 
 
@@ -431,6 +431,7 @@ Du siehst den Stein ein letztes Mal an.
 Dann drückst du den Knopf.
 Er ist verschwunden. Auf einmal fühlt sich die Atmosphäre um dich etwas kälter an. Könnte aber auch an dir liegen.
 #StoryBlock = 4.4
+#Items = none
 $
 
 
