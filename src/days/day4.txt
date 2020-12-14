@@ -308,7 +308,8 @@ $
 >
 
 <Nein, lass sie hängen
-#StoryBlock = 5.1.1.2
+#StoryBlock = 5.2
+#Items = none
 >
 
 }
@@ -320,6 +321,7 @@ zu deaktivieren. Du gehst zum Kontrollraum und -
 $
 @Language = Deutsch & StoryBlock = 5.1.1.1^
 explosion
+#StoryBlock = X
 ^
 
 
