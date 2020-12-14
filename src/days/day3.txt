@@ -250,13 +250,13 @@ $
 @Language = Deutsch & StoryBlock = 4.0$
 [gTag 3]
 
-Heute ist der Tag. Nach einer kurzen Nacht breitest du alles vor für den Sprung. Während du dich den Koordinaten des Eingangs Punkt näherst, wird das Sternenlicht dunkler.
-Alle Sterne verschwinden hinter dir und die Dunkelheit breitet sich vor dir aus. Auf einmal sind alle Sterne weg und nur noch ein leichtes Leuchten ist übrig, 
+Heute ist der Tag. Nach einer kurzen Nacht breitest du alles vor für den Sprung. Während du dich den Koordinaten des Eingangspunktes näherst, wird das Sternenlicht dunkler.
+Alle Sterne verschwinden hinter dir und die Dunkelheit breitet sich vor dir aus. Auf einmal sind alle Sterne weg und nur noch ein schwaches Leuchten ist übrig, 
 als ob der Raum selbst leuchtet.
-Ab diesem Zeitpunkt fühlt sich alles was du wahrnimmst unecht an, als ob es nicht mit der Realität verbunden wäre. Die Instrumente im Control Raum zeigen keine korrekten 
-Daten an. Sobald du aus dem Fenster schaust bekommst du Übelkeit, auch wenn dort draußen nichts ist außer dieses komische Leuchten.
-Bist du schon drinnen? Warum fühlt sich die Route nicht "schneller" an? Den Rechnungen zu folge solltest du 6000 km/s schnell sein.
-Du schaust nochmals aus dem Fenster. Ist das deine Werkzeugtasche? Ist das [+DEINE] Werkzeugtasche?? Das muss er sein, aber wie ist sie dorthin gekommen? Verdammt.
+Ab diesem Zeitpunkt fühlt sich alles, was du wahrnimmst unecht an, als ob es nicht mit der Realität verbunden wäre. Die Instrumente im Kontrollraum zeigen keine korrekten 
+Daten an. Sobald du aus dem Fenster schaust, bekommst du Übelkeit, auch wenn dort draußen nichts ist außer dieses komische Leuchten.
+Bist du schon drinnen? Warum fühlt sich die Route nicht "schneller" an? Den Rechnungen zu Folge solltest du 6000 km/s schnell sein.
+Du schaust nochmals aus dem Fenster. Ist das deine Werkzeugtasche? Ist das [+DEINE] Werkzeugtasche?? Das muss sie sein, aber wie ist sie dorthin gekommen? Verdammt.
 Du musst schnell handeln. Was wirst du tun?
 $
 
@@ -277,10 +277,10 @@ Es ist ein zu großes Risiko. Du musst daran denken, was letztes Jahr passiert i
 }
 
 @Language = Deutsch & StoryBlock = 4.1$
-Das Anlegen des Raumanzuges war immer eins der Highlights eines Weltraumspaziergangs, zumindest als Vlad noch mit dir war. Jetzt musst du den vielen Schichten des Raumanzuges selbst anlegen.
+Das Anlegen des Raumanzuges war immer eins der Highlights eines Weltraumspaziergangs, zumindest als Vlad noch mit dir war. Jetzt musst du die vielen Schichten des Raumanzuges selbst anlegen.
 Vladimir Lituskij war der zweite Kosmonaut an Bord der SPUTNIK 2078, bis zu dem schrecklichen Vorfall letztes Jahr. Du denkst nicht gerne darüber nach.
 Als du dich dem Ausgang des Schiffs näherst, drehst du dich noch einmal um und prüfst deine Sicherheitsleine.
-Der Bildschirm auf der Seite des Ausgangs liest
+Der Bildschirm auf der Seite des Ausgangs zeigt
 
 #StoryBlock = 4.1.0
 $
@@ -346,7 +346,7 @@ $
 
 
 @Language = Deutsch & StoryBlock = 4.1.0$
-Die Tür klemmt schonwieder. Typisch... Du gibst ihr einen starken Stoß.
+Die Tür klemmt, schon wieder. Typisch... Du gibst ihr einen starken Stoß.
 
 #StoryBlock = 4.1.1
 $
@@ -355,9 +355,9 @@ $
 @Language = Deutsch & StoryBlock = 4.1.1$
 Um nicht von dem gewaltigen Druck der herausströmenden Luft rausgesaugt zu werden, hältst du dich an den Seitenschienen fest. Während sich die Tür immer weiter öffnet und immer mehr der leere Raum
 vor dir ausbreitet, schaust du dich um und prüfst nochmals deine Sicherheitsleine. Ohne sie hättest du keine Möglichkeit wieder ins Schiff zu kommen. Mit anderen Worten, du würdest in den unendlichen
-weiten des Weltraums verloren sein.
-Draußen erhältst du einen unglaublichen Blick von dem Schiff, welches in ein mysteriöses Leuchten getunkt ist, indem du dich kurzzeitig verlierst, bevor du dich in Richtung Werkzeugtasche auf machst.
-Der unendliche Blick in die Leere lies die 60 Meter kurzer Vorkommen als erwartet. Einige Male hattest du die Befürchtung, dass die Leine nicht ausreicht.
+Weiten des Weltraums verloren sein.
+Draußen erhältst du einen unglaublichen Blick von dem Schiff, welches in ein mysteriöses Leuchten getaucht ist, indem du dich kurzzeitig verlierst, bevor du dich in Richtung Werkzeugtasche auf machst.
+Der unendliche Blick in die Leere lies die 60 Meter kürzer vorkommen, als erwartet. Einige Male hattest du die Befürchtung, dass die Leine nicht ausreicht.
 Schlussendlich bist du in der Nähe der Werkzeugtasche und du kannst sie fast greifen, aber... deine Aufmerksamkeit wendet sich einem anderem nicht weit von dir entferntem Gegenstand zu. 
 Das pulsierende Leuchten des Gegenstandes hat einen komischen Effekt auf deine Augen.
 Du wendest dich eine Weile dem Gegenstand zu, um herauszufinden, was es sein mag. Du bemerkst ein Gefühl... tief in dir... welches dich zu dem Gegenstand zieht.
@@ -376,7 +376,7 @@ wähl die Werkzeugtasche
 >
 
 <
-wähl das misteriöse Etwas
+wähl das mysteriöse Etwas
 #StoryBlock = 4.1.1.2
 #Items = mysterious
 >
@@ -384,7 +384,7 @@ wähl das misteriöse Etwas
 }
 
 @Language = Deutsch & StoryBlock = 4.1.1.1$
-Für einen kurzen Moment bist du dir nicht sicher, ob es die Richtige Entscheidung war, aber es ist auf jeden Fall sie sicherere. 
+Für einen kurzen Moment bist du dir nicht sicher, ob es die richtige Entscheidung war, aber es ist auf jeden Fall die Sicherere. 
 Auf dem Weg zurück zum Schiff kannst du nicht widerstehen dich noch einmal umzudrehen. Langsam verschwindet das Leuchten in der tiefen Dunkelheit.
 Mit der Werkzeugtasche fest in deiner Hand kommst du zurück zum Schiff.
 Als sich endlich die hermetische Tür hinter dir schließt, kannst du nicht anders als nochmal einen Blick nach dem Gegenstand zu werfen, welcher eine Wärme und gleichzeitig Kälte ausstrahlt.
@@ -395,9 +395,9 @@ $
 
 @Language = Deutsch & StoryBlock = 4.1.1.2$
 Du schwebst auf den scheinenden Gegenstand zu, welcher immer heller wird. Du bist dir sicher, dass der Gegenstand in dem Moment als du nach ihm greifst näherkommt. 
-Du untersuchst den Gegenstand ein wenig und bemerkst: seine Oberfläche besteht aus vielen kleinen Kristallen, die Rillen und Risse wie Schluchten formen, in denen sich das Licht zu verlieren scheint.
-Während du dich zum Schiff zurück ziehst hältst du den Kristall fest in der Hand. Es fühlt sich so an, als ob der Kristall vibriert; ein Gefühl, als ob es kein normaler Kristall wäre.
-Zumindest keiner der mir bis jetzt bekannt ist. 
+Du untersuchst den Gegenstand ein wenig und bemerkst: Seine Oberfläche besteht aus vielen kleinen Kristallen, die Rillen und Risse wie Schluchten formen, in denen sich das Licht zu verlieren scheint.
+Während du dich zum Schiff zurück ziehst, hältst du den Kristall fest in der Hand. Es fühlt sich so an, als ob der Kristall vibriert; ein Gefühl, als ob es kein normaler Kristall wäre.
+Zumindest keiner, der dir bis jetzt bekannt ist. 
 Der Kristall bekommt deine volle Aufmerksamkeit und du denkst nicht einmal mehr an die Werkzeugtasche.
 
 Als sich endlich die hermetische Tür hinter dir schließt und Dunkelheit damit abriegelst, empfindest du wieder ein Gefühl von Sicherheit.
@@ -436,7 +436,7 @@ $
 
 
 @Language = Deutsch & StoryBlock = 4.2$
-Du denkst nur sehr selten daran, denn dir wurde immer eingeredet negative Gedanken und Emotionen auf der Mission zu unterdrücken.  Die Fähigkeit dies zu können erwies sich als sehr nützlich. Es ist besser fokussiert zu bleiben, Vlad konnte das besonders gut, vielleicht sogar besser als du.
+Du denkst nur sehr selten daran, denn dir wurde immer eingeredet negative Gedanken und Emotionen auf der Mission zu unterdrücken.  Die Fähigkeit dies zu können, erwies sich als sehr nützlich. Es ist besser fokussiert zu bleiben, Vlad konnte das besonders gut, vielleicht sogar besser als du.
 Vladimir Lituskij war sein Name, er war der zweite Kosmonaut an Board der Sputnik 2078, bis zum schrecklichen Ereignis von vor einem Jahr.  Ihr beide wart gute Freunde, ihr hattet den Auswahlvorgang für diese Mission gemeinsam bestanden. 
 
 Es passierte in der Nähe des Xiastea-63507 Asteroidengürtels, eine kleinere Mission, die dem Aufstocken der Mineralienvorräte diente. 
@@ -446,7 +446,7 @@ Der Gesteinsbrocken der Vlad erwischte wog über 3 Tonnen, er hatte keine Chance
 $
 
 @Language = Deutsch & StoryBlock = 4.3$
-Du legst ihn in den Lagerraum, damit du später wiederfindest.
+Du legst ihn in den Lagerraum, damit du ihn später wiederfindest.
 
 #StoryBlock = 4.4
 $

@@ -107,7 +107,7 @@ Feature-Liste:
 - Deutsch und Englisch
 - lesbarer Code
 - erweiterbarer Code
-- verschaltung(en)
+- Verschaltung(en)
 $
 
 

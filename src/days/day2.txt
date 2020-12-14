@@ -102,8 +102,8 @@ $
 @Language = Deutsch & StoryBlock = 3.0$
 [gTag 2]
 
-Du hattest es schwer Gestern zu schlafen. Diese Anomalie von Raum und Zeit, ein unentdecktes Phänomen direkt vor deinen Augen, war einfach zu aufregend und beängstigend zu gleich.
-Heute bist du viel früher als aufgestanden als nötig. Du starrst den Bildschirm an während die Navigation läuft.
+Du hattest es schwer gestern zu schlafen. Diese Anomalie von Raum und Zeit, ein unentdecktes Phänomen, direkt vor deinen Augen, war einfach zu aufregend und beängstigend zugleich.
+Heute bist du viel früher als aufgestanden als nötig. Du starrst den Bildschirm an, während die Navigation läuft.
 
 Du denkst über deine Chance der erste Mensch zu sein, welcher durch ein Wurmloch fliegt, ein echtes. Aber du fängst dich schnell wieder:
 Was bedeutet es denn überhaupt, der Erste zu sein, wenn du dir 99.9% sicher bist, dass du STRIBST, wenn du es tust??
@@ -132,7 +132,7 @@ trajectory option 3: course correction 0.00045744° , new estimated km left: 643
 }
 
 @Language = Deutsch & StoryBlock = 3.1$
-Es kann keine gute Entscheidung sein auf gefährliche und höchst wahrscheinlich todbringende Abenteuer zu gehen. Du bist nur zwei Wochen entfernt von deinem Ziel, nach drei Jahren und zehn Monaten reise.
+Es kann keine gute Entscheidung sein, auf gefährliche und höchstwahrscheinlich todbringende Abenteuer zu gehen. Du bist nur zwei Wochen entfernt von deinem Ziel, nach drei Jahren und zehn Monaten Reise.
 Während die Reaktoreffizienz konstant fällt, ist es besser die sichere Option zu wählen, ohne irgendwelche Überraschungen.
 
 Du streckst deine Hand aus, um den richtigen Kurs zu wählen.
@@ -145,7 +145,7 @@ Einen Moment später kneifst du deine Augen zusammen und du weißt, der Kurs kan
 $
 
 @Language = Deutsch & StoryBlock = 3.2$
-Etwas in dir sagt du solltest es versuchen. VERSUCHEN? Was versuchen?
+Etwas in dir sagt, du solltest es versuchen. VERSUCHEN? Was versuchen?
 .
 .
 .

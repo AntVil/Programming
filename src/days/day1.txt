@@ -250,11 +250,11 @@ Deutsch
 @Language = Deutsch$
 
 Hallo ~N! 
-Danke fürs spielen!
+Danke fürs Spielen!
 Ein paar Empfehlungen für optimales Spielerlebnis:
-- Mache den Terminal auf Vollbildschirm
-- benutze Kopfhörer oder gute Lautsprecher
-- viel Spaß!
+- Mache das Terminal auf Vollbildschirm
+- Benutze Kopfhörer oder gute Lautsprecher
+- Viel Spaß!
 .
 .
 .
@@ -292,16 +292,16 @@ spacetrack
 .
 .
 [bMission:]
-bewohnbaren Planeten erreichen
+Bewohnbaren Planeten erreichen
 .
 .
 .
 $
 
 @Language = Deutsch$
-Der dritte Weltkrieg hat die Russische Föderation dazu gebracht ihr Raumfahrtprogramm wieder zu beleben, um vor der USA zu fliehen, welche Moskau und die Umgebung zerbombt.
+Der dritte Weltkrieg hat die Russische Föderation dazu gebracht ihr Raumfahrtprogramm wieder zu beleben, um vor den USA zu fliehen, welche Moskau und die Umgebung zerbombt haben.
 Es wurden drei verschiedene Teams ausgesendet, um den planeten-ähnlichen Asteroiden “надежда”(nadezhda), ungefähr 489.396.264 km entfernt, zu untersuchen,
-von welchem Wissenschaftler aus Dolgoprudny, Moskau komische Signale seit Dezember 2068 erhielten.
+von welchem Wissenschaftler aus Dolgoprudny, Moskau, komische Signale seit Dezember 2068 erhielten.
 $
 
 %Story Block 1:%
@@ -315,16 +315,16 @@ $
 Eine deiner täglichen Herausforderungen ist es stets den richtigen Kurs während des Tages beizubehalten, da du das Navigationssystem ausschalten musst, solange du wach bist.
 Der Bordcomputer verbraucht zu viel Strom, für den kleinen Reaktor der SPUTNIK 2078, da er die letzten Monate weniger effizient wurde. 
 Entwickelt in Eile und der Erste seiner Art. Ein sicherer nuklearer Reaktor ... sagten sie zumindest.
-Dein Wecker klingelt, die digital Uhr in der Ecke deiner Kabine zeigt 04:00Uhr morgens. Du hast fünf Stunden geschlafen. Es ist dunkel draußen... wie immer. Du nimmst 
-dein kleines Notebook, welches neben deiner Schlafkabine an deinem Nachtisch festgebunden ist. Das Ausrechnen der Zeit, die du schlafen darfst ist zur Routine geworden.
+Dein Wecker klingelt, die digitale Uhr in der Ecke deiner Kabine zeigt 04:00Uhr morgens. Du hast fünf Stunden geschlafen. Es ist dunkel draußen... wie immer. Du nimmst 
+dein kleines Notebook, welches neben deiner Schlafkabine an deinem Nachtisch festgebunden ist. Das Ausrechnen der Zeit, die du schlafen darfst, ist zur Routine geworden.
 $
 
 
 
 @Language = Deutsch{
-geschätzte km verbleibend: [r6509482]
-momentane Geschwindigkeit: [r4,23627 km/s]
-Reaktor Effizients: [r21/100] (21% der Originalleistung)
+Geschätzte km verbleibend: [r6509482]
+Momentane Geschwindigkeit: [r4,23627 km/s]
+Reaktor Effizienz: [r21/100] (21% der Originalleistung)
 
 Wie rechnet man sowas nochmals? Verdammt, dein Kopf tut weh.
 
@@ -357,7 +357,7 @@ $
 
 
 @Language = Deutsch & StoryBlock = 1.2$
-Du musst den Fakt akzeptieren, dass weniger Schlaf dein Überleben sichert. Also stehst du auf wie jeden Morgen. Es gibt natürlich keinen Kaffee im Weltall, aber 
+Du musst den Fakt akzeptieren, dass weniger Schlaf dein Überleben sichert. Also stehst du auf, wie jeden Morgen. Es gibt natürlich keinen Kaffee im Weltall, aber 
 du bist dir sehr sicher, dass deine tägliche Dosis "Vitamin" Tabletten, Koffein oder zumindest etwas mit einem ähnlichen Effekt auf den Körper beinhalten.
 Sonst könntest du so einen Lebensstil nicht lange aufrechterhalten. Du schwebst aus deiner Kabine zur Komandozentrale.
 Als tägliche Routine prüfst du alle Instrumente. Der Bordcomputer zeigt "Good Morning General ~N" an, das war das Einzige was dich nicht überraschte, denn heute war etwas anders.
@@ -366,18 +366,18 @@ $
 
 
 @Language = Deutsch & StoryBlock = 1.3$
-Keine Kopfschmerzen. Sehr schön. Vielleicht ist das genau das was du brauchtest. Du8 schaust auf den Status Monitor... WAS??? Du bist noch nie so schnell aufgestanden.
+Keine Kopfschmerzen. Sehr schön. Vielleicht ist das genau das was du brauchtest. Du schaust auf den Status Monitor... WAS??? Du bist noch nie so schnell aufgestanden.
 
 [bDate: december 14, 2083
 Time: 02:53 am]
 
 Da... Das bedeutet du hast 21 Stunden geschlafen.
 
-Einblick auf den Kontrollmonitor reicht aus, um zu wissen das dies das längste war wie lange du in nächster Zeit schlafen würdest.
-Obwohl es sich gut anfühlt den ganzen versäumten Schlaf aufzuholen fühlst du dich miserabel. Dir war schon immer unwohl dabei deine Pflichten zu vernachlässigen,
-dies war einer der Gründe warum du es als Astronaut so weit gebracht hast. Damals ausgewählt zu werden war eine Grosse Ehre sogar Vladimir Putin Jr. hat dir persönlich die "Летчик-космонавт Российской Федерации" 
+Ein Blick auf den Kontrollmonitor reicht aus, um zu wissen das dies das längste war, wie lange du in nächster Zeit schlafen würdest.
+Obwohl es sich gut anfühlt den ganzen versäumten Schlaf aufzuholen, fühlst du dich miserabel. Dir war schon immer unwohl dabei deine Pflichten zu vernachlässigen,
+dies war einer der Gründe, warum du es als Astronaut so weit gebracht hast. Damals ausgewählt zu werden war eine große Ehre. Sogar Vladimir Putin Jr. hat dir persönlich die "Летчик-космонавт Российской Федерации" 
 (Piloten-Kosmonaut der Russischen Föderation) Medaille überreicht. Der ganze Stolz und die Hoffnung einer ganzen Nation war in diesem Moment auf dich gerichtet.
-Aber genug der Erinnerungen was sagt der Bordcomputer?
+Aber genug der Erinnerungen, was sagt der Bordcomputer?
 
 Du schwebst aus deiner Kabine in die Komandozentrale.
 Als tägliche Routine prüfst du alle Instrumente. Der Bordcomputer zeigt "Good Morning General ~N" an, das war das Einzige was dich nicht überraschte, denn heute war etwas anders.
@@ -388,7 +388,7 @@ $
 
 @Language = Deutsch & StoryBlock = 2$
 Du hast sowas noch nie gesehen. Nicht im Training, welches zugegeben nicht sehr lang oder intensiv war, noch in den vier Jahren auf dem Schiff, ist [+sowas] vorgefallen. 
-Uns [+sowas] sollte nicht auf die leichte Schulter genommen werden. Für "normale" Leute wären solche Zahlen auf dem Bildschirm nichts Besonderes. Du jedoch weißt was sie bedeuten.
+Uns [+sowas] sollte nicht auf die leichte Schulter genommen werden. Für "normale" Leute wären solche Zahlen auf dem Bildschirm nichts Besonderes. Du jedoch weißt, was sie bedeuten.
 Du bist dir nur noch nicht sicher, ob du dich darüber freuen solltest.
 
 Die Flugbahn des Schiffs wird täglich neu berechnet. Normalerweise erhältst du drei bis vier verschiedene Optionen des Computers. Das Problem ist, sie sahen noch nie so aus, wie diese:
@@ -411,7 +411,7 @@ Muss ein Fehler sein, muss neu berechnen werden.
 >
 
 <
-Der Computer hat noch nie einen Fehler gemacht. Ist es das was ich denke, was es ist?
+Der Computer hat noch nie einen Fehler gemacht. Ist es das, was ich denke, was es ist?
 #StoryBlock = 2.2
 >
 }

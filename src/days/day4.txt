@@ -238,9 +238,9 @@ $
 $
 
 @Language = Deutsch & StoryBlock = 5.1$
-Du musst etwas dagegen tun, andernfalls ist deine Chance zu überleben sehr gering. Während du Richtung Reaktorraum schwebst siehst du auf der Anzeige [bcritical status].
+Du musst etwas dagegen tun, andernfalls ist deine Chance zu überleben sehr gering. Während du Richtung Reaktorraum schwebst, siehst du auf der Anzeige [bcritical status].
 Obwohl du fast alles über diesen Reaktor weisst, hast du keine Ahnung was du nun tun sollst. Den Reaktor zu untersuchen und reparieren ist unmöglich, während er läuft.
-Um etwas an ihm zu tun müsste er heruntergefahren sein...
+Um etwas an ihm zu tun, müsste er heruntergefahren sein...
 $
 
 @Language = Deutsch & StoryBlock = 5.1{
@@ -259,7 +259,7 @@ Vielleicht reicht die Energie... ich lasse ihn lieber laufen.
 
 
 @Language = Deutsch & StoryBlock = 5.1.1$
-Du gibst den Sicherheitsschlüssel ein, um den Reaktor herunterzufahren. Das Energieniveau sinkt auf ein Minimum, nur die Überlebenswichtigen Systeme werden von einer großen Batterie versorgt.
+Du gibst den Sicherheitsschlüssel ein, um den Reaktor herunterzufahren. Das Energieniveau sinkt auf ein Minimum, nur die überlebenswichtigen Systeme werden von einer großen Batterie versorgt.
 Fangen wir an.
 Du gehst zum Lagerraum
 $
@@ -282,7 +282,7 @@ $
 
 
 @Language = Deutsch & StoryBlock = 5.1.1 & Items = toolbag$
-Du bist mehr als froh über deine Werkzeugtasche. Sie ist das einige, was dir in so einer Situation von Nutzen sein kann. Du schnappst sie dir und schwebst zurück zum Reaktorraum.
+Du bist mehr als froh über deine Werkzeugtasche. Sie ist das Einzige, was dir in so einer Situation von Nutzen sein kann. Du schnappst sie dir und schwebst zurück zum Reaktorraum.
 $
 @Intro = True & Language = Deutsch^
 alarm
@@ -290,7 +290,7 @@ alarm
 @Language = Deutsch & StoryBlock = 5.1.1 & Items = toolbag$
 [bfatal error] 
 
-wird auf dem Bildschirm angezeigt.
+Wird auf dem Bildschirm angezeigt.
 
 - Das könnte eine Weile dauern.
 .
@@ -298,7 +298,7 @@ wird auf dem Bildschirm angezeigt.
 .
 .
 .
-Ein einigen Stunden harter Arbeit bist du dir ziemlich sicher, dass der Reaktor wieder normal funktioniert. Um zu prüfen, ob deine Arbeit erfolgreich war, schaltest du ihn an... und schaust was passiert.
+Nach einigen Stunden harter Arbeit bist du dir ziemlich sicher, dass der Reaktor wieder normal funktioniert. Um zu prüfen, ob deine Arbeit erfolgreich war, schaltest du ihn an... und schaust was passiert.
 Du verbindest alle Kabel an der offengelegten Schaltfläche und... siehst ein paar Kabel, die du bis jetzt noch nicht bemerkt hast. Sie waren anscheinend schon vor der Reparatur nicht verbunden.
 Solltest du sie verbinden?
 $
@@ -317,7 +317,7 @@ $
 
 @Language = Deutsch & StoryBlock = 5.1.1.1$
 Vorsichtig greifst du durch ein enges Loch nach den Kabeln, um sie zu verbinden. Geschafft.
-Ein letzter prüfender Blick, bevor du den Reaktor wieder einschaltest. Du gibst den Passcode am Kontrollsystem ein, um den Reaktor hochzufahren, aber... nichts passiert. Vielleicht hast du vergessen Sicherheitsschloss
+Ein letzter prüfender Blick, bevor du den Reaktor wieder einschaltest. Du gibst den Passcode am Kontrollsystem ein, um den Reaktor hochzufahren, aber... nichts passiert. Vielleicht hast du vergessen das Sicherheitsschloss
 zu deaktivieren. Du gehst zum Kontrollraum und -
 $
 @Language = Deutsch & StoryBlock = 5.1.1.1^
@@ -328,8 +328,8 @@ explosion
 $
 
 @Language = Deutsch & StoryBlock = 5.1.1.2$
-Du verschliesst die Schaltfläche, gibst den Passcode am Kontrollsystem ein, um den Reaktor hochzufahren und gehst einen Schritt zurück... wer weiss.
-Nach dem eine Weile nichts passiert, schaltet sich die Schaltfläche ein zeigt den Status des Reaktors an und du merkst alles [+funktioniert]! Du bist sehr froh, dass du nichts falsch gemacht hast.
+Du verschließt die Schaltfläche, gibst den Passcode am Kontrollsystem ein, um den Reaktor hochzufahren und gehst einen Schritt zurück... wer weiss.
+Nach dem eine Weile nichts passiert, schaltet sich die Schaltfläche ein, zeigt den Status des Reaktors an und du merkst alles [+funktioniert]! Du bist sehr froh, dass du nichts falsch gemacht hast.
 Ein Fehler wäre fatal, vor allem im Weltall.
 
 Mit deiner Werkzeugtasche in der Hand schwebst du zur Kommandozentrale des Schiffs. Auf deinem Weg dorthin schwebst du durch die schmalen Korridore des Schiffs, als du etwas bemerkst:
@@ -382,7 +382,7 @@ $
 
 
 @Language = Deutsch & StoryBlock = 5.3$
-Auf einmal ändert sich der Raum draussen. Das träge Gefühl des Wurmlochs, an welches du dich gewöhnt hast, ist verschwunden und das kalte Universum fühlt sich wieder so an wie vor dem Sprung. Bist du schon da?
+Auf einmal ändert sich der Raum draussen. Das träge Gefühl des Wurmlochs, an welches du dich gewöhnt hast, ist verschwunden und das kalte Universum fühlt sich wieder so an, wie vor dem Sprung. Bist du schon da?
 Du schwebst durch das Schiff auf der Suche nach einem Fenster.... und was du siehst macht dich sprachlos.
 
 Draussen siehst du... einen Planet, direkt vor dem Schiff. Nicht irgendein Planet sondern...
