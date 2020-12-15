@@ -1,13 +1,6 @@
 # Textadventure
 ### a simple textadventure
 
-##### TODO:
-- ###### storyboard (most important)
-- modeling (diagrams)
-- conventions for implementing (make code uniform)
-- implementing (needs diagrams)
-- feature list
-
 ##### HOW TO RUN THE ADVENTURE (using VSCode):
 - copy the repository to your computer
 - open the repository using VSCode

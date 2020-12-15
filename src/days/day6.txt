@@ -49,6 +49,7 @@ Feature-list:
 - German and English
 - readable code
 - expandable code
+- colors in console
 - unlock(s)
 $
 
@@ -107,7 +108,8 @@ Feature-Liste:
 - Deutsch und Englisch
 - lesbarer Code
 - erweiterbarer Code
-- Verschaltung(en)
+- Farben in der Konsole
+- Freischaltung(en)
 $
 
 
